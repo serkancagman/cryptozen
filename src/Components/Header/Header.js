@@ -8,6 +8,7 @@ import {
   marketList,
   tradeList,
   earnList,
+  newsList
 } from "./NavbarItems/NavbarItems";
 const Header = () => {
   return (
@@ -49,9 +50,15 @@ const Header = () => {
             <li className={style.navItem}>
               <Link to="/strategybot" className={style.dropdownLink} href="/#">
                 Copy Trading
-
                 <span className={style.navLinkTag}>NEW</span>
               </Link>
+            </li>
+            <li className={style.navItem}>
+              <Dropdown placement="bottom" overlay={newsList}>
+                <span className={style.dropdownLink} href="/#">
+                  News
+                </span>
+              </Dropdown>
             </li>
           </ul>
         </nav>
