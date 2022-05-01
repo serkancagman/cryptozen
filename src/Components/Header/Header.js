@@ -8,7 +8,8 @@ import {
   marketList,
   tradeList,
   earnList,
-  newsList
+  newsList,
+  giveawayList
 } from "./NavbarItems/NavbarItems";
 const Header = () => {
   return (
@@ -55,8 +56,15 @@ const Header = () => {
             </li>
             <li className={style.navItem}>
               <Dropdown placement="bottom" overlay={newsList}>
-                <span className={style.dropdownLink} href="/#">
+                <span className={style.dropdownLink}>
                   News
+                </span>
+              </Dropdown>
+            </li>
+            <li className={style.navItem}>
+              <Dropdown placement="bottom" overlay={giveawayList}>
+                <span className={style.dropdownLink} >
+                  Giveaways
                 </span>
               </Dropdown>
             </li>

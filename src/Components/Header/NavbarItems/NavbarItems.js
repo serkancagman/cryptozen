@@ -9,17 +9,22 @@ import {
   BsCloudMinusFill,
   BsFilePost,
   BsFillChatDotsFill,
-  BsNewspaper
+  BsNewspaper,
 } from "react-icons/bs";
-import {BiNews,BiPodcast} from "react-icons/bi";
+import { BiNews, BiPodcast,BiTask } from "react-icons/bi";
 import { SiHiveBlockchain } from "react-icons/si";
-import { MdPriceChange, MdOutlineGeneratingTokens,MdLiveTv } from "react-icons/md";
+import {
+  MdPriceChange,
+  MdOutlineGeneratingTokens,
+  MdLiveTv,
+} from "react-icons/md";
 import {
   AiOutlineRise,
   AiOutlineFieldTime,
   AiOutlineGlobal,
   AiOutlineSwap,
   AiFillSetting,
+  AiFillGift
 } from "react-icons/ai";
 import {
   GiInjustice,
@@ -34,7 +39,7 @@ import {
   RiTimerFlashFill,
   RiCoinsFill,
 } from "react-icons/ri";
-import { FaFileInvoiceDollar, FaCubes } from "react-icons/fa";
+import { FaFileInvoiceDollar, FaCubes,FaCoins } from "react-icons/fa";
 // Buy List Dropdown Menu
 export const buyList = (
   <div className={style.navSubWrapper}>
@@ -432,46 +437,73 @@ export const earnList = (
     </ul>
   </div>
 );
-
+// NEWS MENU ITEMS
 export const newsList = (
   <div className={style.navSubWrapper}>
-  <ul className={style.navSubList}>
-    <li className={style.navSubItem}>
-      <Link to="/posts" className={style.navSubLink}>
-        <BsFilePost className={style.navSubIcon} />
-        <span className={style.navSubText}>Posts</span>
-      </Link>
-    </li>
-    <li className={style.navSubItem}>
-      <Link to="/live" className={style.navSubLink}>
-        <MdLiveTv className={style.navSubIcon} />
-        <span className={style.navSubText}>Live Stream</span>
-      </Link>
-    </li>
-    <li className={style.navSubItem}>
-      <Link to="/cheatroom" className={style.navSubLink}>
-        <BsFillChatDotsFill className={style.navSubIcon} />
-        <span className={style.navSubText}>Chatroom</span>
-      </Link>
-    </li>
-    <li className={style.navSubItem}>
-      <Link to="/news_live" className={style.navSubLink}>
-        <BsNewspaper className={style.navSubIcon} />
-        <span className={style.navSubText}>News</span>
-      </Link>
-    </li>
-    <li className={style.navSubItem}>
-      <Link to="/blog" className={style.navSubLink}>
-        <BiNews className={style.navSubIcon} />
-        <span className={style.navSubText}>Cryptozen Blog</span>
-      </Link>
-    </li>
-    <li className={style.navSubItem}>
-      <Link to="/podcast" className={style.navSubLink}>
-        <BiPodcast className={style.navSubIcon} />
-        <span className={style.navSubText}>Podcast</span>
-      </Link>
-    </li>
-  </ul>
-</div>
+    <ul className={style.navSubList}>
+      <li className={style.navSubItem}>
+        <Link to="/posts" className={style.navSubLink}>
+          <BsFilePost className={style.navSubIcon} />
+          <span className={style.navSubText}>Posts</span>
+        </Link>
+      </li>
+      <li className={style.navSubItem}>
+        <Link to="/live" className={style.navSubLink}>
+          <MdLiveTv className={style.navSubIcon} />
+          <span className={style.navSubText}>Live Stream</span>
+        </Link>
+      </li>
+      <li className={style.navSubItem}>
+        <Link to="/cheatroom" className={style.navSubLink}>
+          <BsFillChatDotsFill className={style.navSubIcon} />
+          <span className={style.navSubText}>Chatroom</span>
+        </Link>
+      </li>
+      <li className={style.navSubItem}>
+        <Link to="/news_live" className={style.navSubLink}>
+          <BsNewspaper className={style.navSubIcon} />
+          <span className={style.navSubText}>News</span>
+        </Link>
+      </li>
+      <li className={style.navSubItem}>
+        <Link to="/blog" className={style.navSubLink}>
+          <BiNews className={style.navSubIcon} />
+          <span className={style.navSubText}>Cryptozen Blog</span>
+        </Link>
+      </li>
+      <li className={style.navSubItem}>
+        <Link to="/podcast" className={style.navSubLink}>
+          <BiPodcast className={style.navSubIcon} />
+          <span className={style.navSubText}>Podcast</span>
+        </Link>
+      </li>
+    </ul>
+  </div>
+);
+
+// GIVEAWAY MENU ITEMS
+
+export const giveawayList = (
+  <div className={style.navSubWrapper}>
+    <ul className={style.navSubList}>
+      <li className={style.navSubItem}>
+        <Link to="/rewards/activity" className={style.navSubLink}>
+          <AiFillGift className={style.navSubIcon} />
+          <span className={style.navSubText}>Bonus Campaigns</span>
+        </Link>
+      </li>
+      <li className={style.navSubItem}>
+        <Link to="/rewards/task" className={style.navSubLink}>
+          <BiTask className={style.navSubIcon} />
+          <span className={style.navSubText}>Tasks & Bonuses</span>
+        </Link>
+      </li>
+      <li className={style.navSubItem}>
+        <Link to="/referral" className={style.navSubLink}>
+          <FaCoins className={style.navSubIcon} />
+          <span className={style.navSubText}>My Referrals</span>
+        </Link>
+      </li>
+    </ul>
+  </div>
 )
