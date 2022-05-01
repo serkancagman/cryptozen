@@ -5,6 +5,7 @@ import logo from "Assets/Logo/logo.png";
 import { Dropdown } from "antd";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { MdMobileScreenShare } from "react-icons/md";
+import {RiCustomerService2Fill} from "react-icons/ri";
 import {
   buyList,
   marketList,
@@ -14,7 +15,7 @@ import {
   giveawayList,
   nftList,
 } from "./NavbarItems/NavbarItems";
-import {appList} from "./NavbarItems/RightNavItems"
+import {appList,helpList} from "./NavbarItems/RightNavItems"
 const Header = () => {
   return (
     <header className={style.header}>
@@ -105,6 +106,13 @@ const Header = () => {
               <Dropdown placement="bottomLeft" overlay={appList}>
                 <span className={style.dropdownLink}>
                   <MdMobileScreenShare className={style.navItemIcon} />
+                </span>
+              </Dropdown>
+            </li>
+            <li className={style.navItem}>
+              <Dropdown placement="bottomLeft" overlay={helpList}>
+                <span className={style.dropdownLink}>
+                  <RiCustomerService2Fill className={style.navItemIcon} />
                 </span>
               </Dropdown>
             </li>
