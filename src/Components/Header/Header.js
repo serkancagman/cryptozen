@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import style from "./Style/Header.module.css";
 import logo from "Assets/Logo/logo.png";
 import { Dropdown } from "antd";
-import { buyList } from "./NavbarItems/NavbarItems";
+import { buyList,martketList } from "./NavbarItems/NavbarItems";
 const Header = () => {
   return (
     <header className={style.header}>
@@ -17,6 +17,13 @@ const Header = () => {
               <Dropdown placement="bottomCenter" overlay={buyList}>
                 <span className={style.dropdownLink} href="/#">
                   Buy Crypto
+                </span>
+              </Dropdown>
+            </li>
+            <li className={style.navItem}>
+              <Dropdown placement="bottomCenter" overlay={martketList}>
+                <span className={style.dropdownLink} href="/#">
+                  Markets
                 </span>
               </Dropdown>
             </li>
