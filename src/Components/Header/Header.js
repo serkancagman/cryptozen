@@ -3,7 +3,12 @@ import { Link } from "react-router-dom";
 import style from "./Style/Header.module.css";
 import logo from "Assets/Logo/logo.png";
 import { Dropdown } from "antd";
-import { buyList,marketList,tradeList,earnList } from "./NavbarItems/NavbarItems";
+import {
+  buyList,
+  marketList,
+  tradeList,
+  earnList,
+} from "./NavbarItems/NavbarItems";
 const Header = () => {
   return (
     <header className={style.header}>
@@ -40,6 +45,13 @@ const Header = () => {
                   Earn
                 </span>
               </Dropdown>
+            </li>
+            <li className={style.navItem}>
+              <Link to="/strategybot" className={style.dropdownLink} href="/#">
+                Copy Trading
+
+                <span className={style.navLinkTag}>NEW</span>
+              </Link>
             </li>
           </ul>
         </nav>
