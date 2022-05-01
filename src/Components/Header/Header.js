@@ -9,7 +9,8 @@ import {
   tradeList,
   earnList,
   newsList,
-  giveawayList
+  giveawayList,
+  nftList
 } from "./NavbarItems/NavbarItems";
 const Header = () => {
   return (
@@ -56,15 +57,19 @@ const Header = () => {
             </li>
             <li className={style.navItem}>
               <Dropdown placement="bottom" overlay={newsList}>
-                <span className={style.dropdownLink}>
-                  News
-                </span>
+                <span className={style.dropdownLink}>News</span>
               </Dropdown>
             </li>
             <li className={style.navItem}>
               <Dropdown placement="bottom" overlay={giveawayList}>
-                <span className={style.dropdownLink} >
-                  Giveaways
+                <span className={style.dropdownLink}>Giveaways</span>
+              </Dropdown>
+            </li>
+            <li className={style.navItem}>
+              <Dropdown placement="bottom" overlay={nftList}>
+                <span className={style.dropdownLink}>
+                  NFT BOX
+                  <span className={style.navLinkTag}>HOT</span>
                 </span>
               </Dropdown>
             </li>

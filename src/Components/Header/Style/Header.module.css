@@ -204,7 +204,7 @@
   position: absolute;
   top: -15px;
   right: -15px;
-  font-size: 11px;
+  font-size: 10px;
   border-radius: 5px;
   background: -webkit-gradient(linear, right top, left top, from(#FF4A3C), to(#FF8031));
   background: linear-gradient(270deg, #FF4A3C 0%, #FF8031 100%);
@@ -213,5 +213,6 @@
   font-family: "Poppins", sans-serif;
   letter-spacing: 1px;
   color: #fff !important;
+  border-bottom-left-radius: 0;
 }
 /*# sourceMappingURL=Header.module.css.map */
