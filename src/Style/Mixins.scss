@@ -13,7 +13,18 @@
   justify-content: flex-start;
   align-items: center;
 }
-
+@mixin flexrowastart{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+@mixin flexalstart{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
 @mixin flexrowjend{
   display: flex;
   flex-direction: row;

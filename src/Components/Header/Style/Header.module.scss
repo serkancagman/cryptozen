@@ -10,8 +10,8 @@
     height: auto;
   }
 }
-.navItem{
-    margin: 0 10px;
+.navItem {
+  margin: 0 10px;
 }
 .dropdownLink {
   font-size: 18px;
@@ -23,36 +23,100 @@
   }
 }
 
-.navSubList {
+.navSubWrapper {
+  @include flexrowastart;
+  border-radius: 10px;
+  margin-top: 15px;
   background-color: #fff;
+  height: 100%;
+  .navSubList {
+    margin: 0;
+    .navSubItem {
+      height: 100%;
+    }
+  }
+}
+.navSubTextWrapper {
+  min-height: 110px;
+}
+.navSubList {
   width: 100%;
   padding: 0;
   height: 100%;
   border-radius: 5px;
   overflow: hidden;
   min-width: 250px;
+  max-width: 300px;
   margin-top: 15px;
   .navSubItem {
     width: 100%;
     list-style: none;
-
-    .navSubLink {
-      @include flexrowjstart;
-      padding: 15px;
-      &:hover {
-        background-color: #e4f6ff;
-      }
-
-      .navSubIcon {
-        margin-right: 5px;
-        font-size: 20px;
-        color: $mainColor;
-      }
-      .navSubText {
-        font-size: 17px;
-        font-weight: 600;
-        color: #555;
+    &:hover {
+      .navSubTextWrapper {
+        .navSubLinkOptionsWrapper {
+          display: block;
+        }
+        .navSubTextBottom {
+          display: none;
+        }
       }
     }
   }
+}
+.navSubLink {
+  @include flexrowjstart;
+  padding: 15px;
+  width: 100%;
+  &:hover {
+    background-color: #e4f6ff;
+  }
+}
+.navSubIcon {
+  margin-right: 5px;
+  font-size: 20px;
+  color: $mainColor;
+  min-width: 25px;
+}
+
+.navSubText {
+  font-size: 17px;
+  font-weight: 600;
+  color: #555;
+}
+.navSubStartLink {
+  @include flexalstart;
+  padding: 15px;
+  width: 100%;
+  &:hover {
+    background-color: #e4f6ff;
+  }
+}
+.navSubHeader {
+  margin: 15px 10px;
+  font-weight: 650;
+}
+.navSubTextBottom {
+  color: #888;
+}
+.navSubLinkOptionsWrapper {
+  display: none;
+  width: 100%;
+}
+.navSubLinkOptions {
+  @include flexrowbetween;
+  flex-wrap: wrap;
+}
+.navSubOptionLink {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+  font-weight: 600;
+}
+.navSubOptionLinkDash {
+  display: inline-block;
+  margin: 0 10px;
+  color: #555;
+}
+.navSubTextWrapperHoverless {
+  width: 100%;
 }

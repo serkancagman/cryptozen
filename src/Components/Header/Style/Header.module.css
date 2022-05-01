@@ -24,14 +24,46 @@
   color: #37a3fe;
 }
 
-.navSubList {
+.navSubWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 10px;
+  margin-top: 15px;
   background-color: #fff;
+  height: 100%;
+}
+
+.navSubWrapper .navSubList {
+  margin: 0;
+}
+
+.navSubWrapper .navSubList .navSubItem {
+  height: 100%;
+}
+
+.navSubTextWrapper {
+  min-height: 110px;
+}
+
+.navSubList {
   width: 100%;
   padding: 0;
   height: 100%;
   border-radius: 5px;
   overflow: hidden;
   min-width: 250px;
+  max-width: 300px;
   margin-top: 15px;
 }
 
@@ -40,7 +72,15 @@
   list-style: none;
 }
 
-.navSubList .navSubItem .navSubLink {
+.navSubList .navSubItem:hover .navSubTextWrapper .navSubLinkOptionsWrapper {
+  display: block;
+}
+
+.navSubList .navSubItem:hover .navSubTextWrapper .navSubTextBottom {
+  display: none;
+}
+
+.navSubLink {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,21 +95,94 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 15px;
+  width: 100%;
 }
 
-.navSubList .navSubItem .navSubLink:hover {
+.navSubLink:hover {
   background-color: #e4f6ff;
 }
 
-.navSubList .navSubItem .navSubLink .navSubIcon {
+.navSubIcon {
   margin-right: 5px;
   font-size: 20px;
   color: #37a3fe;
+  min-width: 25px;
 }
 
-.navSubList .navSubItem .navSubLink .navSubText {
+.navSubText {
   font-size: 17px;
   font-weight: 600;
   color: #555;
+}
+
+.navSubStartLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 15px;
+  width: 100%;
+}
+
+.navSubStartLink:hover {
+  background-color: #e4f6ff;
+}
+
+.navSubHeader {
+  margin: 15px 10px;
+  font-weight: 650;
+}
+
+.navSubTextBottom {
+  color: #888;
+}
+
+.navSubLinkOptionsWrapper {
+  display: none;
+  width: 100%;
+}
+
+.navSubLinkOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.navSubOptionLink {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #555;
+  font-weight: 600;
+}
+
+.navSubOptionLinkDash {
+  display: inline-block;
+  margin: 0 10px;
+  color: #555;
+}
+
+.navSubTextWrapperHoverless {
+  width: 100%;
 }
 /*# sourceMappingURL=Header.module.css.map */
