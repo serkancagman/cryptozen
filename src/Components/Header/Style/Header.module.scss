@@ -12,9 +12,18 @@
 }
 .navItem {
   margin: 0 10px;
+
+  &:hover {
+    .navIconUp {
+      transform: rotate(180deg);
+    }
+  }
+}
+.navIconUp {
+  transition: all 0.3s ease-in-out;
 }
 .dropdownLink {
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   cursor: pointer;
   position: relative;
@@ -75,6 +84,7 @@
   @include flexrowjstart;
   padding: 15px;
   width: 100%;
+
   &:hover {
     background-color: #e4f6ff;
     .navSubText {
@@ -84,13 +94,13 @@
 }
 .navSubIcon {
   margin-right: 5px;
-  font-size: 22px;
+  font-size: 20px;
   color: $mainColor;
   min-width: 25px;
 }
 
 .navSubText {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
   color: #555;
 }
@@ -131,14 +141,14 @@
 .navSubTextWrapperHoverless {
   width: 100%;
 }
-.navLinkTag{
+.navLinkTag {
   position: absolute;
   top: -15px;
   right: -15px;
   font-size: 10px;
   border-radius: 5px;
-  background: linear-gradient(270deg, #FF4A3C 0%, #FF8031 100%);
-  padding: 1px 2px;
+  background: linear-gradient(270deg, #ff4a3c 0%, #ff8031 100%);
+  padding: 0 2px;
   font-weight: bold;
   font-family: $poppinsFont;
   letter-spacing: 1px;

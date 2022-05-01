@@ -10,10 +10,11 @@ import {
   BsFilePost,
   BsFillChatDotsFill,
   BsNewspaper,
-  BsPersonLinesFill
+  BsAwardFill,
+  BsPersonLinesFill,
 } from "react-icons/bs";
-import { BiNews, BiPodcast,BiTask } from "react-icons/bi";
-import { SiHiveBlockchain } from "react-icons/si";
+import { BiNews, BiPodcast, BiTask } from "react-icons/bi";
+import { SiHiveBlockchain, SiEthereum } from "react-icons/si";
 import {
   MdPriceChange,
   MdOutlineGeneratingTokens,
@@ -26,7 +27,7 @@ import {
   AiOutlineSwap,
   AiFillSetting,
   AiFillGift,
-  AiFillFire
+  AiFillFire,
 } from "react-icons/ai";
 import {
   GiInjustice,
@@ -35,17 +36,23 @@ import {
   GiTwoCoins,
   GiMining,
   GiAbstract002,
-  GiStarFormation
+  GiStarFormation,
 } from "react-icons/gi";
+import { GrStatusCriticalSmall } from "react-icons/gr";
 import { CgArrowsExchangeAltV } from "react-icons/cg";
 import {
   RiExchangeDollarLine,
   RiTimerFlashFill,
   RiCoinsFill,
-  RiNotificationBadgeFill
+  RiNotificationBadgeFill,
 } from "react-icons/ri";
-import {SiFacepunch} from "react-icons/si";
-import { FaFileInvoiceDollar, FaCubes,FaCoins } from "react-icons/fa";
+import { SiFacepunch } from "react-icons/si";
+import {
+  FaFileInvoiceDollar,
+  FaCubes,
+  FaCoins,
+  FaVoteYea,
+} from "react-icons/fa";
 // Buy List Dropdown Menu
 export const buyList = (
   <div className={style.navSubWrapper}>
@@ -512,10 +519,9 @@ export const giveawayList = (
       </li>
     </ul>
   </div>
-)
+);
 
 // NFT MENU ITEMS
-
 
 export const nftList = (
   <div className={style.navSubWrapper}>
@@ -558,4 +564,4 @@ export const nftList = (
       </li>
     </ul>
   </div>
-)
+);

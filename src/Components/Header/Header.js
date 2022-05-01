@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import style from "./Style/Header.module.css";
 import logo from "Assets/Logo/logo.png";
 import { Dropdown } from "antd";
+import { TiArrowSortedDown, TiArrowSortedUp } from "react-icons/ti";
 import {
   buyList,
   marketList,
@@ -10,7 +11,7 @@ import {
   earnList,
   newsList,
   giveawayList,
-  nftList
+  nftList,
 } from "./NavbarItems/NavbarItems";
 const Header = () => {
   return (
@@ -24,54 +25,63 @@ const Header = () => {
             <li className={style.navItem}>
               <Dropdown placement="bottom" overlay={buyList}>
                 <span className={style.dropdownLink} href="/#">
-                  Buy Crypto
+                  Buy Crypto <TiArrowSortedDown className={style.navIconUp} />
                 </span>
               </Dropdown>
             </li>
             <li className={style.navItem}>
               <Dropdown placement="bottom" overlay={marketList}>
                 <span className={style.dropdownLink} href="/#">
-                  Markets
+                  Markets <TiArrowSortedDown className={style.navIconUp} />
                 </span>
               </Dropdown>
             </li>
             <li className={style.navItem}>
               <Dropdown placement="bottom" overlay={tradeList}>
                 <span className={style.dropdownLink} href="/#">
-                  Trade
+                  Trade <TiArrowSortedDown className={style.navIconUp} />
                 </span>
               </Dropdown>
             </li>
             <li className={style.navItem}>
               <Dropdown placement="bottom" overlay={earnList}>
                 <span className={style.dropdownLink} href="/#">
-                  Earn
+                  Earn <TiArrowSortedDown className={style.navIconUp} />
                 </span>
               </Dropdown>
             </li>
             <li className={style.navItem}>
-              <Link to="/strategybot" className={style.dropdownLink} href="/#">
+              <Link to="/strategybot" className={style.dropdownLink}>
                 Copy Trading
                 <span className={style.navLinkTag}>NEW</span>
               </Link>
             </li>
             <li className={style.navItem}>
               <Dropdown placement="bottom" overlay={newsList}>
-                <span className={style.dropdownLink}>News</span>
+                <span className={style.dropdownLink}>
+                  News <TiArrowSortedDown className={style.navIconUp} />
+                </span>
               </Dropdown>
             </li>
             <li className={style.navItem}>
               <Dropdown placement="bottom" overlay={giveawayList}>
-                <span className={style.dropdownLink}>Giveaways</span>
+                <span className={style.dropdownLink}>
+                  Giveaways <TiArrowSortedDown className={style.navIconUp} />
+                </span>
               </Dropdown>
             </li>
             <li className={style.navItem}>
               <Dropdown placement="bottom" overlay={nftList}>
                 <span className={style.dropdownLink}>
-                  NFT BOX
+                  NFT BOX <TiArrowSortedDown className={style.navIconUp} />
                   <span className={style.navLinkTag}>HOT</span>
                 </span>
               </Dropdown>
+            </li>
+            <li className={style.navItem}>
+              <Link to="/startup" className={style.dropdownLink}>
+                Startup
+              </Link>
             </li>
           </ul>
         </nav>
