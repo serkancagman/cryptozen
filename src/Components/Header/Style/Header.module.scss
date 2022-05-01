@@ -1,0 +1,56 @@
+@import "../../../Style/Variables.scss";
+@import "../../../Style/Mixins.scss";
+.header {
+  background-color: transparent;
+  width: 100%;
+  padding: 5px 0;
+
+  .logo {
+    width: 200px;
+    height: auto;
+  }
+}
+
+.dropdownLink {
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    color: $mainColor;
+  }
+}
+
+.navSubList {
+  background-color: #fff;
+  width: 100%;
+  padding: 0;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  min-width: 250px;
+  margin-top: 15px;
+  .navSubItem {
+    width: 100%;
+    list-style: none;
+
+    .navSubLink {
+      @include flexrowjstart;
+      padding: 15px;
+      &:hover {
+        background-color: #e4f6ff;
+      }
+
+      .navSubIcon {
+        margin-right: 5px;
+        font-size: 20px;
+        color: $mainColor;
+      }
+      .navSubText {
+        font-size: 17px;
+        font-weight: 600;
+        color: #555;
+      }
+    }
+  }
+}

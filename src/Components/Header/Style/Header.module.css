@@ -1,1 +1,71 @@
-/* No CSS *//*# sourceMappingURL=Header.module.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+.header {
+  background-color: transparent;
+  width: 100%;
+  padding: 5px 0;
+}
+
+.header .logo {
+  width: 200px;
+  height: auto;
+}
+
+.dropdownLink {
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.dropdownLink:hover {
+  color: #37a3fe;
+}
+
+.navSubList {
+  background-color: #fff;
+  width: 100%;
+  padding: 0;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  min-width: 250px;
+  margin-top: 15px;
+}
+
+.navSubList .navSubItem {
+  width: 100%;
+  list-style: none;
+}
+
+.navSubList .navSubItem .navSubLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+}
+
+.navSubList .navSubItem .navSubLink:hover {
+  background-color: #e4f6ff;
+}
+
+.navSubList .navSubItem .navSubLink .navSubIcon {
+  margin-right: 5px;
+  font-size: 20px;
+  color: #37a3fe;
+}
+
+.navSubList .navSubItem .navSubLink .navSubText {
+  font-size: 17px;
+  font-weight: 600;
+  color: #555;
+}
+/*# sourceMappingURL=Header.module.css.map */
