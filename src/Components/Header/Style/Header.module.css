@@ -225,4 +225,60 @@
   color: #fff !important;
   border-bottom-left-radius: 0;
 }
+
+.dropdornSignupLink {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.dropdornSignupLink:hover {
+  border: 1px solid #37a3fe;
+}
+
+.navItemIcon {
+  font-size: 25px;
+}
+
+.navSubInner {
+  margin: 10px;
+  text-align: center;
+  padding: 15px;
+}
+
+.navSubInner .navSubMainLinkText {
+  color: #555;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  display: block;
+  font-weight: 600;
+}
+
+.navSubInner .navSubMainLinkImg {
+  width: 100px;
+}
+
+.navSubMainLinkButton {
+  width: 150px;
+  margin: 10px 0;
+  background-color: #37a3fe;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+  border: 2px solid transparent;
+}
+
+.navSubMainLinkButton:hover {
+  border: 2px solid #37a3fe;
+  background-color: #fff;
+  color: #37a3fe;
+}
 /*# sourceMappingURL=Header.module.css.map */

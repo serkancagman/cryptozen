@@ -20,7 +20,7 @@
   }
 }
 .navIconUp {
-  transition: all 0.3s ease-in-out;
+  transition: $clastrans;
 }
 .dropdownLink {
   font-size: 16px;
@@ -154,4 +154,52 @@
   letter-spacing: 1px;
   color: #fff !important;
   border-bottom-left-radius: 0;
+}
+
+.dropdornSignupLink {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: $clastrans;
+  &:hover {
+    border: 1px solid $mainColor;
+  }
+}
+.navItemIcon {
+  font-size: 25px;
+}
+.navSubInner {
+  margin: 10px;
+  text-align: center;
+  padding: 15px;
+  .navSubMainLinkText {
+    color: #555;
+    font-size: 15px;
+    font-family: $poppinsFont;
+    display: block;
+    font-weight: 600;
+  }
+  .navSubMainLinkImg {
+    width: 100px;
+  }
+}
+.navSubMainLinkButton{
+  width: 150px;
+  margin: 10px 0;
+  background-color: $mainColor;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  font-family: $poppinsFont;
+  font-weight: 600;
+  transition: $clastrans;
+  outline: none;
+  border: 2px solid transparent;
+  &:hover {
+    border : 2px solid $mainColor;
+    background-color: #fff;
+    color: $mainColor;
+  }
+
 }

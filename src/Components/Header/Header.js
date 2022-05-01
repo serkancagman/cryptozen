@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import style from "./Style/Header.module.css";
 import logo from "Assets/Logo/logo.png";
 import { Dropdown } from "antd";
-import { TiArrowSortedDown, TiArrowSortedUp } from "react-icons/ti";
+import { TiArrowSortedDown } from "react-icons/ti";
+import { MdMobileScreenShare } from "react-icons/md";
 import {
   buyList,
   marketList,
@@ -13,6 +14,7 @@ import {
   giveawayList,
   nftList,
 } from "./NavbarItems/NavbarItems";
+import {appList} from "./NavbarItems/RightNavItems"
 const Header = () => {
   return (
     <header className={style.header}>
@@ -82,6 +84,29 @@ const Header = () => {
               <Link to="/startup" className={style.dropdownLink}>
                 Startup
               </Link>
+            </li>
+          </ul>
+
+          <ul className="navbar-nav ms-auto">
+            <li className={style.navItem}>
+              <Link to="/login" className={style.dropdownLink}>
+                Log In
+              </Link>
+            </li>
+            <li className={style.navItem}>
+              <Link
+                to="/signup"
+                className={`${style.dropdownLink} ${style.dropdornSignupLink}`}
+              >
+                Sign Up
+              </Link>
+            </li>
+            <li className={style.navItem}>
+              <Dropdown placement="bottomLeft" overlay={appList}>
+                <span className={style.dropdownLink}>
+                  <MdMobileScreenShare className={style.navItemIcon} />
+                </span>
+              </Dropdown>
             </li>
           </ul>
         </nav>
