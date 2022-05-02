@@ -207,6 +207,7 @@
 .bannerImageFourth {
   position: absolute;
   right: 0;
+  z-index: 99;
   top: 0;
   animation: transition_image 3s infinite linear;
 }
@@ -215,11 +216,13 @@
   position: absolute;
   bottom: 50px;
   right: 120px;
+  z-index: 99;
 }
 .bannerImageSixth {
   position: absolute;
   top: 50px;
   left: 100px;
+  z-index: 99;
 }
 @keyframes transition_image {
   0% {
@@ -230,5 +233,80 @@
   }
   100% {
     transform: translateY(0);
+  }
+}
+.soldTotalImage {
+  width: 100%;
+  height: auto;
+}
+
+.countdown {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: $softBlue;
+  padding: 20px;
+  z-index: 99;
+  border-radius: 10px;
+
+  .countdownTitle {
+    color: #fff;
+    font-family: $interFont;
+  }
+  .countdownBox {
+    @include flexcolcenter;
+
+    .countdownNumber {
+      width: 50px;
+      padding: 10px 0;
+      margin: 4px;
+      color: #fff;
+      font-family: $interFont;
+      border-radius: 5px;
+      font-size: 17px;
+    }
+    .days {
+      background-color: $mainColor;
+    }
+    .hours {
+      background-color: #47dba7;
+    }
+    .mins {
+      background-color: #ffc107;
+    }
+    .sec {
+      background-color: #e230cc;
+    }
+    .countdownText {
+      color: #fff;
+      font-family: $interFont;
+      display: inline-block;
+      margin-top: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 1399.99px) {
+  .thirdImage {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1199.99px) {
+  .thirdImage {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 767.99px) {
+  .bannerMainImage {
+    z-index: -2;
+  }
+  .bannerImageSixth {
+    left: 0 !important;
+  }
+  .bannerImageFifth {
+    right: 0 !important;
+  }
+  .soldTotalImage {
+    width: 200px;
   }
 }

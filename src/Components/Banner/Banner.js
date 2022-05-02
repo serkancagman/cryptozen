@@ -8,6 +8,7 @@ import fifthImg from "Assets/Banner/five.png";
 import sixthImg from "Assets/Banner/three.png";
 import { BiDollar } from "react-icons/bi";
 import { BsPlayCircle } from "react-icons/bs";
+import Countdown from "./Countdown";
 
 const Banner = () => {
   return (
@@ -64,7 +65,7 @@ const Banner = () => {
                   <img src={twoImg} alt="banner" className={style.thirdImage} />
                 </div>
                 <div className={style.bannerImageFourth}>
-                  <img src={fourthImg} alt="banner" className="img-fluid" />
+                  <img src={fourthImg} alt="banner" className={style.soldTotalImage} />
                 </div>
                 <div className={style.bannerImageFifth}>
                   <img src={fifthImg} alt="banner" className="img-fluid" />
@@ -72,6 +73,7 @@ const Banner = () => {
                 <div className={style.bannerImageSixth}>
                   <img src={sixthImg} alt="banner" className="img-fluid" />
                 </div>
+                <Countdown />
               </div>
             </div>
           </div>
