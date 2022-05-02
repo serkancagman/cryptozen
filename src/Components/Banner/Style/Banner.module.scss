@@ -1,0 +1,142 @@
+@import "../../../Style/Variables.scss";
+@import "../../../Style/Mixins.scss";
+
+.banner {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 70px 0;
+  padding: 30px 0;
+}
+.bannerBgArea {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  .bannerBgInner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .bannerBgOverlay {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      z-index: 0;
+      background-color: rgba(3, 3, 65, 0.7);
+    }
+  }
+  .bannerBg {
+    width: 100%;
+    height: 100%;
+  }
+}
+.bannerContent {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.bannerInner {
+  @include flexcolastart;
+  width: 100%;
+
+  .bannerSloganArea {
+    background-color: $softBlue;
+    padding: 8px 10px;
+    border-radius: 25px;
+
+    .bannerSlogan {
+      @include flexrowjstart;
+      margin: 0;
+
+      .bannerSloganIcon {
+        width: 30px;
+        background-color: $mainColor;
+        border-radius: 50%;
+        padding: 3px;
+        @include flexrowcenter;
+        height: 30px;
+        margin-right: 10px;
+        .bannerLeftIcon {
+          color: #fff;
+          font-size: 20px;
+        }
+      }
+      .bannerSloganText {
+        color: #fff;
+        font-size: 16px;
+      }
+    }
+  }
+}
+.bannerTitle {
+  font-size: 60px;
+  color: #fff;
+  font-family: $interFont;
+  font-weight: 600;
+  margin: 20px 0;
+
+  .strongTextBanner {
+    color: $mainColor !important;
+  }
+}
+.bannerDescription {
+  font-size: 17px;
+  color: $pColor;
+  margin-bottom: 20px;
+  font-family: $mainFont;
+}
+
+.bannerHowBtn {
+  background-color: #fff;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 15px 20px;
+  position: relative;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $mainColor;
+    transform: translateX(-100%);
+    transition: $clastrans;
+    z-index: 0;
+  }
+
+  &:hover {
+    &:before {
+      transform: translateX(0);
+    }
+    .bannerButtonIcon {
+      color: #fff;
+    }
+    .bannerButtonText {
+      color: #fff;
+    }
+  }
+}
+.howBtnInner {
+  position: relative;
+  z-index: 1;
+}
+.bannerButtonIcon {
+  transition: $clastrans;
+  font-size: 25px;
+  font-weight: 600;
+  margin-right: 10px;
+  color: $mainColor;
+}
+.bannerButtonText {
+  font-size: 18px;
+  transition: $clastrans;
+  color: $mainColor;
+  font-family: $interFont;
+}

@@ -1,10 +1,13 @@
-import { Header } from 'Components'
-import React from 'react'
+import { Banner, Header } from "Components";
+import React from "react";
 
 const Home = () => {
   return (
-    <Header />
-  )
-}
+    <>
+      <Header />
+      <Banner />
+    </>
+  );
+};
 
-export default Home
+export default Home;
