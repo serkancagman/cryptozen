@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import style from "./Style/Header.module.css";
 import logo from "Assets/Logo/logo.png";
+import logoMobile from "Assets/Logo/logomobile.png";
 import { Dropdown } from "antd";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { MdMobileScreenShare } from "react-icons/md";
@@ -25,6 +26,7 @@ const Header = () => {
         <nav className="navbar navbar-expand-lg ">
           <Link to="/" className="navbar-brand">
             <img src={logo} className={style.logo} alt="logo" />
+            <img src={logoMobile} className={style.logoMobile} alt="logo" />
           </Link>
           <ul className="navbar-nav ms-2">
             <li className={style.navItem}>

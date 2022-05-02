@@ -270,3 +270,28 @@
     }
   }
 }
+.logoMobile {
+  display: none;
+  width: 50px;
+  height: auto;
+}
+@media screen and (max-width: 1469.99px) {
+  .navLinkTag {
+    right: -5px !important;
+  }
+  .navItem {
+    margin: 0 4px !important;
+  }
+  .navItemIcon {
+    font-size: 16px !important;
+  }
+  .dropdownLink {
+    font-size: 14px !important;
+  }
+  .logo {
+    display: none !important;
+  }
+  .logoMobile {
+    display: block !important;
+  }
+}
