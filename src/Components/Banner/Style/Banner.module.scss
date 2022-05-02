@@ -252,6 +252,7 @@
   .countdownTitle {
     color: #fff;
     font-family: $interFont;
+    font-size: 17px;
   }
   .countdownBox {
     @include flexcolcenter;
@@ -282,6 +283,7 @@
       font-family: $interFont;
       display: inline-block;
       margin-top: 5px;
+      font-size: 15px;
     }
   }
 }
@@ -308,5 +310,22 @@
   }
   .soldTotalImage {
     width: 200px;
+  }
+}
+@media screen and (max-width: 379.99px) {
+  .bannerImageFifth {
+    display: none !important;
+  }
+  .countdown {
+    .countdownTitle {
+      font-size: 15px !important;
+    }
+    .countdownNumber {
+      width: 40px !important;
+      padding: 5px 0 !important;
+    }
+    .countdownNumber {
+      font-size: 15px !important;
+    }
   }
 }

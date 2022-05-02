@@ -387,6 +387,7 @@
 .countdown .countdownTitle {
   color: #fff;
   font-family: "Inter", sans-serif;
+  font-size: 17px;
 }
 
 .countdown .countdownBox {
@@ -436,6 +437,7 @@
   font-family: "Inter", sans-serif;
   display: inline-block;
   margin-top: 5px;
+  font-size: 15px;
 }
 
 @media screen and (max-width: 1399.99px) {
@@ -462,6 +464,22 @@
   }
   .soldTotalImage {
     width: 200px;
+  }
+}
+
+@media screen and (max-width: 379.99px) {
+  .bannerImageFifth {
+    display: none !important;
+  }
+  .countdown .countdownTitle {
+    font-size: 15px !important;
+  }
+  .countdown .countdownNumber {
+    width: 40px !important;
+    padding: 5px 0 !important;
+  }
+  .countdown .countdownNumber {
+    font-size: 15px !important;
   }
 }
 /*# sourceMappingURL=Banner.module.css.map */
