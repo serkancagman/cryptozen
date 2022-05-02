@@ -100,7 +100,7 @@
 }
 
 .navSubText {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   color: #555;
 }
@@ -115,6 +115,7 @@
 .navSubHeader {
   margin: 15px 10px;
   font-weight: 650;
+  font-size: 15px;
 }
 .navSubTextBottom {
   color: #888;
@@ -183,7 +184,7 @@
     width: 100px;
   }
 }
-.navSubMainLinkButton{
+.navSubMainLinkButton {
   width: 150px;
   margin: 10px 0;
   background-color: $mainColor;
@@ -197,9 +198,49 @@
   outline: none;
   border: 2px solid transparent;
   &:hover {
-    border : 2px solid $mainColor;
+    border: 2px solid $mainColor;
     background-color: #fff;
     color: $mainColor;
   }
+}
 
+.navGlobalInner {
+  width: 100%;
+  @include flexrowastart;
+  .globalList {
+    margin: 0;
+    padding: 0;
+    min-width: 190px;
+    .globalListTitle {
+      text-align: start;
+      font-size: 15px;
+      font-family: $mainFont;
+      color: #777;
+      font-weight: 600;
+      margin: 10px;
+    }
+    .globalListItem {
+      @include flexrowbetween;
+      list-style: none;
+      transition: $clastrans;
+      cursor: pointer;
+      &:hover {
+        background-color: #e4f6ff;
+      }
+      width: 100%;
+      padding: 10px 15px;
+      .globalListItemText {
+        font-size: 14px;
+        color: #555;
+        font-weight: 600;
+      }
+      .globalListItemIcon {
+        color: $mainColor;
+        font-size: 17px;
+      }
+    }
+  }
+}
+.selectedLang {
+  color: $mainColor !important;
 }

@@ -10,11 +10,10 @@ import {
   BsFilePost,
   BsFillChatDotsFill,
   BsNewspaper,
-  BsAwardFill,
   BsPersonLinesFill,
 } from "react-icons/bs";
 import { BiNews, BiPodcast, BiTask } from "react-icons/bi";
-import { SiHiveBlockchain, SiEthereum } from "react-icons/si";
+import { SiHiveBlockchain } from "react-icons/si";
 import {
   MdPriceChange,
   MdOutlineGeneratingTokens,
@@ -38,7 +37,6 @@ import {
   GiAbstract002,
   GiStarFormation,
 } from "react-icons/gi";
-import { GrStatusCriticalSmall } from "react-icons/gr";
 import { CgArrowsExchangeAltV } from "react-icons/cg";
 import {
   RiExchangeDollarLine,
@@ -51,7 +49,6 @@ import {
   FaFileInvoiceDollar,
   FaCubes,
   FaCoins,
-  FaVoteYea,
 } from "react-icons/fa";
 // Buy List Dropdown Menu
 export const buyList = (

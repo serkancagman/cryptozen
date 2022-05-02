@@ -5,7 +5,7 @@ import logo from "Assets/Logo/logo.png";
 import { Dropdown } from "antd";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { MdMobileScreenShare } from "react-icons/md";
-import {RiCustomerService2Fill} from "react-icons/ri";
+import { RiCustomerService2Fill } from "react-icons/ri";
 import {
   buyList,
   marketList,
@@ -15,7 +15,8 @@ import {
   giveawayList,
   nftList,
 } from "./NavbarItems/NavbarItems";
-import {appList,helpList} from "./NavbarItems/RightNavItems"
+import { appList, helpList } from "./NavbarItems/RightNavItems";
+import GlobalList from "./NavbarItems/GlobalList";
 const Header = () => {
   return (
     <header className={style.header}>
@@ -116,6 +117,7 @@ const Header = () => {
                 </span>
               </Dropdown>
             </li>
+            <GlobalList />
           </ul>
         </nav>
       </div>

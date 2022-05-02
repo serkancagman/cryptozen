@@ -134,7 +134,7 @@
 }
 
 .navSubText {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   color: #555;
 }
@@ -164,6 +164,7 @@
 .navSubHeader {
   margin: 15px 10px;
   font-weight: 650;
+  font-size: 15px;
 }
 
 .navSubTextBottom {
@@ -280,5 +281,78 @@
   border: 2px solid #37a3fe;
   background-color: #fff;
   color: #37a3fe;
+}
+
+.navGlobalInner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navGlobalInner .globalList {
+  margin: 0;
+  padding: 0;
+  min-width: 190px;
+}
+
+.navGlobalInner .globalList .globalListTitle {
+  text-align: start;
+  font-size: 15px;
+  font-family: "Raleway", sans-serif;
+  color: #777;
+  font-weight: 600;
+  margin: 10px;
+}
+
+.navGlobalInner .globalList .globalListItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px 15px;
+}
+
+.navGlobalInner .globalList .globalListItem:hover {
+  background-color: #e4f6ff;
+}
+
+.navGlobalInner .globalList .globalListItem .globalListItemText {
+  font-size: 14px;
+  color: #555;
+  font-weight: 600;
+}
+
+.navGlobalInner .globalList .globalListItem .globalListItemIcon {
+  color: #37a3fe;
+  font-size: 17px;
+}
+
+.selectedLang {
+  color: #37a3fe !important;
 }
 /*# sourceMappingURL=Header.module.css.map */
