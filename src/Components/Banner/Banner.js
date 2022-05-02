@@ -1,14 +1,20 @@
 import React from "react";
 import style from "./Style/Banner.module.css";
 import bannerBg from "Assets/Banner/hero.jpg";
+import oneImg from "Assets/Banner/one.png";
+import twoImg from "Assets/Banner/two.png";
+import fourthImg from "Assets/Banner/four.png";
+import fifthImg from "Assets/Banner/five.png";
+import sixthImg from "Assets/Banner/three.png";
 import { BiDollar } from "react-icons/bi";
 import { BsPlayCircle } from "react-icons/bs";
+
 const Banner = () => {
   return (
     <section className={style.banner}>
       <div className={style.bannerContent}>
         <div className="container">
-          <div className="row-g-3 align-items-center">
+          <div className="row g-3 align-items-center">
             <div className="col-lg-5 col-md-12">
               <div className={style.bannerInner}>
                 <div className={style.bannerSloganArea}>
@@ -34,7 +40,9 @@ const Banner = () => {
               </div>
               <div className="d-flex justify-content-start align-items-center">
                 <button className={style.bannerHowBtn}>
-                  <div className={`d-flex justify-content-center align-items-center ${style.howBtnInner}`}>
+                  <div
+                    className={`d-flex justify-content-center align-items-center ${style.howBtnInner}`}
+                  >
                     <BsPlayCircle className={style.bannerButtonIcon} />
                     <span className={style.bannerButtonText}>
                       {" "}
@@ -42,6 +50,28 @@ const Banner = () => {
                     </span>
                   </div>
                 </button>
+              </div>
+            </div>
+            <div className="col-lg-7 text-center col-md-12">
+              <div className={style.bannerImage}>
+                <div className={style.bannerMainImage}>
+                  <img src={twoImg} alt="banner" className={style.firstImage} />
+                </div>
+                <div className={style.bannerImageSecond}>
+                  <img src={oneImg} alt="banner" className="img-fluid" />
+                </div>
+                <div className={style.bannerImageThird}>
+                  <img src={twoImg} alt="banner" className={style.thirdImage} />
+                </div>
+                <div className={style.bannerImageFourth}>
+                  <img src={fourthImg} alt="banner" className="img-fluid" />
+                </div>
+                <div className={style.bannerImageFifth}>
+                  <img src={fifthImg} alt="banner" className="img-fluid" />
+                </div>
+                <div className={style.bannerImageSixth}>
+                  <img src={sixthImg} alt="banner" className="img-fluid" />
+                </div>
               </div>
             </div>
           </div>
