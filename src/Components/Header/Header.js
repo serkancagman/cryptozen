@@ -17,6 +17,7 @@ import {
 } from "./NavbarItems/NavbarItems";
 import { appList, helpList } from "./NavbarItems/RightNavItems";
 import GlobalList from "./NavbarItems/GlobalList";
+import Search from "./NavbarItems/Search";
 const Header = () => {
   return (
     <header className={style.header}>
@@ -118,6 +119,7 @@ const Header = () => {
               </Dropdown>
             </li>
             <GlobalList />
+            <Search />
           </ul>
         </nav>
       </div>

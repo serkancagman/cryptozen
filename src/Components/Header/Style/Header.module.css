@@ -303,7 +303,7 @@
 .navGlobalInner .globalList {
   margin: 0;
   padding: 0;
-  min-width: 190px;
+  min-width: 150px;
 }
 
 .navGlobalInner .globalList .globalListTitle {
@@ -341,10 +341,16 @@
   background-color: #e4f6ff;
 }
 
+.navGlobalInner .globalList .globalListItem:hover .globalListItemText {
+  color: #37a3fe;
+}
+
 .navGlobalInner .globalList .globalListItem .globalListItemText {
-  font-size: 14px;
+  font-size: 13px;
   color: #555;
   font-weight: 600;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .navGlobalInner .globalList .globalListItem .globalListItemIcon {
@@ -354,5 +360,29 @@
 
 .selectedLang {
   color: #37a3fe !important;
+}
+
+.navSearchInner {
+  padding: 15px;
+  width: 100%;
+}
+
+.navSearchInner .navSearch {
+  margin-bottom: 15px;
+}
+
+.navSearchInner .navSearch .navSearchInput {
+  border: 2px solid #999;
+  padding: 5px;
+  outline: none;
+  -webkit-transform: all 0.3s ease-in-out;
+          transform: all 0.3s ease-in-out;
+  font-family: "Raleway", sans-serif;
+  color: #555;
+  font-weight: 600;
+}
+
+.navSearchInner .navSearch .navSearchInput:focus {
+  border: 2px solid #37a3fe;
 }
 /*# sourceMappingURL=Header.module.css.map */
