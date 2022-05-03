@@ -4,8 +4,9 @@
 .rating {
   @include sectionPM;
   background: url("../../../Assets/Rate/bg.png");
-  background-size: cover;
-  background-position: center;
+  background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
   .rateHeader {
     @include sectionHeader;
     .rateTitle {
@@ -22,6 +23,25 @@
   z-index: 1;
   margin-bottom: 30px;
   border-radius: 5px;
+  &:hover{
+      &:before{
+        left: 0;
+        width: 100%;
+      }
+      transform:translateY(-10px); 
+  }
+  &:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    transition: 0.5s;
+    border-radius: 5px;
+    z-index: -1;
+    background: linear-gradient(-9deg, #032241 0%, #3b035a 97%);
+  }
   &::after {
     position: absolute;
     content: "";
@@ -31,7 +51,7 @@
     width: 100%;
     transition: $clastrans;
     z-index: -1;
-    background: -webkit-linear-gradient(-9deg, #213981 0%, #3b035a 97%);
+    background: linear-gradient(-9deg, #213981 0%, #3b035a 97%);
   }
   .ratingNumber {
     font-size: 25px;
