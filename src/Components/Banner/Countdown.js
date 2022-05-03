@@ -2,7 +2,7 @@ import React from "react";
 import style from "./Style/Banner.module.css";
 import { useCountdown } from "Hooks/useCount";
 const Countdown = () => {
-  const [expiryTime, setExpiryTime] = React.useState("23 aug 2022 15:30:25");
+  const expiryTime = "23 aug 2022 15:30:25";
 
   const countdownDateTime = new Date(expiryTime).getTime();
   const [days, hours, minutes, seconds] = useCountdown(countdownDateTime);

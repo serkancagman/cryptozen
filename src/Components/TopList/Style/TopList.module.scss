@@ -1,0 +1,35 @@
+@import "../../../Style/Variables.scss";
+@import "../../../Style/Mixins.scss";
+
+.topList {
+  padding: 70px 0;
+  background: url("../../../Assets/TopList/bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.popularItem {
+  background-color: $softBlue;
+  padding: 25px;
+  border-radius: 10px;
+
+  .coinImage {
+    width: 70px;
+    height: 70px;
+  }
+  .coinName {
+    font-family: $interFont;
+    font-size: 20px;
+    color: #677786;
+    font-weight: 600;
+    display: inline-block;
+    margin: 10px 0;
+  }
+  .coinPrice {
+    font-family: $interFont;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    display: inline-block;
+  }
+}
