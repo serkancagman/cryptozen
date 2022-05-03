@@ -5,4 +5,12 @@ body {
   font-family: "Raleway", sans-serif;
   position: relative;
 }
+
+thead[class*="ant-table-thead"] th {
+  background-color: #192e6e !important;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 17px;
+  border: none !important;
+}
 /*# sourceMappingURL=main.css.map */

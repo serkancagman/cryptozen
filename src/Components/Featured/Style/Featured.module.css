@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+.topList {
+  padding: 70px 0;
+  background: url("../../../Assets/TopList/bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.popularItem {
+  background-color: #06206D;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.popularItem .coinImage {
+  width: 70px;
+  height: 70px;
+}
+
+.popularItem .coinName {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  color: #677786;
+  font-weight: 600;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.popularItem .coinPrice {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.chart {
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.coinTimeType {
+  font-size: 17px;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.marketCapChange {
+  font-size: 17px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.riseUp {
+  color: #6fdfdf;
+}
+
+.riseDown {
+  color: #ff3f00;
+}
+
+.tablePrice {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+}
+
+.priceUp {
+  color: #6fdfdf;
+}
+
+.priceDown {
+  color: #ff3f00;
+}
+
+.tableVolume {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+
+.tableImgWrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 3px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.tableImage {
+  width: 100%;
+  height: 100%;
+}
+
+.tableCoinId {
+  min-width: 60px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.tableCoinCurrency {
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+
+.tradeBtn {
+  color: #37a3fe;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  padding: 7px 15px;
+  border-radius: 5px;
+  border: 2px solid #37a3fe;
+}
+
+.tradeBtn:hover {
+  background-color: #37a3fe;
+  color: #fff;
+}
+
+.firstRow {
+  background-color: #06206D;
+  border: none !important;
+}
+
+.firstRow:hover td {
+  background-color: #233b83 !important;
+}
+
+.firstRow td {
+  border: none !important;
+}
+
+.secondRow {
+  background-color: #192e6e;
+}
+
+.secondRow:hover td {
+  background-color: #112f8a !important;
+}
+
+.secondRow td {
+  border: none !important;
+}
+/*# sourceMappingURL=Featured.module.css.map */

@@ -1,13 +1,14 @@
 import React from "react";
-import style from "./Style/TopList.module.css";
+import style from "./Style/Featured.module.css";
 import { getCoinList } from "API/Api";
 import { useQuery } from "react-query";
 import PopularItem from "./PopularItem";
+import FeaturedTable from "./FeaturedTable";
 const TopList = () => {
   const { data, isLoading, error } = useQuery("coinList", () =>
     getCoinList("USD")
   );
-
+  console.log(data);
   return (
     <section className={style.topList}>
       <div className="container">
@@ -20,6 +21,7 @@ const TopList = () => {
             </>
           )}
         </div>
+        {!isLoading && !error && <FeaturedTable data={data} />}
       </div>
     </section>
   );
