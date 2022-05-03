@@ -1,0 +1,75 @@
+@import "../../../Style/Variables.scss";
+@import "../../../Style/Mixins.scss";
+
+.news {
+  @include sectionPM;
+  background-color: $bgColor;
+
+  .newsHeader {
+    @include sectionHeader;
+
+    .newsTitle {
+      @include sectionTitle;
+    }
+  }
+}
+.newsItem {
+  margin: 20px 0;
+  padding: 10px;
+
+  .newsItemImage {
+    width: 100%;
+    position: relative;
+    &:hover {
+      .newsItemFade {
+        opacity: 1;
+      }
+    }
+    .newsItemFade {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: all 0.2s ease-in-out;
+      z-index: 1;
+      background: linear-gradient(to top, #571376 0%, rgba(0, 0, 0, 0.1) 73%);
+      border-radius: 10px;
+    }
+    .newImg {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+    }
+  }
+  .newsItemContent {
+    padding: 15px 0;
+
+    .newsItemIcon {
+      font-size: 17px;
+      color: #999;
+      font-weight: 550;
+      font-family: $interFont;
+      margin-right: 5px;
+    }
+    .newsItemTitle {
+      color: #fff;
+      font-family: $interFont;
+      font-size: 22px;
+      font-weight: 600;
+      margin: 15px 0;
+    }
+    .newsItemText {
+      color: $pColor;
+      font-family: $interFont;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .newsItemLink {
+      font-size: 17px;
+      color: $mainColor;
+      font-family: $interFont;
+    }
+  }
+}
