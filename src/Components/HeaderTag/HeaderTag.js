@@ -4,8 +4,10 @@ import { BsCurrencyBitcoin } from "react-icons/bs";
 const HeaderTag = ({ title }) => {
   return (
     <div className={style.headerTag}>
-      <BsCurrencyBitcoin className={style.tagIcon} />{" "}
-      <span className={style.tagTitle}>{title}</span>
+      <div className="d-flex jutify-content-center align-items-center">
+        <BsCurrencyBitcoin className={style.tagIcon} />{" "}
+        <span className={style.tagTitle}>{title}</span>
+      </div>
     </div>
   );
 };

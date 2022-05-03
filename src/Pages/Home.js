@@ -1,4 +1,4 @@
-import { Banner, Header, Featured,AboutIco } from "Components";
+import { Banner, Header, Featured,AboutIco, Rating } from "Components";
 import React from "react";
 
 const Home = () => {
@@ -8,6 +8,7 @@ const Home = () => {
       <Banner />
       <Featured />
       <AboutIco />
+      <Rating />
     </>
   );
 };

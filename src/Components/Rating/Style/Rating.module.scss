@@ -1,0 +1,45 @@
+@import "../../../Style/Variables.scss";
+@import "../../../Style/Mixins.scss";
+
+.rating {
+  @include sectionPM;
+  background: url("../../../Assets/Rate/bg.png");
+  background-size: cover;
+  background-position: center;
+  .rateHeader {
+    @include sectionHeader;
+    .rateTitle {
+      @include sectionTitle;
+    }
+  }
+}
+.ratingItem {
+  padding: 40px 27px 42px;
+  text-align: center;
+  background: rgba(28, 25, 94, 0.6);
+  transition: $clastrans;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    transition: $clastrans;
+    z-index: -1;
+    background: -webkit-linear-gradient(-9deg, #213981 0%, #3b035a 97%);
+  }
+  .ratingNumber {
+    font-size: 25px;
+    color: #fff;
+    font-family: $interFont;
+    width: 100px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid $mainColor;
+  }
+}
