@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+.faq {
+  padding: 70px 0;
+  background: url("../../../Assets/Faq/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.faq .faqHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.faq .faqHeader .faqTitle {
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 40px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+
+.faq .faqHeader .faqText {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #a2bbd2;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.faq .tab {
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 2px solid #37a3fe;
+  color: #37a3fe;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.faq .tab:hover {
+  background-color: #37a3fe;
+  color: #fff;
+}
+
+.faq .active {
+  background-color: #37a3fe !important;
+  color: #fff !important;
+}
+
+.faqText {
+  font-size: 16px;
+  color: #a2bbd2;
+  font-family: "Inter", sans-serif;
+}
+/*# sourceMappingURL=Faq.module.css.map */

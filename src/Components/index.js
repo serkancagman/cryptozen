@@ -5,3 +5,4 @@ export { default as AboutIco } from "./AboutIco/AboutIco";
 export { default as Rating } from "./Rating/Rating";
 export { default as WhoWeAre } from "./WhoWeAre/WhoWeAre";
 export { default as MobileApp } from "./MobileApp/MobileApp";
+export { default as FAQ } from "./FAQ/Faq";

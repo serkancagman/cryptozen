@@ -13,4 +13,19 @@ thead[class*="ant-table-thead"] th {
   font-size: 17px;
   border: none !important;
 }
+
+.ant-collapse-item {
+  border-bottom: 2px solid #37a3fe !important;
+}
+
+.ant-collapse-header {
+  font-size: 23px;
+  color: #fff !important;
+  font-weight: 600 !important;
+  font-family: "Inter", sans-serif;
+}
+
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
+  font-size: 23px !important;
+}
 /*# sourceMappingURL=main.css.map */

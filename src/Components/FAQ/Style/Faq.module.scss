@@ -1,0 +1,46 @@
+@import "../../../Style/Variables.scss";
+@import "../../../Style/Mixins.scss";
+
+.faq {
+  @include sectionPM;
+  background: url("../../../Assets/Faq/bg.jpg");
+  background-size: cover;
+  background-position: center;
+
+  .faqHeader {
+    @include flexcolcenter;
+    margin-bottom: 30px;
+    .faqTitle {
+      @include sectionTitle;
+    }
+    .faqText {
+      @include sectionDesc;
+    }
+  }
+  .tab {
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid $mainColor;
+    color: $mainColor;
+    font-family: $interFont;
+    font-weight: 600;
+    font-size: 19px;
+    transition: $clastrans;
+
+    &:hover {
+      background-color: $mainColor;
+      color: #fff;
+    }
+  }
+  .active {
+    background-color: $mainColor !important;
+    color: #fff !important;
+  }
+}
+.faqText {
+  font-size: 16px;
+  color: $pColor;
+  font-family: $interFont;
+}

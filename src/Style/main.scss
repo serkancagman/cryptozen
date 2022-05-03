@@ -10,3 +10,18 @@ thead[class*="ant-table-thead"] th {
   font-size: 17px;
   border: none !important;
 }
+
+// FAQ COLLAPSE CSS
+
+.ant-collapse-item {
+  border-bottom: 2px solid $mainColor !important;
+}
+.ant-collapse-header {
+  font-size: 23px;
+  color: #fff !important;
+  font-weight: 600 !important;
+  font-family: $interFont;
+}
+.ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
+  font-size: 23px !important;
+}
