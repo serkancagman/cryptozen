@@ -5,8 +5,8 @@
   @include sectionPM;
   background: url("../../../Assets/Rate/bg.png");
   background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
   .rateHeader {
     @include sectionHeader;
     .rateTitle {
@@ -23,12 +23,12 @@
   z-index: 1;
   margin-bottom: 30px;
   border-radius: 5px;
-  &:hover{
-      &:before{
-        left: 0;
-        width: 100%;
-      }
-      transform:translateY(-10px); 
+  &:hover {
+    &:before {
+      left: 0;
+      width: 100%;
+    }
+    transform: translateY(-10px);
   }
   &:before {
     position: absolute;

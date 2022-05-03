@@ -1,4 +1,4 @@
-import { Banner, Header, Featured,AboutIco, Rating, WhoWeAre } from "Components";
+import { Banner, Header, Featured,AboutIco, Rating, WhoWeAre, MobileApp } from "Components";
 import React from "react";
 
 const Home = () => {
@@ -10,6 +10,7 @@ const Home = () => {
       <AboutIco />
       <Rating />
       <WhoWeAre />
+      <MobileApp />
     </>
   );
 };

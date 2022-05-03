@@ -1,0 +1,77 @@
+@import "../../../Style/Variables.scss";
+@import "../../../Style/Mixins.scss";
+
+.mobileApp {
+  @include sectionPM;
+  background: url("../../../Assets/AboutIco/bg.png");
+  background-size: cover;
+  background-position: center;
+
+  .mobileAppContent {
+    background: url("../../../Assets/MobileApp/shape.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin: 60px 0;
+    padding: 60px 30px;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+
+    .mobileAppTitle {
+      color: #fff;
+      font-family: $mainFont;
+      font-size: 40px;
+      font-weight: 600;
+    }
+    .mobileAppText {
+      font-family: $poppinsFont;
+      font-size: 17px;
+      color: $pColor;
+      margin-bottom: 20px;
+    }
+  }
+  .storeIcon {
+    margin-right: 15px;
+    margin-top: 15px;
+  }
+}
+.mobileAppImg {
+  position: absolute;
+  right: 100px;
+  top: -25%;
+  animation: float_phone 3s ease-in-out infinite;
+}
+.mobileAppInner {
+  position: relative;
+}
+.phoneIcon {
+  position: absolute;
+  top: 130px;
+  left: 50px;
+  animation: flip_animation 3s infinite;
+}
+
+@keyframes flip_animation {
+  0% {
+    transform: rotate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 359deg);
+  }
+}
+
+@keyframes float_phone {
+  0% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}

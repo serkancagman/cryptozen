@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+.mobileApp {
+  padding: 70px 0;
+  background: url("../../../Assets/AboutIco/bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.mobileApp .mobileAppContent {
+  background: url("../../../Assets/MobileApp/shape.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  margin: 60px 0;
+  padding: 60px 30px;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+}
+
+.mobileApp .mobileAppContent .mobileAppTitle {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.mobileApp .mobileAppContent .mobileAppText {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  color: #a2bbd2;
+  margin-bottom: 20px;
+}
+
+.mobileApp .storeIcon {
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.mobileAppImg {
+  position: absolute;
+  right: 100px;
+  top: -25%;
+  -webkit-animation: float_phone 3s ease-in-out infinite;
+          animation: float_phone 3s ease-in-out infinite;
+}
+
+.mobileAppInner {
+  position: relative;
+}
+
+.phoneIcon {
+  position: absolute;
+  top: 130px;
+  left: 50px;
+  -webkit-animation: flip_animation 3s infinite;
+          animation: flip_animation 3s infinite;
+}
+
+@-webkit-keyframes flip_animation {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 0);
+            transform: rotate3d(0, 0, 0);
+  }
+  50% {
+    -webkit-transform: rotate3d(0, 1, 0, 180deg);
+            transform: rotate3d(0, 1, 0, 180deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 1, 0, 359deg);
+            transform: rotate3d(0, 1, 0, 359deg);
+  }
+}
+
+@keyframes flip_animation {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 0);
+            transform: rotate3d(0, 0, 0);
+  }
+  50% {
+    -webkit-transform: rotate3d(0, 1, 0, 180deg);
+            transform: rotate3d(0, 1, 0, 180deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 1, 0, 359deg);
+            transform: rotate3d(0, 1, 0, 359deg);
+  }
+}
+
+@-webkit-keyframes float_phone {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@keyframes float_phone {
+  0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+/*# sourceMappingURL=MobileApp.module.css.map */
