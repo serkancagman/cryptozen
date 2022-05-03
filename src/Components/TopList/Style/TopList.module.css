@@ -35,4 +35,34 @@
   font-weight: 600;
   display: inline-block;
 }
+
+.chart {
+  height: 40px;
+  width: 100%;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.coinTimeType {
+  font-size: 17px;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.marketCapChange {
+  font-size: 17px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.riseUp {
+  color: #6FDFDF;
+}
+
+.riseDown {
+  color: #FF3F00;
+}
 /*# sourceMappingURL=TopList.module.css.map */

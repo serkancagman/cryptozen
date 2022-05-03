@@ -7,3 +7,10 @@ export const getCoinList = async (currency) => {
 
   return res.data;
 };
+export const getCoinChartData = async (coin, currency) => {
+  const res = await axios.get(
+    `${process.env.REACT_APP_API_URL}coins/${coin}/market_chart?vs_currency=${currency}&days=1&interval=hourly`
+  );
+
+  return res.data;
+};
