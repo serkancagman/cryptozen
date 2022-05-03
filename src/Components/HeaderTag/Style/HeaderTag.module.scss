@@ -1,0 +1,22 @@
+@import "../../../Style/Variables.scss";
+@import "../../../Style/Mixins.scss";
+
+
+.headerTag{
+    background-color: $softBlue;
+    padding: 10px 15px;
+    border-radius: 5px;
+    @include flexrowcenter;
+    margin-bottom: 20px;
+
+    .tagIcon{
+        font-size: 25px;
+        color: $mainColor;
+        margin-right: 10px;
+    }
+    .tagTitle{
+        font-family: $interFont;
+        font-size: 19px;
+        color: $mainColor;
+    }
+}

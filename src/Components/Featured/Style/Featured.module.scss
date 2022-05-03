@@ -188,8 +188,8 @@
 .promotionItem {
   margin: 10px;
   display: block;
-  &:hover{
-    .promotionImg{
+  &:hover {
+    .promotionImg {
       transform: scale(1.05);
     }
   }
@@ -198,7 +198,7 @@
   overflow: hidden;
 
   .promotionImg {
-    transition:  $clastrans;
+    transition: $clastrans;
     width: 100%;
     height: 140px;
     object-fit: cover contain;

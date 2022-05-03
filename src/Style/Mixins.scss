@@ -87,3 +87,18 @@
   font-family: $interFont;
   font-weight: bold;
 }
+@mixin sectionPM {
+  padding: 70px 0;
+}
+@mixin sectionHeader {
+  margin-bottom: 40px;
+  @include flexcolcenter;
+}
+@mixin sectionDesc{
+  max-width: 700px;
+  margin: 0 auto;
+  color: $pColor;
+  font-size: 17px;
+  font-family: $poppinsFont;
+  text-align: center;
+}

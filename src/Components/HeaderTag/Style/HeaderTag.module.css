@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+.headerTag {
+  background-color: #06206D;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.headerTag .tagIcon {
+  font-size: 25px;
+  color: #37a3fe;
+  margin-right: 10px;
+}
+
+.headerTag .tagTitle {
+  font-family: "Inter", sans-serif;
+  font-size: 19px;
+  color: #37a3fe;
+}
+/*# sourceMappingURL=HeaderTag.module.css.map */

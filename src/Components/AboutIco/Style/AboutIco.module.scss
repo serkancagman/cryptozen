@@ -1,0 +1,43 @@
+@import "../../../Style/Variables.scss";
+@import "../../../Style/Mixins.scss";
+
+.aboutIco {
+  @include sectionPM;
+  background: url("../../../Assets/AboutIco/bg.png");
+  background-size: cover;
+  background-position: center;
+
+  .aboutIcoHeader {
+    @include sectionHeader;
+
+    .aboutIcoTitle {
+      @include sectionTitle;
+    }
+    .aboutIcoDesc {
+      @include sectionDesc;
+    }
+  }
+}
+.aboutIcoImage {
+  width: 100%;
+  text-align: center;
+}
+.aboutIcoItem {
+  margin: 10px 0;
+  @include flexrowastart;
+
+  .aboutIcoItemIcon {
+    width: 90px;
+    height: 90px;
+    margin: 0 20px;
+  }
+  .aboutIcoItemTitle {
+    font-size: 22px;
+    color: #fff;
+    font-family: $interFont;
+  }
+  .aboutIcoItemDesc {
+    font-size: 16px;
+    color: $pColor;
+  }
+}

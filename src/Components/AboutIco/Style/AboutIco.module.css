@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+.aboutIco {
+  padding: 70px 0;
+  background: url("../../../Assets/AboutIco/bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.aboutIco .aboutIcoHeader {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aboutIco .aboutIcoHeader .aboutIcoTitle {
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 40px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+
+.aboutIco .aboutIcoHeader .aboutIcoDesc {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #a2bbd2;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.aboutIcoImage {
+  width: 100%;
+  text-align: center;
+}
+
+.aboutIcoItem {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aboutIcoItem .aboutIcoItemIcon {
+  width: 90px;
+  height: 90px;
+  margin: 0 20px;
+}
+
+.aboutIcoItem .aboutIcoItemTitle {
+  font-size: 22px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+.aboutIcoItem .aboutIcoItemDesc {
+  font-size: 16px;
+  color: #a2bbd2;
+}
+/*# sourceMappingURL=AboutIco.module.css.map */

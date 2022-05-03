@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,oEAAI;AACZ,OAAO,CAAC,6EAAI;AACZ,OAAO,CAAC,kEAAI;ADEZ,AAAA,UAAU,CAAA;EACN,gBAAgB,ECDT,OAAO;EDEd,OAAO,EAAE,SAAS;EAClB,aAAa,EAAE,GAAG;EENpB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EFKjB,aAAa,EAAE,IAAI;CAYtB;;AAjBD,AAOI,UAPM,CAON,QAAQ,CAAA;EACJ,SAAS,EAAE,IAAI;EACf,KAAK,ECVD,OAAO;EDWX,YAAY,EAAE,IAAI;CACrB;;AAXL,AAYI,UAZM,CAYN,SAAS,CAAA;EACL,WAAW,ECTP,OAAO,EAAE,UAAU;EDUvB,SAAS,EAAE,IAAI;EACf,KAAK,EChBD,OAAO;CDiBd",
+    "sources": [
+        "HeaderTag.module.scss",
+        "../../../Style/Variables.scss",
+        "../../../Style/Mixins.scss"
+    ],
+    "names": [],
+    "file": "HeaderTag.module.css"
+}
