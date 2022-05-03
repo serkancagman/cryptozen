@@ -3,15 +3,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 .topList {
   padding: 70px 0;
-  background: url("../../../Assets/TopList/bg.png");
+  background: url("../../../Assets/Featured/bg.png");
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 
 .popularItem {
   background-color: #06206D;
   padding: 25px;
   border-radius: 10px;
+  position: relative;
+  z-index: 1;
 }
 
 .popularItem .coinImage {
@@ -90,7 +93,6 @@
   height: 40px;
   border-radius: 50%;
   overflow: hidden;
-  padding: 3px;
   margin-right: 10px;
   text-align: center;
 }
@@ -153,5 +155,100 @@
 
 .secondRow td {
   border: none !important;
+}
+
+.tableWrapper {
+  margin: 30px 0;
+  padding: 20px 0;
+}
+
+.topListTitle {
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 40px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+
+.viewAll {
+  display: inline-block;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.viewAll:hover {
+  color: #37a3fe !important;
+}
+
+.viewAllIcon {
+  font-size: 23px;
+  margin: 0 5px;
+}
+
+.circleEffect {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  z-index: 0;
+  -webkit-animation: transition_image 3s infinite linear;
+          animation: transition_image 3s infinite linear;
+}
+
+@-webkit-keyframes transition_image {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes transition_image {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.promotionItem {
+  margin: 10px;
+  display: block;
+}
+
+.promotionItem:hover .promotionImg {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.promotionItemImgWrapper {
+  overflow: hidden;
+}
+
+.promotionItemImgWrapper .promotionImg {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  height: 140px;
+  -o-object-fit: cover contain;
+     object-fit: cover contain;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=Featured.module.css.map */

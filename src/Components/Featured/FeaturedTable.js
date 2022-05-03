@@ -20,7 +20,7 @@ const FeaturedTable = ({ data }) => {
                   className={style.tableImage}
                 />{" "}
               </div>
-              <Link className={style.tableCoinId} to={`coin/${record.id}`}>
+              <Link className={style.tableCoinId} to={`coins/${record.id}`}>
                 {text.toUpperCase()}
               </Link>{" "}
             </div>
@@ -83,7 +83,7 @@ const FeaturedTable = ({ data }) => {
         dataIndex: "name",
         key: "name",
         render: (text, record) => (
-          <Link to={`/coin/${record.id}`} className={style.tradeBtn}>
+          <Link to={`/coins/${record.id}`} className={style.tradeBtn}>
             Trade
           </Link>
         ),

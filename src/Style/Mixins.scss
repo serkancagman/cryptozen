@@ -1,82 +1,89 @@
-
-
-@mixin flexrowcenter{
+@mixin flexrowcenter {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-@mixin flexrowjstart{
+@mixin flexrowjstart {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
-@mixin flexrowastart{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
+@mixin flexrowastart {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
 }
-@mixin flexalstart{
+@mixin flexalstart {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
 }
-@mixin flexrowjend{
+@mixin flexrowjend {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
 }
 
-@mixin flexrowbetween{
+@mixin flexrowbetween {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-@mixin flexrowaround{
+@mixin flexrowaround {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
 
-@mixin flexcolcenter{
+@mixin flexcolcenter {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-@mixin flexcolastart{
+@mixin flexcolastart {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
-@mixin flexcolaend{
+@mixin flexcolaend {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
 }
 
-@mixin flexcoljbetween{
+@mixin flexcoljbetween {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-@mixin flexcoljaround{
+@mixin flexcoljaround {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+@mixin sectionTitle {
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 40px;
+  font-family: $interFont;
+  font-weight: bold;
 }
