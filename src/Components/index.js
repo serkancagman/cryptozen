@@ -8,3 +8,4 @@ export { default as MobileApp } from "./MobileApp/MobileApp";
 export { default as FAQ } from "./FAQ/Faq";
 export { default as News } from "./News/News";
 export { default as Contact } from "./Contact/Contact";
+export { default as Footer } from "./Footer/Footer";

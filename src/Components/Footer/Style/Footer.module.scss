@@ -1,0 +1,150 @@
+@import "../../../Style/Variables.scss";
+@import "../../../Style/Mixins.scss";
+
+.footer {
+  @include sectionPM;
+  background: url("../../../Assets/Footer/bg.jpg");
+  background-size: cover;
+  background-position: center;
+
+  .footerBrand {
+    width: 100%;
+    height: 100%;
+
+    .footerBrandLogo {
+      margin-bottom: 20px;
+    }
+  }
+  .footerBrandDesc {
+    color: $pColor;
+    font-size: 15px;
+    font-family: $interFont;
+    margin-bottom: 20px;
+  }
+  .socialTitle {
+    font-size: 24px;
+    color: #fff;
+    font-family: $interFont;
+  }
+  .socialItem {
+    margin-right: 10px;
+    @include flexrowcenter;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: $clastrans;
+    background-color: #333067;
+
+    &:hover {
+      background-color: $mainColor;
+    }
+    .socialIcon {
+      font-size: 20px;
+      color: #fff;
+      transition: $clastrans;
+    }
+  }
+}
+.footerMenu {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+  .footerMenuItem {
+    list-style: none;
+    margin-bottom: 10px;
+    &::before {
+      content: "-";
+      margin-right: 10px;
+      color: #fff;
+      font-size: 17px;
+    }
+    .footerLink {
+      display: inline-block;
+      transition: 0.5s;
+      position: relative;
+      left: 24px;
+      font-size: 19px;
+      transition: 0.5s;
+      background-image: linear-gradient(
+        to right,
+        #37a3fe,
+        #37a3fe,
+        50%,
+        #a2bbd2 50%
+      );
+      background-size: 200% 100%;
+      background-position: 100%;
+      color: transparent;
+      background-clip: text;
+      font-weight: 600;
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        color: $mainColor;
+        background-position: 0;
+      }
+    }
+  }
+}
+.footerMenuTitle {
+  color: #fff;
+  font-family: $interFont;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.footerNewsletter {
+  position: relative;
+
+  .footerNewsletterInput {
+    background: #1c2960;
+    border: none;
+    padding: 14px 21px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    outline: 0;
+    color: #fff;
+    width: 100%;
+    height: 55px;
+
+    &::placeholder {
+      color: #fff;
+    }
+  }
+
+  .footerNewsletterButton {
+    position: absolute;
+    right: 0;
+    background: #0194fc;
+    border: none;
+    height: 55px;
+    width: 113px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    outline: 0;
+  }
+}
+.footerBottom {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #3e407b;
+
+  .footerBottomTitle {
+    color: #fff;
+    font-size: 17px;
+    font-family: $interFont;
+    margin-bottom: 0;
+    .footerBottomHeart {
+      color: red;
+    }
+  }
+  .footerBottomLink{
+      font-size: 17px;
+      color: #fff;
+      margin-left: 10px;
+  }
+}

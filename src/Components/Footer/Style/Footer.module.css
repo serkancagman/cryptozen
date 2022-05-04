@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+.footer {
+  padding: 70px 0;
+  background: url("../../../Assets/Footer/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.footer .footerBrand {
+  width: 100%;
+  height: 100%;
+}
+
+.footer .footerBrand .footerBrandLogo {
+  margin-bottom: 20px;
+}
+
+.footer .footerBrandDesc {
+  color: #a2bbd2;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 20px;
+}
+
+.footer .socialTitle {
+  font-size: 24px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+.footer .socialItem {
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #333067;
+}
+
+.footer .socialItem:hover {
+  background-color: #37a3fe;
+}
+
+.footer .socialItem .socialIcon {
+  font-size: 20px;
+  color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.footerMenu {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.footerMenu .footerMenuItem {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footerMenu .footerMenuItem::before {
+  content: "-";
+  margin-right: 10px;
+  color: #fff;
+  font-size: 17px;
+}
+
+.footerMenu .footerMenuItem .footerLink {
+  display: inline-block;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  left: 24px;
+  font-size: 19px;
+  transition: 0.5s;
+  background-image: -webkit-gradient(linear, left top, right top, from(#37a3fe), color-stop(#37a3fe), color-stop(50%), color-stop(50%, #a2bbd2));
+  background-image: linear-gradient(to right, #37a3fe, #37a3fe, 50%, #a2bbd2 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+  color: transparent;
+  background-clip: text;
+  font-weight: 600;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.footerMenu .footerMenuItem .footerLink:hover {
+  color: #37a3fe;
+  background-position: 0;
+}
+
+.footerMenuTitle {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.footerNewsletter {
+  position: relative;
+}
+
+.footerNewsletter .footerNewsletterInput {
+  background: #1c2960;
+  border: none;
+  padding: 14px 21px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  outline: 0;
+  color: #fff;
+  width: 100%;
+  height: 55px;
+}
+
+.footerNewsletter .footerNewsletterInput::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.footerNewsletter .footerNewsletterInput:-ms-input-placeholder {
+  color: #fff;
+}
+
+.footerNewsletter .footerNewsletterInput::-ms-input-placeholder {
+  color: #fff;
+}
+
+.footerNewsletter .footerNewsletterInput::placeholder {
+  color: #fff;
+}
+
+.footerNewsletter .footerNewsletterButton {
+  position: absolute;
+  right: 0;
+  background: #0194fc;
+  border: none;
+  height: 55px;
+  width: 113px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 15px;
+  outline: 0;
+}
+
+.footerBottom {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #3e407b;
+}
+
+.footerBottom .footerBottomTitle {
+  color: #fff;
+  font-size: 17px;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 0;
+}
+
+.footerBottom .footerBottomTitle .footerBottomHeart {
+  color: red;
+}
+
+.footerBottom .footerBottomLink {
+  font-size: 17px;
+  color: #fff;
+  margin-left: 10px;
+}
+/*# sourceMappingURL=Footer.module.css.map */

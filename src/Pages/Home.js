@@ -9,6 +9,7 @@ import {
   FAQ,
   News,
   Contact,
+  Footer,
 } from "Components";
 import React from "react";
 
@@ -25,6 +26,7 @@ const Home = () => {
       <FAQ />
       <News />
       <Contact />
+      <Footer />
     </>
   );
 };
