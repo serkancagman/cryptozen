@@ -37,7 +37,7 @@
   }
 }
 .chart {
-  height: 40px;
+  height: 55px;
   width: 100%;
   overflow: hidden;
   margin: 10px 0;
@@ -57,20 +57,20 @@
   margin-left: 10px;
 }
 .riseUp {
-  color: #6fdfdf;
+  color: #9AE66E;
 }
 .riseDown {
-  color: #ff3f00;
+  color: #FF3F00;
 }
 .tablePrice {
   font-size: 15px;
   font-family: $interFont;
 }
 .priceUp {
-  color: #6fdfdf;
+  color: #9AE66E;
 }
 .priceDown {
-  color: #ff3f00;
+  color: #FF3F00;
 }
 .tableVolume {
   font-size: 15px;

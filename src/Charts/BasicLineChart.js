@@ -8,27 +8,25 @@ const BasicLineChart = ({ coin }) => {
   const { data, isLoading, error } = useQuery(useCoinName, () =>
     getCoinChartData(useCoinName, "usd")
   );
-  
+  console.log(data);
   React.useEffect(() => {
     if (data) {
-      setChartData(data.prices.map((item) => (item[1])))
+      setChartData(data.prices.map((item) => item[1]));
     }
   }, [data]);
 
-  const currentColor = coin.market_cap_change_percentage_24h > 0 ? "#6FDFDF" : "#FF3F00";
+  const currentColor =
+    coin.market_cap_change_percentage_24h > 0 ? "#9AE66E" : "#FF3F00";
 
   const config = {
     height: 1000,
     width: 180,
     autoFit: false,
-    data:chartData,
+    data: chartData,
     smooth: true,
-    renderer: "svg",
     color: currentColor,
   };
-  return <>
-    {!isLoading && !error && <TinyLine {...config} />}
-  </>;
+  return <>{!isLoading && !error && <TinyLine {...config} />}</>;
 };
 
 export default BasicLineChart;

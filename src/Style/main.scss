@@ -10,6 +10,13 @@ thead[class*="ant-table-thead"] th {
   font-size: 17px;
   border: none !important;
 }
+tbody[class*="ant-table-tbody"] tr > td {
+  background-color: #192e6e !important;
+  color: #fff;
+  font-family: $interFont;
+  font-size: 17px;
+  border: none !important;
+}
 
 // FAQ COLLAPSE CSS
 

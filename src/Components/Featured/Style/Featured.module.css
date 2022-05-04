@@ -40,7 +40,7 @@
 }
 
 .chart {
-  height: 40px;
+  height: 55px;
   width: 100%;
   overflow: hidden;
   margin: 10px 0;
@@ -62,11 +62,11 @@
 }
 
 .riseUp {
-  color: #6fdfdf;
+  color: #9AE66E;
 }
 
 .riseDown {
-  color: #ff3f00;
+  color: #FF3F00;
 }
 
 .tablePrice {
@@ -75,11 +75,11 @@
 }
 
 .priceUp {
-  color: #6fdfdf;
+  color: #9AE66E;
 }
 
 .priceDown {
-  color: #ff3f00;
+  color: #FF3F00;
 }
 
 .tableVolume {

@@ -29,7 +29,7 @@ const TopList = () => {
         <div className={style.tableWrapper}>
           {!isLoading && !error && <FeaturedTable data={data} />}
           <div className="d-flex justify-content-center align-items-center my-3">
-            <Link to="/coins" className={style.viewAll}>
+            <Link to="/market_list" className={style.viewAll}>
               {" "}
               View More
               <MdKeyboardArrowRight className={style.viewAllIcon} />

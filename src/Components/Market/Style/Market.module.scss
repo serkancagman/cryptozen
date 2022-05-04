@@ -1,0 +1,110 @@
+@import "../../../Style/Variables.scss";
+@import "../../../Style/Mixins.scss";
+
+.market {
+  padding: 100px 0 70px 0;
+  background: url("../../../Assets/Banner/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.marketHeader {
+  @include sectionHeader;
+
+  .marketTitle {
+    @include sectionTitle;
+  }
+  .marketDesc {
+    @include sectionDesc;
+  }
+}
+.tableImgWrapper {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+  .tableImage {
+    width: 100%;
+    height: 100%;
+  }
+}
+.shortName {
+  font-size: 15px;
+  color: #999;
+  text-transform: uppercase;
+  font-family: $interFont;
+}
+.tableCurrency {
+  font-family: $interFont;
+  font-size: 15px;
+  color: #fff;
+  margin-left: 5px;
+}
+.tableName {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: $interFont;
+  font-weight: 550;
+  color: #efefef;
+}
+.tablePrice {
+  font-family: $interFont;
+  font-size: 15px;
+  margin-right: 5px;
+  color: #fff;
+}
+.tableIconUp {
+  color: #9ae66e;
+  font-size: 15px;
+}
+.tableIconDown {
+  color: #ff3f00;
+  font-size: 15px;
+}
+.priceUp {
+  color: #9ae66e !important;
+}
+.priceDown {
+  color: #ff3f00 !important;
+}
+.firstRow {
+  background-color: $softBlue;
+  border: none !important;
+
+  &:hover {
+    td {
+      background-color: #233b83 !important;
+    }
+  }
+  td {
+    border: none !important;
+  }
+}
+.secondRow {
+  background-color: #192e6e;
+
+  &:hover {
+    td {
+      background-color: #112f8a !important;
+    }
+  }
+  td {
+    border: none !important;
+  }
+}
+.tradeBtn {
+  color: $mainColor;
+  font-size: 15px;
+  font-family: $interFont;
+  font-weight: 600;
+  transition: $clastrans;
+  padding: 7px 15px;
+  border-radius: 5px;
+  border: 2px solid $mainColor;
+  &:hover {
+    background-color: $mainColor;
+    color: #fff;
+  }
+}
