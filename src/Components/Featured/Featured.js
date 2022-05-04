@@ -12,7 +12,6 @@ const TopList = () => {
   const { data, isLoading, error } = useQuery("coinList", () =>
     getCoinList("USD")
   );
-  console.log(data);
   return (
     <section className={style.topList}>
       <div className="container">

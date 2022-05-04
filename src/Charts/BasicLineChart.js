@@ -8,7 +8,6 @@ const BasicLineChart = ({ coin }) => {
   const { data, isLoading, error } = useQuery(useCoinName, () =>
     getCoinChartData(useCoinName, "usd")
   );
-  console.log(data);
   React.useEffect(() => {
     if (data) {
       setChartData(data.prices.map((item) => item[1]));

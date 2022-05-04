@@ -20,3 +20,10 @@ export const getCoinChartData = async (coin, currency) => {
 
   return res.data;
 };
+
+export const searchCoin = async (query) => {
+  const res = await axios.get(
+    `${process.env.REACT_APP_API_URL}/search?query=${query}`
+  );
+  return res.data;
+};
