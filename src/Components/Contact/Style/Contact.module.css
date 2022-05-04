@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+.contact {
+  padding: 70px 0;
+  background: url("../../../Assets/Contact/bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contact .contactHeader {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .contactTitle {
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 40px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+}
+
+.contactIconWrapper {
+  padding: 10px;
+  background-color: rgba(55, 163, 254, 0.5);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.contactIconWrapper::after {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-color: #0195f9;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.contactIconWrapper .contactIcon {
+  font-size: 23px;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.contactInfoTitle {
+  font-size: 20px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.contactForm {
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+.contactForm .input {
+  width: 100%;
+  border: 2px solid transparent;
+  padding: 20px 10px;
+  margin: 10px 0;
+  color: #fff;
+  font-size: 17px;
+  font-family: "Inter", sans-serif;
+  -webkit-transition: border 0.3s ease-in-out;
+  transition: border 0.3s ease-in-out;
+  outline: none;
+  background-color: #06206D;
+}
+
+.contactForm .input::-webkit-input-placeholder {
+  color: #fff;
+  font-size: 17px;
+}
+
+.contactForm .input:-ms-input-placeholder {
+  color: #fff;
+  font-size: 17px;
+}
+
+.contactForm .input::-ms-input-placeholder {
+  color: #fff;
+  font-size: 17px;
+}
+
+.contactForm .input::placeholder {
+  color: #fff;
+  font-size: 17px;
+}
+
+.contactForm .input:focus {
+  border: 2px solid #37a3fe;
+}
+
+.submitBtn {
+  background-color: #37a3fe;
+  padding: 10px 15px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: none;
+}
+/*# sourceMappingURL=Contact.module.css.map */

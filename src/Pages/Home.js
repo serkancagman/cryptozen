@@ -1,4 +1,15 @@
-import { Banner, Header, Featured,AboutIco, Rating, WhoWeAre, MobileApp,FAQ, News } from "Components";
+import {
+  Banner,
+  Header,
+  Featured,
+  AboutIco,
+  Rating,
+  WhoWeAre,
+  MobileApp,
+  FAQ,
+  News,
+  Contact,
+} from "Components";
 import React from "react";
 
 const Home = () => {
@@ -13,6 +24,7 @@ const Home = () => {
       <MobileApp />
       <FAQ />
       <News />
+      <Contact />
     </>
   );
 };
