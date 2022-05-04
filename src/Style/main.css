@@ -6,7 +6,7 @@ body {
   position: relative;
 }
 
-thead[class*="ant-table-thead"] th {
+thead[class="ant-table-thead"] th {
   background-color: #192e6e !important;
   color: #fff;
   font-family: "Inter", sans-serif;
@@ -14,12 +14,13 @@ thead[class*="ant-table-thead"] th {
   border: none !important;
 }
 
-tbody[class*="ant-table-tbody"] tr > td {
-  background-color: #192e6e !important;
-  color: #fff;
-  font-family: "Inter", sans-serif;
-  font-size: 17px;
-  border: none !important;
+td.ant-table-column-sort {
+  background-color: transparent !important;
+}
+
+.ant-table-tbody > tr.ant-table-row:hover > td,
+.ant-table-tbody > tr > td.ant-table-cell-row-hover {
+  background: none;
 }
 
 .ant-collapse-item {

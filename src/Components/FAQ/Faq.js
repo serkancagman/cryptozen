@@ -50,7 +50,7 @@ const Faq = () => {
             {activeTab === "second" && <TabSecond />}
             {activeTab === "third" && <TabThird />}
           </div>
-          <div className="col-md-12 col-lg-6">
+          <div className="col-md-12 text-center col-lg-6">
             <img src={faqImg} alt="faq" className="img-fluid" />
           </div>
         </div>

@@ -33,7 +33,12 @@ const Search = () => {
       setDefaultValue(data);
     }
   }, [data]);
-
+  React.useEffect(() => {
+    if (!isVisible) {
+      setSearchItems([]);
+      setSearchValue("");
+    }
+  }, [isVisible]);
   const menu = (
     <div className={style.navSubWrapper}>
       <div className={style.searchWrapper}>
@@ -57,7 +62,7 @@ const Search = () => {
           </span>
         </div>
         <ul className={style.searchList}>
-          {searchItems.length > 1
+          {searchItems.length > 0
             ? searchItems.map((item, index) => {
                 return (
                   <li key={index} className={style.searchListItem}>

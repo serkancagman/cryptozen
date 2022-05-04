@@ -428,7 +428,7 @@
   overflow-y: auto;
   max-height: 400px;
   margin: 0 1px;
-  padding: 5px 0;
+  padding: 0;
 }
 
 .searchList::-webkit-scrollbar {
@@ -447,7 +447,8 @@
 
 .searchList .searchListItem {
   list-style: none;
-  margin: 5px 0;
+  padding: 0;
+  margin: 0;
 }
 
 .searchList .searchItemWrapper {
