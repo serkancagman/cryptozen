@@ -5,9 +5,11 @@ import style from "./Style/Market.module.css";
 import { Table } from "antd";
 import { Link } from "react-router-dom";
 import { BsArrowUp, BsArrowDown } from "react-icons/bs";
+import { useSelector } from "react-redux";
 const MarketTable = () => {
-  const { data, isLoading, error } = useQuery("allCoinList", () =>
-    getAllCoinList("USD")
+  const { currency, currencyIcon } = useSelector((state) => state.currency);
+  const { data, isLoading, error } = useQuery(["allCoinList", currency], () =>
+    getAllCoinList(currency)
   );
   const columns = React.useMemo(() => {
     return [
@@ -29,7 +31,7 @@ const MarketTable = () => {
                 <Link to={`/market/${record.id}`} className={style.shortName}>
                   {record.symbol}
                 </Link>
-                <span className={style.tableCurrency}>/USD</span>
+                <span className={style.tableCurrency}>/{currency}</span>
               </div>
               <span className={style.tableName}>{record.id}</span>
             </div>
@@ -83,25 +85,21 @@ const MarketTable = () => {
         title: "High",
         dataIndex: "high_24h",
         key: "high_24h",
-        render: (text, record) => (
-          <span className={style.tablePrice}>{text}</span>
-        ),
+        render: (text) => <span className={style.tablePrice}>{text}</span>,
         sorter: (a, b) => a.high_24h - b.high_24h,
       },
       {
         title: "Low",
         dataIndex: "low_24h",
         key: "low_24h",
-        render: (text, record) => (
-          <span className={style.tablePrice}>{text}</span>
-        ),
+        render: (text) => <span className={style.tablePrice}>{text}</span>,
         sorter: (a, b) => a.low_24h - b.low_24h,
       },
       {
         title: "Volume",
         dataIndex: "total_volume",
         key: "total_volume",
-        render: (text, record) => (
+        render: (text) => (
           <span className={style.tablePrice}>{text.toLocaleString()}</span>
         ),
       },
@@ -109,8 +107,10 @@ const MarketTable = () => {
         title: "Market Cap",
         dataIndex: "market_cap",
         key: "market_cap",
-        render: (text, record) => (
-          <span className={style.tablePrice}>${text.toLocaleString()}</span>
+        render: (text) => (
+          <span className={style.tablePrice}>
+            {currencyIcon + "" + text.toLocaleString()}
+          </span>
         ),
         sorter: (a, b) => a.market_cap - b.market_cap,
       },
@@ -119,14 +119,15 @@ const MarketTable = () => {
         title: "Action",
         dataIndex: "name",
         key: "name",
-        render: (text, record) => (
+        render: (record) => (
           <Link to={`/coins/${record.id}`} className={style.tradeBtn}>
             Trade
           </Link>
         ),
       },
     ];
-  }, [data]);
+  }, [currency, currencyIcon]);
+
   return (
     <>
       {!isLoading && !error && (

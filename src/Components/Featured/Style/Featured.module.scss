@@ -91,8 +91,9 @@
   height: 100%;
 }
 .tableCoinId {
-  min-width: 60px;
-  color: #fff;
+   margin-right: 5px;
+  color: #999;
+  text-transform: uppercase;
   font-family: $interFont;
   font-weight: 600;
 }
@@ -100,6 +101,13 @@
   font-size: 15px;
   font-family: $interFont;
   color: #fff;
+}
+.tableName {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-family: $interFont;
+  font-weight: 600;
+  color: #c9c9c9;
 }
 .tradeBtn {
   color: $mainColor;

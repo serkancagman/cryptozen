@@ -1,9 +1,9 @@
 import BasicLineChart from "Charts/BasicLineChart";
 import React from "react";
 import style from "./Style/Featured.module.css";
-
+import { useSelector } from "react-redux";
 const PopularItem = ({ coin }) => {
-
+  const { currency } = useSelector((state) => state.currency);
   return (
     <div className="col-lg-4 col-md-6">
       <div className={style.popularItem}>
@@ -11,7 +11,9 @@ const PopularItem = ({ coin }) => {
           <div className="d-flex align-items-start justify-content-center flex-column">
             <img src={coin.image} alt="coin" className={style.coinImage} />
             <span className={style.coinName}>{coin.name}</span>
-            <span className={style.coinPrice}>USD {coin.current_price}</span>
+            <span className={style.coinPrice}>
+              {currency + " " + coin.current_price}
+            </span>
           </div>
           <div className="d-flex flex-column align-items-end justify-content-between">
             <span className={style.coinTimeType}>24h</span>

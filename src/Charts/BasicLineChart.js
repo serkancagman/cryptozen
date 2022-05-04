@@ -2,11 +2,13 @@ import React from "react";
 import { TinyLine } from "@ant-design/plots";
 import { getCoinChartData } from "API/Api";
 import { useQuery } from "react-query";
+import { useSelector } from "react-redux";
 const BasicLineChart = ({ coin }) => {
   const [chartData, setChartData] = React.useState([]);
+  const { currency } = useSelector((state) => state.currency);
   let useCoinName = coin.id.toLowerCase();
-  const { data, isLoading, error } = useQuery(useCoinName, () =>
-    getCoinChartData(useCoinName, "usd")
+  const { data, isLoading, error } = useQuery(["Chart data",currency,useCoinName], () =>
+    getCoinChartData(useCoinName, currency)
   );
   React.useEffect(() => {
     if (data) {

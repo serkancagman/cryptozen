@@ -3,9 +3,12 @@ import style from "../Style/Header.module.css";
 import { Dropdown } from "antd";
 import { RiGlobalFill } from "react-icons/ri";
 import { BsCheckLg } from "react-icons/bs";
+import { useDispatch, useSelector } from "react-redux";
+import { setCurrency } from "Redux/CurrencySlice/CurrencySlice";
 const GlobalList = () => {
+  const dispatch = useDispatch();
   const [lang, setLang] = React.useState("en");
-  const [currency, setCurrency] = React.useState("USD");
+  const { currency } = useSelector((state) => state.currency);
   const menu = (
     <div className={style.navSubWrapper}>
       <div className={style.navGlobalInner}>
@@ -40,7 +43,7 @@ const GlobalList = () => {
         <ul className={style.globalList}>
           <h6 className={style.globalListTitle}>Currencies</h6>
           <li
-            onClick={() => setCurrency("USD")}
+            onClick={() => dispatch(setCurrency({ type: "USD", icon: "$" }))}
             className={style.globalListItem}
           >
             <span
@@ -55,7 +58,7 @@ const GlobalList = () => {
             )}
           </li>
           <li
-            onClick={() => setCurrency("EUR")}
+            onClick={() => dispatch(setCurrency({ type: "EUR", icon: "€" }))}
             className={style.globalListItem}
           >
             <span
@@ -70,7 +73,7 @@ const GlobalList = () => {
             )}
           </li>
           <li
-            onClick={() => setCurrency("TRY")}
+            onClick={() => dispatch(setCurrency({ type: "TRY", icon: "₺" }))}
             className={style.globalListItem}
           >
             <span
@@ -86,7 +89,7 @@ const GlobalList = () => {
           </li>
 
           <li
-            onClick={() => setCurrency("GBP")}
+            onClick={() => dispatch(setCurrency({ type: "GBP", icon: "£" }))}
             className={style.globalListItem}
           >
             <span

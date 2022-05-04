@@ -8,9 +8,12 @@ import FeaturedTable from "./FeaturedTable";
 import circleEffectImg from "Assets/Featured/round.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import PromotionCarousel from "./PromotionCarousel";
+import { useSelector } from "react-redux";
 const TopList = () => {
-  const { data, isLoading, error } = useQuery("coinList", () =>
-    getCoinList("USD")
+  const {currency} = useSelector(state => state.currency);
+
+  const { data, isLoading, error } = useQuery(["coinList",currency], () =>
+    getCoinList(currency)
   );
   return (
     <section className={style.topList}>
