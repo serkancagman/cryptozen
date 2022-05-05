@@ -1,4 +1,4 @@
-import { Home,MarketList } from "Pages";
+import { Home, MarketList, Coin } from "Pages";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 const Router = () => {
@@ -6,6 +6,7 @@ const Router = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/market_list" element={<MarketList />} />
+      <Route path="/market_list/:id" element={<Coin />} />
     </Routes>
   );
 };

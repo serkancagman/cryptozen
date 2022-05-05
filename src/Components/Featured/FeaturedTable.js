@@ -23,7 +23,7 @@ const FeaturedTable = ({ data }) => {
           </div>
           <div className="d-flex flex-column justify-content-center align-items-start">
             <div className="d-flex justify-content-center align-items-center">
-              <Link to={`/market/${record.id}`} className={style.tableCoinId}>
+              <Link to={`/market_list/${record.id}`} className={style.tableCoinId}>
                 {record.symbol}
               </Link>
               <span className={style.tableCoinCurrency}>/{currency}</span>
@@ -90,7 +90,7 @@ const FeaturedTable = ({ data }) => {
       dataIndex: "name",
       key: "name",
       render: (text, record) => (
-        <Link to={`/coins/${record.id}`} className={style.tradeBtn}>
+        <Link to={`/market_list/${record.id}`} className={style.tradeBtn}>
           Trade
         </Link>
       ),

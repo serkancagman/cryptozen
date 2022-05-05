@@ -37,4 +37,31 @@ td.ant-table-column-sort {
 .ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
   font-size: 23px !important;
 }
+
+.ant-switch-checked {
+  background-color: #9AE66E !important;
+}
+
+.ant-table-body::-webkit-scrollbar {
+  background-color: #0B0B47;
+  width: 0.5em;
+  height: 2em;
+  z-index: 99;
+  position: relative;
+}
+
+.ant-table-body::-webkit-scrollbar-thumb {
+  background-color: #37a3fe;
+  border-radius: 10px;
+  size: 1px;
+}
+
+.ant-table-cell-scrollbar {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.ant-table-container table > thead > tr:first-child th {
+  border-radius: 0 !important;
+}
 /*# sourceMappingURL=main.css.map */

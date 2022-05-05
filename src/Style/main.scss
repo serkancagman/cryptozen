@@ -32,3 +32,29 @@ td.ant-table-column-sort {
 .ant-collapse > .ant-collapse-item > .ant-collapse-header .ant-collapse-arrow {
   font-size: 23px !important;
 }
+.ant-switch-checked {
+  background-color: $green !important;
+}
+.ant-table-body{
+    &::-webkit-scrollbar {
+    background-color: $bgColor;
+    width: 0.5em;
+    height: 2em;
+    z-index: 99;
+    position: relative;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $mainColor;
+    border-radius: 10px;
+    size: 1px;
+  }
+}
+.ant-table-cell-scrollbar{
+  box-shadow: none !important;
+}
+.ant-table-container table>thead>tr:first-child th {
+  border-radius: 0 !important;
+
+ 
+}
+

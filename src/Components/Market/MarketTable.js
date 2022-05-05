@@ -28,7 +28,7 @@ const MarketTable = () => {
             </div>
             <div className="d-flex flex-column justify-content-center align-items-start">
               <div className="d-flex justify-content-center align-items-center">
-                <Link to={`/market/${record.id}`} className={style.shortName}>
+                <Link to={`/market_list/${record.id}`} className={style.shortName}>
                   {record.symbol}
                 </Link>
                 <span className={style.tableCurrency}>/{currency}</span>
@@ -119,8 +119,8 @@ const MarketTable = () => {
         title: "Action",
         dataIndex: "name",
         key: "name",
-        render: (record) => (
-          <Link to={`/coins/${record.id}`} className={style.tradeBtn}>
+        render: (text,record) => (
+          <Link to={`/market_list/${record.id}`} className={style.tradeBtn}>
             Trade
           </Link>
         ),

@@ -8,7 +8,7 @@
   background-position: center;
   position: relative;
 }
-.featuredHeader{
+.featuredHeader {
   @include sectionHeader;
 }
 .popularItem {
@@ -59,20 +59,20 @@
   margin-left: 10px;
 }
 .riseUp {
-  color: #9AE66E;
+  color: $green;
 }
 .riseDown {
-  color: #FF3F00;
+  color: $red;
 }
 .tablePrice {
   font-size: 15px;
   font-family: $interFont;
 }
 .priceUp {
-  color: #9AE66E;
+  color: $green;
 }
 .priceDown {
-  color: #FF3F00;
+  color: $red;
 }
 .tableVolume {
   font-size: 15px;
@@ -93,7 +93,7 @@
   height: 100%;
 }
 .tableCoinId {
-   margin-right: 5px;
+  margin-right: 5px;
   color: #999;
   text-transform: uppercase;
   font-family: $interFont;

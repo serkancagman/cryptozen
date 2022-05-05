@@ -10,3 +10,4 @@ export { default as News } from "./News/News";
 export { default as Contact } from "./Contact/Contact";
 export { default as Footer } from "./Footer/Footer";
 export { default as Market } from "./Market/Market";
+export { default as Product } from "./Product/Product";
