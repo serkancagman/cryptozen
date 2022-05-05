@@ -204,21 +204,36 @@
     }
   }
 }
-.productPriceInfo{
+.productPriceInfo {
   margin: 0 30px;
 
-  .productCurrencyIcon{
+  .productCurrencyIcon {
     font-size: 18px;
     color: $pColor;
     margin-right: 5px;
   }
-  .productPriceValue{
+  .productPriceValue {
     font-family: $interFont;
     font-size: 23px;
   }
 }
-.productPriceChange{
+.productPriceChange {
   font-size: 20px;
   font-family: $interFont;
   margin: 0 10px;
+  @include flexrowcenter;
+}
+.productVolumeInfo {
+  margin: 0 30px;
+
+  .productVolumeTitle {
+    font-size: 15px;
+    color: $pColor;
+    font-family: $interFont;
+  }
+  .productVolumeValue {
+    font-size: 15px;
+    color: #fff;
+    font-family: $interFont;
+  }
 }

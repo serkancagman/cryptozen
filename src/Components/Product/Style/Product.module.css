@@ -258,5 +258,34 @@
   font-size: 20px;
   font-family: "Inter", sans-serif;
   margin: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.productVolumeInfo {
+  margin: 0 30px;
+}
+
+.productVolumeInfo .productVolumeTitle {
+  font-size: 15px;
+  color: #a2bbd2;
+  font-family: "Inter", sans-serif;
+}
+
+.productVolumeInfo .productVolumeValue {
+  font-size: 15px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
 }
 /*# sourceMappingURL=Product.module.css.map */

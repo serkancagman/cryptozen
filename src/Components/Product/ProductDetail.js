@@ -83,16 +83,18 @@ const ProductDetail = ({ name }) => {
                     }`}
                   >
                     {" "}
-                    {data.market_data.market_cap_change_percentage_24h_in_currency.usd.toFixed(
+                   <span> {data.market_data.market_cap_change_percentage_24h_in_currency.usd.toFixed(
                       2
                     )}
-                    %
+                    %</span>
+                    <span>
                     {data.market_data
                       .market_cap_change_percentage_24h_in_currency.usd > 0 ? (
                       <TiArrowSortedUp className={style.priceUp} />
                     ) : (
                       <TiArrowSortedDown className={style.priceDown} />
                     )}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -113,7 +115,7 @@ const ProductDetail = ({ name }) => {
                   <div className="d-flex justify-content-center mx-2 align-items-start flex-column">
                     <span className={style.productVolumeTitle}>24H Volume</span>
                     <span className={style.productVolumeValue}>
-                      {shortedNumber(data.market_data.total_volume.usd)}
+                      {currencyIcon +"" +shortedNumber(data.market_data.total_volume.usd)}
                     </span>
                   </div>
                 </div>
