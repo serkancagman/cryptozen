@@ -8,7 +8,9 @@
   background-position: center;
   position: relative;
 }
-
+.featuredHeader{
+  @include sectionHeader;
+}
 .popularItem {
   background-color: $softBlue;
   padding: 25px;

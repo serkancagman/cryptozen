@@ -9,6 +9,7 @@ import circleEffectImg from "Assets/Featured/round.png";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import PromotionCarousel from "./PromotionCarousel";
 import { useSelector } from "react-redux";
+import HeaderTag from "Components/HeaderTag/HeaderTag";
 const TopList = () => {
   const {currency} = useSelector(state => state.currency);
 
@@ -18,7 +19,10 @@ const TopList = () => {
   return (
     <section className={style.topList}>
       <div className="container">
+        <div className={style.featuredHeader}>
+          <HeaderTag title="Featured" />
         <h3 className={style.topListTitle}>Featured Coins</h3>
+        </div>
         <div className="row g-3">
           {!isLoading && !error && (
             <>
