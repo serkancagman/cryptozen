@@ -1,5 +1,5 @@
 import React from "react";
-import { Table, Switch, Rate } from "antd";
+import { Table, Switch, Rate, Tooltip, Dropdown } from "antd";
 import { Link } from "react-router-dom";
 import { useQuery } from "react-query";
 import { getAllCoinList } from "API/Api";
@@ -7,13 +7,13 @@ import { useSelector } from "react-redux";
 import { BiSearchAlt } from "react-icons/bi";
 import style from "./Style/Product.module.css";
 const ProductTable = () => {
-    const [simpleTable, setSimpleTable] = React.useState(false);
+  const [simpleTable, setSimpleTable] = React.useState(false);
   const { currency, currencyIcon } = useSelector((state) => state.currency);
   const { data, isLoading, error } = useQuery(["allCoinList", currency], () =>
     getAllCoinList(currency)
   );
 
-  function onChange(checked){
+  function onChange(checked) {
     setSimpleTable(checked);
   }
 
@@ -37,7 +37,7 @@ const ProductTable = () => {
         width: 120,
         render: (text, record) => (
           <div className="d-flex align-items-center justify-content-start">
-            <div className={simpleTable ? "d-none" : style.tableImgWrapper }>
+            <div className={simpleTable ? "d-none" : style.tableImgWrapper}>
               <img
                 src={record.image}
                 alt={record.name}
@@ -59,11 +59,12 @@ const ProductTable = () => {
       {
         title: "Price",
         dataIndex: "current_price",
-        width: 100,
+        width: 90,
         key: "current_price",
         render: (text, record) => (
           <span className={style.tablePrice}>{record.current_price}</span>
         ),
+        sorter: (a, b) => a.current_price - b.current_price,
       },
       {
         title: "24h %",
@@ -85,6 +86,7 @@ const ProductTable = () => {
             </span>
           </div>
         ),
+        sorter: (a, b) => a.market_cap_change_percentage_24h - b.market_cap_change_percentage_24h,
       },
       {
         title: "⭐",
@@ -93,12 +95,12 @@ const ProductTable = () => {
         width: 40,
         render: (text, record) => (
           <div className="d-flex align-items-center ">
-              <Rate count={1} className={style.tableStar} />
+            <Rate count={1} className={style.tableStar} />
           </div>
         ),
       },
     ];
-  }, [currencyIcon, currency,simpleTable]);
+  }, [currencyIcon, currency, simpleTable]);
 
   return (
     <div className={style.tableWrapper}>
@@ -107,15 +109,19 @@ const ProductTable = () => {
           <div className="d-flex justify-content-between align-items-center">
             <form className="w-100 me-3">
               <div className={style.inputWrapper}>
-                <input
-                  type="text"
-                  className={style.searchInput}
-                  placeholder="Search..."
-                />
+           
+                  <input
+                    type="text"
+                    className={style.searchInput}
+                    placeholder="Search..."
+                  />
+            
                 <BiSearchAlt className={style.searchIcon} />
               </div>
             </form>
-            <Switch onChange={onChange} />
+            <Tooltip title="Simple mode">
+              <Switch onChange={onChange} />
+            </Tooltip>
           </div>
         </div>
         <div className={style.tableBody}>
