@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import ProductDetail from "./ProductDetail";
 import ProductTable from "./ProductTable";
 import style from "./Style/Product.module.css";
 const Product = () => {
@@ -8,11 +9,13 @@ const Product = () => {
   return (
     <section className={style.product}>
       <div className="container">
-        <div className="row-g-3">
-          <div className="col-lg-3">
+        <div className="row g-3">
+          <div className="col-lg-4">
             <ProductTable />
           </div>
-          <div className="col-lg-9"></div>
+          <div className="col-lg-8">
+            <ProductDetail name={id} />
+          </div>
         </div>
       </div>
     </section>

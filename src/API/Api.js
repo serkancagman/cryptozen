@@ -34,3 +34,10 @@ export const getDefaultSearchData = async (currency) => {
   );
   return res.data;
 };
+
+export const getCoinData = async (coin) => {
+  const res = await axios.get(
+    `${process.env.REACT_APP_API_URL}coins/${coin}?localization=false&market_data=true&community_data=false&developer_data=true&sparkline=false`
+  );
+  return res.data;
+}

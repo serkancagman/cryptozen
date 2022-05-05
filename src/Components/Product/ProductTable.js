@@ -6,6 +6,7 @@ import { getAllCoinList } from "API/Api";
 import { useSelector } from "react-redux";
 import { BiSearchAlt } from "react-icons/bi";
 import style from "./Style/Product.module.css";
+import useNumberStep from "Hooks/useNumberStep";
 const ProductTable = () => {
   const [simpleTable, setSimpleTable] = React.useState(false);
   const { currency, currencyIcon } = useSelector((state) => state.currency);
@@ -17,24 +18,15 @@ const ProductTable = () => {
     setSimpleTable(checked);
   }
 
-  console.log(simpleTable);
+  const shortedNumber = useNumberStep;
 
-  function nFormatter(num) {
-    if (num >= 1000000) {
-      return (num / 100000000).toFixed(2).replace(/\.0$/, "") + "M";
-    }
-    if (num >= 1000) {
-      return (num / 1000).toFixed(2).replace(/\.0$/, "") + "K";
-    }
-    return num;
-  }
   const columns = React.useMemo(() => {
     return [
       {
         title: "Coin",
         dataIndex: "symbol",
         key: "symbol",
-        width: 120,
+
         render: (text, record) => (
           <div className="d-flex align-items-center justify-content-start">
             <div className={simpleTable ? "d-none" : style.tableImgWrapper}>
@@ -59,7 +51,7 @@ const ProductTable = () => {
       {
         title: "Price",
         dataIndex: "current_price",
-        width: 90,
+
         key: "current_price",
         render: (text, record) => (
           <span className={style.tablePrice}>{record.current_price}</span>
@@ -70,6 +62,7 @@ const ProductTable = () => {
         title: "24h %",
         dataIndex: "market_cap_change_percentage_24h",
         key: "market_cap_change_percentage_24h",
+
         render: (text, record) => (
           <div className="d-flex justify-content-center flex-column align-items-end">
             <span
@@ -82,17 +75,19 @@ const ProductTable = () => {
               {text.toFixed(2)}%
             </span>
             <span className={simpleTable ? "d-none" : style.tableVolume}>
-              {nFormatter(record.total_volume)}
+              {shortedNumber(record.total_volume)}
             </span>
           </div>
         ),
-        sorter: (a, b) => a.market_cap_change_percentage_24h - b.market_cap_change_percentage_24h,
+        sorter: (a, b) =>
+          a.market_cap_change_percentage_24h -
+          b.market_cap_change_percentage_24h,
       },
       {
         title: "⭐",
         dataIndex: "id",
         key: "id",
-        width: 40,
+        width: 30,
         render: (text, record) => (
           <div className="d-flex align-items-center ">
             <Rate count={1} className={style.tableStar} />
@@ -109,13 +104,12 @@ const ProductTable = () => {
           <div className="d-flex justify-content-between align-items-center">
             <form className="w-100 me-3">
               <div className={style.inputWrapper}>
-           
-                  <input
-                    type="text"
-                    className={style.searchInput}
-                    placeholder="Search..."
-                  />
-            
+                <input
+                  type="text"
+                  className={style.searchInput}
+                  placeholder="Search..."
+                />
+
                 <BiSearchAlt className={style.searchIcon} />
               </div>
             </form>

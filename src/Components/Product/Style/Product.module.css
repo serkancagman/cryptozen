@@ -106,6 +106,7 @@
   font-size: 12px;
   color: #a2bbd2;
   font-weight: 600;
+  margin-left: 5px;
 }
 
 .tableChange {
@@ -171,5 +172,91 @@
 
 .dNone {
   display: none !important;
+}
+
+.productDetail {
+  width: 100%;
+  height: 100%;
+}
+
+.productDetail .productDetailTop {
+  background-color: #06206D;
+  padding: 10px;
+}
+
+.productDetail .productDetailTop .productNameInfo {
+  margin-right: 15px;
+}
+
+.productDetail .productDetailTop .productNameInfo .productImageWrapper {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.productDetail .productDetailTop .productNameInfo .productImageWrapper .productImage {
+  width: 100%;
+  height: 100%;
+}
+
+.productDetail .productDetailTop .productNameInfo .productNameWrapper {
+  padding: 0 3px;
+}
+
+.productDetail .productDetailTop .productNameInfo .productNameWrapper .productName {
+  font-size: 23px;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 550;
+}
+
+.productDetail .productDetailTop .productNameInfo .productNameWrapper .productName:nth-child(1):hover {
+  color: #37a3fe !important;
+}
+
+.productDetail .productDetailTop .productNameInfo .productNameWrapper .productName:nth-child(2) {
+  margin-right: 10px;
+}
+
+.productDetail .productDetailTop .productNameInfo .productNameWrapper .productIcon {
+  font-size: 18px;
+  color: #fff;
+  margin-right: 5px;
+}
+
+.productDetail .productDetailTop .productNameInfo .productNameWrapper .productNameLong {
+  color: #fff;
+  text-decoration: underline;
+  font-family: "Inter", sans-serif;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.productDetail .productDetailTop .productNameInfo .productNameWrapper .productNameLong:hover {
+  color: #37a3fe !important;
+}
+
+.productPriceInfo {
+  margin: 0 30px;
+}
+
+.productPriceInfo .productCurrencyIcon {
+  font-size: 18px;
+  color: #a2bbd2;
+  margin-right: 5px;
+}
+
+.productPriceInfo .productPriceValue {
+  font-family: "Inter", sans-serif;
+  font-size: 23px;
+}
+
+.productPriceChange {
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  margin: 0 10px;
 }
 /*# sourceMappingURL=Product.module.css.map */
