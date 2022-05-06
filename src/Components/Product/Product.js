@@ -1,3 +1,4 @@
+import CandleChart from "Charts/CandleChart";
 import React from "react";
 import { useParams } from "react-router-dom";
 import ProductDetail from "./ProductDetail";
@@ -14,7 +15,12 @@ const Product = () => {
             <ProductTable />
           </div>
           <div className="col-lg-8">
-            <ProductDetail name={id} />
+           <div className="col-12">
+           <ProductDetail name={id} />
+           </div>
+            <div className="col-12">
+         
+            </div>
           </div>
         </div>
       </div>

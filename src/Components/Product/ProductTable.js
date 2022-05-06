@@ -26,7 +26,6 @@ const ProductTable = () => {
         title: "Coin",
         dataIndex: "symbol",
         key: "symbol",
-
         render: (text, record) => (
           <div className="d-flex align-items-center justify-content-start">
             <div className={simpleTable ? "d-none" : style.tableImgWrapper}>
@@ -51,7 +50,6 @@ const ProductTable = () => {
       {
         title: "Price",
         dataIndex: "current_price",
-
         key: "current_price",
         render: (text, record) => (
           <span className={style.tablePrice}>{record.current_price}</span>
@@ -125,6 +123,7 @@ const ProductTable = () => {
               rowClassName={(record, index) =>
                 index % 2 === 0 ? style.firstRow : style.secondRow
               }
+              rowKey="id"
               columns={columns}
               dataSource={data}
               scroll={{ y: 700 }}

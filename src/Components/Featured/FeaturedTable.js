@@ -108,6 +108,7 @@ const FeaturedTable = ({ data }) => {
         pagination={false}
         columns={columns}
         dataSource={data}
+        rowKey="id"
       />
     </>
   );

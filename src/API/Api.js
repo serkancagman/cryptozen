@@ -40,4 +40,11 @@ export const getCoinData = async (coin) => {
     `${process.env.REACT_APP_API_URL}coins/${coin}?localization=false&market_data=true&community_data=false&developer_data=true&sparkline=false`
   );
   return res.data;
-}
+};
+
+export const getCandleChartData = async (coin, currency, time) => {
+  const res = await axios.get(
+    `${process.env.REACT_APP_API_URL}coins/${coin}/ohlc?vs_currency=${currency}&days=${time}`
+  );
+  return res.data;
+};
