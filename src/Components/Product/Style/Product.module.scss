@@ -154,8 +154,7 @@
     padding: 10px;
 
     .productNameInfo {
-      margin-right: 15px;
-
+      width: 100%;
       .productImageWrapper {
         width: 60px;
         height: 60px;
@@ -205,7 +204,7 @@
   }
 }
 .productPriceInfo {
-  margin: 0 30px;
+  width: 100%;
 
   .productCurrencyIcon {
     font-size: 18px;
@@ -235,5 +234,47 @@
     font-size: 15px;
     color: #fff;
     font-family: $interFont;
+  }
+}
+
+.tradeOptions {
+  width: 100%;
+  height: 100%;
+  background-color: #233b83;
+  .tradeOptionsBar {
+    padding-top: 10px;
+
+    .tradeOptionsBarItem {
+      padding: 5px 10px;
+      background-color: transparent;
+      height: 100%;
+      width: 130px;
+    
+      cursor: pointer;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      &:hover{
+        background-color: #112f8a !important;
+      }
+      .tradeOptionsBarItemTitle {
+        max-width: 70px;
+        font-family: $interFont;
+        color: #fff;
+        font-size: 14px;
+      }
+      .tradeOptionsBarItemText {
+        font-family: $interFont;
+        color: $pColor;
+        font-size: 12px;
+      }
+    }
+  }
+}
+.selected{
+  background-color: $softBlue !important;
+
+  .tradeOptionsBarItemTitle {
+    color: $mainColor !important;
+    font-weight: 600;
   }
 }

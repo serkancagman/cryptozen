@@ -68,7 +68,7 @@ const Search = () => {
                   <li key={index} className={style.searchListItem}>
                     <Link
                       className={style.searchItemWrapper}
-                      to={`/coin/${item.id}`}
+                      to={`/market_list/${item.id}`}
                     >
                       <div className="d-flex justify-content-between align-items-center">
                         <div className="d-flex justify-content-center align-items-center">
@@ -97,7 +97,7 @@ const Search = () => {
                   <li key={index} className={style.searchListItem}>
                     <Link
                       className={style.searchItemWrapper}
-                      to={`/coin/${item.id}`}
+                      to={`/market_list/${item.id}`}
                     >
                       <div className="d-flex justify-content-between align-items-center">
                         <div className="d-flex justify-content-center align-items-center">

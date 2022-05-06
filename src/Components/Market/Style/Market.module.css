@@ -47,6 +47,7 @@
 
 .tableImgWrapper {
   width: 30px;
+  min-width: 30px;
   height: 30px;
   border-radius: 50%;
   overflow: hidden;
@@ -145,5 +146,22 @@
 .tradeBtn:hover {
   background-color: #37a3fe;
   color: #fff;
+}
+
+.marketInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.martketFade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(3, 3, 65, 0.7);
 }
 /*# sourceMappingURL=Market.module.css.map */

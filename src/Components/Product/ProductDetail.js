@@ -19,11 +19,11 @@ const ProductDetail = ({ name }) => {
   return (
     <div className={style.productDetail}>
       <div className={style.productDetailTop}>
-        <div className="d-flex align-items-center justify-content-start">
+        <div className="d-flex align-items-center justify-content-between">
           {!isLoading && !error && (
             <>
               <div className={style.productNameInfo}>
-                <div className="d-flex align-items-center justify-content-center">
+                <div className="d-flex align-items-center justify-content-start">
                   <div className={style.productImageWrapper}>
                     <img
                       src={data.image.large}

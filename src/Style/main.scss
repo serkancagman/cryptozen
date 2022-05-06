@@ -35,7 +35,7 @@ td.ant-table-column-sort {
 .ant-switch-checked {
   background-color: $green !important;
 }
-.ant-table-body{
+.ant-table-body,body{
     &::-webkit-scrollbar {
     background-color: $bgColor;
     width: 0.5em;
@@ -46,7 +46,7 @@ td.ant-table-column-sort {
   &::-webkit-scrollbar-thumb {
     background-color: $mainColor;
     border-radius: 10px;
-    size: 1px;
+    size: 1px; 
   }
 }
 .ant-table-cell-scrollbar{

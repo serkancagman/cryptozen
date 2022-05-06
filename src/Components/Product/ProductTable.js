@@ -1,5 +1,5 @@
 import React from "react";
-import { Table, Switch, Rate, Tooltip, Dropdown } from "antd";
+import { Table, Switch, Rate, Tooltip } from "antd";
 import { Link } from "react-router-dom";
 import { useQuery } from "react-query";
 import { getAllCoinList } from "API/Api";

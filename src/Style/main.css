@@ -42,7 +42,7 @@ td.ant-table-column-sort {
   background-color: #9AE66E !important;
 }
 
-.ant-table-body::-webkit-scrollbar {
+.ant-table-body::-webkit-scrollbar, body::-webkit-scrollbar {
   background-color: #0B0B47;
   width: 0.5em;
   height: 2em;
@@ -50,7 +50,7 @@ td.ant-table-column-sort {
   position: relative;
 }
 
-.ant-table-body::-webkit-scrollbar-thumb {
+.ant-table-body::-webkit-scrollbar-thumb, body::-webkit-scrollbar-thumb {
   background-color: #37a3fe;
   border-radius: 10px;
   size: 1px;
