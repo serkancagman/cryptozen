@@ -22,16 +22,26 @@ const Product = () => {
               <div className={style.tradeOptions}>
                 <div className={style.tradeOptionsBar}>
                   <div className="d-flex align-items-center justify-content-start">
-                    <div onClick={() => setSelectedOption("spot")} className={`${style.tradeOptionsBarItem} ${selectedOption === "spot" && style.selected}`}>
+                    <div
+                      onClick={() => setSelectedOption("spot")}
+                      className={`${style.tradeOptionsBarItem} ${
+                        selectedOption === "spot" && style.selected
+                      }`}
+                    >
                       <div className="d-flex justify-content-between align-items-center">
                         <span className={style.tradeOptionsBarItemTitle}>
                           Spot Trading
                         </span>
                       </div>
                     </div>
-                    <div onClick={() => setSelectedOption("cross")} className={`${style.tradeOptionsBarItem} ${selectedOption === "cross" && style.selected}`}>
-                      <div  className="d-flex justify-content-between align-items-center">
-                      <span className={style.tradeOptionsBarItemTitle}>
+                    <div
+                      onClick={() => setSelectedOption("cross")}
+                      className={`${style.tradeOptionsBarItem} ${
+                        selectedOption === "cross" && style.selected
+                      }`}
+                    >
+                      <div className="d-flex justify-content-between align-items-center">
+                        <span className={style.tradeOptionsBarItemTitle}>
                           Cross Margin
                         </span>
                         <span className={style.tradeOptionsBarItemText}>
@@ -40,9 +50,14 @@ const Product = () => {
                         </span>
                       </div>
                     </div>
-                    <div onClick={() => setSelectedOption("isolated")} className={`${style.tradeOptionsBarItem} ${selectedOption === "isolated" && style.selected}`}>
+                    <div
+                      onClick={() => setSelectedOption("isolated")}
+                      className={`${style.tradeOptionsBarItem} ${
+                        selectedOption === "isolated" && style.selected
+                      }`}
+                    >
                       <div className="d-flex justify-content-between align-items-center">
-                      <span className={style.tradeOptionsBarItemTitle}>
+                        <span className={style.tradeOptionsBarItemTitle}>
                           Isolated Margin
                         </span>
                         <span className={style.tradeOptionsBarItemText}>
@@ -51,9 +66,14 @@ const Product = () => {
                         </span>
                       </div>
                     </div>
-                    <div onClick={() => setSelectedOption("perpetual")} className={`${style.tradeOptionsBarItem} ${selectedOption === "perpetual" && style.selected}`}>
+                    <div
+                      onClick={() => setSelectedOption("perpetual")}
+                      className={`${style.tradeOptionsBarItem} ${
+                        selectedOption === "perpetual" && style.selected
+                      }`}
+                    >
                       <div className="d-flex justify-content-between align-items-center">
-                      <span className={style.tradeOptionsBarItemTitle}>
+                        <span className={style.tradeOptionsBarItemTitle}>
                           Perpetual Contract
                         </span>
                         <span className={style.tradeOptionsBarItemText}>
@@ -62,9 +82,14 @@ const Product = () => {
                         </span>
                       </div>
                     </div>
-                    <div onClick={() => setSelectedOption("leverage")} className={`${style.tradeOptionsBarItem} ${selectedOption === "leverage" && style.selected}`}>
+                    <div
+                      onClick={() => setSelectedOption("leverage")}
+                      className={`${style.tradeOptionsBarItem} ${
+                        selectedOption === "leverage" && style.selected
+                      }`}
+                    >
                       <div className="d-flex justify-content-between align-items-center">
-                      <span className={style.tradeOptionsBarItemTitle}>
+                        <span className={style.tradeOptionsBarItemTitle}>
                           Leverage Tokens
                         </span>
                         <span className={style.tradeOptionsBarItemText}>
@@ -73,14 +98,19 @@ const Product = () => {
                         </span>
                       </div>
                     </div>
-                    <div onClick={() => setSelectedOption("liquidity")} className={`${style.tradeOptionsBarItem} ${selectedOption === "liquidity" && style.selected}`}>
+                    <div
+                      onClick={() => setSelectedOption("liquidity")}
+                      className={`${style.tradeOptionsBarItem} ${
+                        selectedOption === "liquidity" && style.selected
+                      }`}
+                    >
                       <div className="d-flex justify-content-between align-items-center">
-                      <span className={style.tradeOptionsBarItemTitle}>
+                        <span className={style.tradeOptionsBarItemTitle}>
                           Liquidity Mining
                         </span>
                         <span className={style.tradeOptionsBarItemPercent}>
                           {" "}
-                          3X{" "}
+                          5.02%{" "}
                         </span>
                       </div>
                     </div>
@@ -92,7 +122,10 @@ const Product = () => {
               <div className={style.tradeOptionsMain}>
                 <div className="row">
                   <div className="col-6">
-                
+                    <BuyorSell type="Buy" />
+                  </div>
+                  <div className="col-6">
+                    <BuyorSell type="Sell" />
                   </div>
                 </div>
               </div>

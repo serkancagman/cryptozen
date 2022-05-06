@@ -2,18 +2,26 @@ import React from "react";
 import style from "./Style/Product.module.css";
 import { useQuery } from "react-query";
 import { getCoinData } from "API/Api";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { setCurrentCoin } from "Redux/CoinSlice/CoinSlice";
 import { Link } from "react-router-dom";
 import { ImBook } from "react-icons/im";
 import useNumberStep from "Hooks/useNumberStep";
 import { Rate } from "antd";
 import { TiArrowSortedDown, TiArrowSortedUp } from "react-icons/ti";
 const ProductDetail = ({ name }) => {
+  const dispatch = useDispatch();
   const { currency, currencyIcon } = useSelector((state) => state.currency);
   const { data, isLoading, error } = useQuery(["coinData", name], () =>
     getCoinData(name)
   );
-  console.log(data);
+
+  React.useEffect(() => {
+    if (data) {
+      dispatch(setCurrentCoin(data));
+    }
+  }, [data]);
+
   const shortedNumber = useNumberStep;
 
   return (
@@ -83,17 +91,21 @@ const ProductDetail = ({ name }) => {
                     }`}
                   >
                     {" "}
-                   <span> {data.market_data.market_cap_change_percentage_24h_in_currency.usd.toFixed(
-                      2
-                    )}
-                    %</span>
                     <span>
-                    {data.market_data
-                      .market_cap_change_percentage_24h_in_currency.usd > 0 ? (
-                      <TiArrowSortedUp className={style.priceUp} />
-                    ) : (
-                      <TiArrowSortedDown className={style.priceDown} />
-                    )}
+                      {" "}
+                      {data.market_data.market_cap_change_percentage_24h_in_currency.usd.toFixed(
+                        2
+                      )}
+                      %
+                    </span>
+                    <span>
+                      {data.market_data
+                        .market_cap_change_percentage_24h_in_currency.usd >
+                      0 ? (
+                        <TiArrowSortedUp className={style.priceUp} />
+                      ) : (
+                        <TiArrowSortedDown className={style.priceDown} />
+                      )}
                     </span>
                   </div>
                 </div>
@@ -115,7 +127,9 @@ const ProductDetail = ({ name }) => {
                   <div className="d-flex justify-content-center mx-2 align-items-start flex-column">
                     <span className={style.productVolumeTitle}>24H Volume</span>
                     <span className={style.productVolumeValue}>
-                      {currencyIcon +"" +shortedNumber(data.market_data.total_volume.usd)}
+                      {currencyIcon +
+                        "" +
+                        shortedNumber(data.market_data.total_volume.usd)}
                     </span>
                   </div>
                 </div>

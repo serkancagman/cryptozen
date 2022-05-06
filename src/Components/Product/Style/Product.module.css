@@ -334,4 +334,145 @@
   color: #37a3fe !important;
   font-weight: 600;
 }
+
+.tradeOptionsBarItemPercent {
+  background-color: rgba(255, 41, 41, 0.301);
+  color: #FF3F00;
+  font-family: "Inter", sans-serif;
+  padding: 0 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.tradeOptionsMain {
+  width: 100%;
+  height: 100%;
+  background-color: #06206D;
+  padding: 10px;
+}
+
+.buyorSell {
+  width: 100%;
+  padding: 5px 0;
+}
+
+.buyorSell .buyorSellTopArea {
+  border-bottom: 1px solid #2a535e;
+  padding: 5px 0;
+  width: 100%;
+}
+
+.buyorSell .buyorSellTopArea .buyorSellTitle {
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+.buyorSell .buyorSellTopArea .buyorSellButton {
+  color: #37a3fe;
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.coinName {
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+}
+
+.buyorSellSubTitle {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #fff;
+  margin-right: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.buyorSellSubTitle:hover {
+  color: #37a3fe !important;
+}
+
+.buyorSellSubTitleCount {
+  margin-right: 10px;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.buyorSellInputWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 15px 0;
+}
+
+.buyorSellInputWrapper .buyorSellInput {
+  width: 100%;
+  padding: 8px 8px 8px 150px;
+  border-radius: 5px;
+  border: 2px solid #2b4cad;
+  outline: none;
+  color: #a2bbd2;
+  font-family: "Inter", sans-serif;
+  text-align: end;
+  background-color: #233b83;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.buyorSellInputWrapper .buyorSellInput:focus {
+  border: 2px solid #37a3fe;
+}
+
+.buyorSellInputText {
+  position: absolute;
+  font-weight: 600;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #a2bbd2;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.buyText {
+  color: #9AE66E;
+}
+
+.sellText {
+  color: #FF3F00;
+}
+
+.buyorSellBtn {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.buyorSellBtn:hover {
+  outline: 3px solid #2b7dada4;
+}
+
+.buyBtn {
+  background: #9ae66e;
+  background: radial-gradient(circle, #9ae66e 0%, #74b981 100%);
+}
+
+.sellBtn {
+  background: #ff3f00;
+  background: radial-gradient(circle, #ff3f00 0%, #e67e5e 100%);
+}
 /*# sourceMappingURL=Product.module.css.map */

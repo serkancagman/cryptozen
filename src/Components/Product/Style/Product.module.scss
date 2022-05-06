@@ -249,11 +249,11 @@
       background-color: transparent;
       height: 100%;
       width: 130px;
-    
+
       cursor: pointer;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
-      &:hover{
+      &:hover {
         background-color: #112f8a !important;
       }
       .tradeOptionsBarItemTitle {
@@ -270,11 +270,145 @@
     }
   }
 }
-.selected{
+.selected {
   background-color: $softBlue !important;
 
   .tradeOptionsBarItemTitle {
     color: $mainColor !important;
     font-weight: 600;
   }
+}
+.tradeOptionsBarItemPercent{
+  background-color: rgba(255, 41, 41, 0.301);
+  color: $red;
+  font-family: $interFont;
+  padding:0 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  text-align: center;
+}
+.tradeOptionsMain {
+  width: 100%;
+  height: 100%;
+  background-color: $softBlue;
+  padding: 10px;
+}
+
+.buyorSell {
+  width: 100%;
+  padding: 5px 0;
+
+  .buyorSellTopArea {
+    border-bottom: 1px solid rgb(42, 83, 94);
+    padding: 5px 0;
+    width: 100%;
+
+    .buyorSellTitle {
+      color: #fff;
+      font-family: $interFont;
+      font-size: 16px;
+    }
+    .buyorSellButton {
+      color: $mainColor;
+      background-color: transparent;
+      border: none;
+      font-weight: 600;
+      font-size: 14px;
+    }
+  }
+}
+.coinName {
+  font-family: $interFont;
+  text-transform: uppercase;
+}
+.buyorSellSubTitle {
+  font-family: $interFont;
+  font-size: 14px;
+  color: #fff;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: $clastrans;
+
+  &:hover {
+    color: $mainColor !important;
+  }
+}
+
+.buyorSellSubTitleCount {
+  margin-right: 10px;
+  font-size: 14px;
+  font-family: $interFont;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.buyorSellInputWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 15px 0;
+
+  .buyorSellInput {
+    width: 100%;
+    padding: 8px 8px 8px 150px;
+    border-radius: 5px;
+    border: 2px solid #2b4cad;
+    outline: none;
+    color: $pColor;
+    font-family: $interFont;
+    text-align: end;
+    background-color: #233b83;
+    transition: $clastrans;
+    &:focus {
+      border: 2px solid $mainColor;
+    }
+  }
+}
+.buyorSellInputText {
+  position: absolute;
+  font-weight: 600;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $pColor;
+  font-family: $interFont;
+  font-size: 14px;
+}
+
+.buyText {
+  color: $green;
+}
+.sellText {
+  color: $red;
+}
+.buyorSellBtn {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-family: $interFont;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+  outline: none;
+  &:hover {
+    outline: 3px solid #2b7dada4;
+  }
+}
+.buyBtn {
+  background: rgb(154, 230, 110);
+  background: radial-gradient(
+    circle,
+    rgba(154, 230, 110, 1) 0%,
+    rgba(116, 185, 129, 1) 100%
+  );
+}
+
+.sellBtn {
+  background: rgb(255, 63, 0);
+  background: radial-gradient(
+    circle,
+    rgba(255, 63, 0, 1) 0%,
+    rgba(230, 126, 94, 1) 100%
+  );
 }
