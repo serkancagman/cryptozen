@@ -1,3 +1,4 @@
+import CandleChart from "Charts/CandleChart";
 import React from "react";
 import { useParams } from "react-router-dom";
 import BuyorSell from "./BuyorSell";
@@ -17,6 +18,9 @@ const Product = () => {
           <div className="col-lg-8">
             <div className="col-12">
               <ProductDetail name={id} />
+            </div>
+            <div className="col-12">
+              <CandleChart coin={id} />
             </div>
             <div className="col-12">
               <div className={style.tradeOptions}>

@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 const BuyorSell = ({ type }) => {
   const { coin, coin_price } = useSelector((state) => state.current_coin);
   const [coinPrice, setCoinPrice] = React.useState(coin_price);
+  console.log(coin_price);
   return (
     <div className={style.buyorSell}>
       <div className={style.buyorSellTopArea}>
@@ -45,7 +46,7 @@ const BuyorSell = ({ type }) => {
               type="text"
               className={style.buyorSellInput}
               placeholder="0"
-              value={coinPrice}
+              value={coin_price}
               onChange={(e) => setCoinPrice(e.target.value)}
             />
             <span className={style.buyorSellInputText}>

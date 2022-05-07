@@ -10,7 +10,7 @@ const CandleChart = ({ coin }) => {
   let useCoinName = coin.toLowerCase();
   let useCurrency = currency.toLowerCase();
   const { data, isLoading, error } = useQuery(
-    ["Chart data", currency, useCoinName],
+    ["Candle Chart data", currency, useCoinName],
     () => getCandleChartData(useCoinName, useCurrency, 1)
   );
 
@@ -19,25 +19,26 @@ const CandleChart = ({ coin }) => {
     if (data) {
       data.forEach((item) => {
         useData.push({
-          trade_date: moment(item[0]).format("H"),
-          close: item[1],
-          open: item[2],
+          trade_date: moment(item[0]).format("YYYY-MM-DD:HH:mm"),
+          open: item[1],
+          high: item[2],
           low: item[3],
-          high: item[4],
+          close: item[4],
         });
       });
     }
     setChartData(useData);
   }, [data]);
-
+  console.log(chartData);
   const config = {
-    appendPadding: [0, 10, 0, 0],
+    appendPadding: [10, 0, 10, 30],
     data: chartData,
     xField: "trade_date",
-
     yField: ["open", "close", "high", "low"],
-    slider: {},
-
+    slider: {
+      scrollable: true,
+    },
+    seriesField: "close",
     risingFill: "#9AE66E",
     fallingFill: "#FF3F00",
   };

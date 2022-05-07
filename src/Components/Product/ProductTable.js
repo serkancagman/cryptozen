@@ -126,7 +126,7 @@ const ProductTable = () => {
               rowKey="id"
               columns={columns}
               dataSource={data}
-              scroll={{ y: 700 }}
+              scroll={{ y: 825 }}
               pagination={false}
               size="small"
             />

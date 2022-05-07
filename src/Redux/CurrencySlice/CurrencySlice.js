@@ -3,8 +3,8 @@ import { createSlice } from "@reduxjs/toolkit";
 export const currencySlice = createSlice({
   name: "currency",
   initialState: {
-    currency: "USD",
-    currencyIcon: "$",
+    currency: JSON.parse(localStorage.getItem("currency")).type || "USD",
+    currencyIcon: JSON.parse(localStorage.getItem("currency")).icon || "$",
   },
   reducers: {
     setCurrency: (state, action) => {

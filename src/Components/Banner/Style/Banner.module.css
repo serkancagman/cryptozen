@@ -319,7 +319,7 @@
 .bannerImageFourth {
   position: absolute;
   right: 0;
-  z-index: 99;
+  z-index: 5;
   top: 0;
   -webkit-animation: transition_image 3s infinite linear;
           animation: transition_image 3s infinite linear;
@@ -329,14 +329,14 @@
   position: absolute;
   bottom: 50px;
   right: 120px;
-  z-index: 99;
+  z-index: 5;
 }
 
 .bannerImageSixth {
   position: absolute;
   top: 50px;
   left: 100px;
-  z-index: 99;
+  z-index: 5;
 }
 
 @-webkit-keyframes transition_image {
@@ -380,7 +380,7 @@
   bottom: 0;
   background-color: #06206D;
   padding: 20px;
-  z-index: 99;
+  z-index: 5;
   border-radius: 10px;
 }
 

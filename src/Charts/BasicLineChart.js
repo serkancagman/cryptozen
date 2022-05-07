@@ -7,8 +7,9 @@ const BasicLineChart = ({ coin }) => {
   const [chartData, setChartData] = React.useState([]);
   const { currency } = useSelector((state) => state.currency);
   let useCoinName = coin.id.toLowerCase();
-  const { data, isLoading, error } = useQuery(["Chart data",currency,useCoinName], () =>
-    getCoinChartData(useCoinName, currency)
+  const { data, isLoading, error } = useQuery(
+    ["Chart data", currency, useCoinName],
+    () => getCoinChartData(useCoinName, currency)
   );
   React.useEffect(() => {
     if (data) {
@@ -23,6 +24,11 @@ const BasicLineChart = ({ coin }) => {
     height: 500,
     width: 180,
     autoFit: false,
+    areaStyle:{
+      
+    
+      fill:currentColor
+    },
     data: chartData,
     smooth: true,
     color: currentColor,
