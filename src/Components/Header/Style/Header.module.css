@@ -8,12 +8,20 @@
   position: fixed;
   top: 0;
   left: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   z-index: 99;
 }
 
 .header .logo {
   width: 200px;
   height: auto;
+}
+
+.scrolledHeader {
+  background-color: #06206D;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .navItem {

@@ -20,8 +20,26 @@ import { appList, helpList } from "./NavbarItems/RightNavItems";
 import GlobalList from "./NavbarItems/GlobalList";
 import Search from "./NavbarItems/Search";
 const Header = () => {
+  const [isScrolled, setIsScrolled] = React.useState(false);
+  const [pageHeight, setPageHeight] = React.useState({ height: 0 });
+  React.useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleScroll = () => {
+    const scrollTop = window.pageYOffset;
+    setPageHeight({ height: scrollTop });
+  };
+  React.useEffect(() => {
+    if (pageHeight.height > 0) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  }, [pageHeight.height]);
+
   return (
-    <header className={style.header}>
+    <header className={`${style.header} ${isScrolled && style.scrolledHeader}`}>
       <div className="container-fluid">
         <nav className="navbar navbar-expand-lg ">
           <Link to="/" className="navbar-brand">
