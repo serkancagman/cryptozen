@@ -24,11 +24,6 @@ const BasicLineChart = ({ coin }) => {
     height: 500,
     width: 180,
     autoFit: false,
-    areaStyle:{
-      
-    
-      fill:currentColor
-    },
     data: chartData,
     smooth: true,
     color: currentColor,
