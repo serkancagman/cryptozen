@@ -12,7 +12,7 @@ const Contact = () => {
           <HeaderTag title="Contacts" />
           <h2 className={style.contactTitle}>Stay Update With Us</h2>
         </div>
-        <div className="row g-3">
+        <div className="row ">
           <div className="col-md-6 col-lg-4 text-center">
             <div className="d-flex justify-content-center align-items-center">
               <div className={style.contactIconWrapper}>
@@ -54,7 +54,7 @@ const Contact = () => {
         </div>
         <div className={style.contactForm}>
           <form>
-            <div className="row g-3">
+            <div className="row ">
               <div className="col-lg-6 col-md-6">
                 <input type="text" placeholder="Name" className={style.input} />
               </div>
@@ -66,7 +66,7 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <div className="row g-3">
+            <div className="row">
               <div className="col-lg-6 col-md-6">
                 <input
                   type="text"

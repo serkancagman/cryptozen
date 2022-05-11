@@ -21,7 +21,7 @@ const BasicLineChart = ({ coin }) => {
     coin.market_cap_change_percentage_24h > 0 ? "#9AE66E" : "#FF3F00";
 
   const config = {
-    height: 500,
+    height: 220,
     width: 180,
     autoFit: false,
     data: chartData,

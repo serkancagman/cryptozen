@@ -124,11 +124,11 @@ const Product = () => {
             </div>
             <div className="col-12">
               <div className={style.tradeOptionsMain}>
-                <div className="row">
-                  <div className="col-6">
+                <div className="row g-3">
+                  <div className="col-lg-6 col-md-12">
                     <BuyorSell type="Buy" />
                   </div>
-                  <div className="col-6">
+                  <div className="col-lg-6 col-md-12">
                     <BuyorSell type="Sell" />
                   </div>
                 </div>

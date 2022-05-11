@@ -5,6 +5,7 @@ import style from "./Style/Featured.module.css";
 import BasicLineChart from "Charts/BasicLineChart";
 import { useSelector } from "react-redux";
 import useWindowSize from "Hooks/useWindowSize";
+
 const FeaturedTable = ({ data }) => {
   const { currency, currencyIcon } = useSelector((state) => state.currency);
   const { width } = useWindowSize();
