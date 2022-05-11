@@ -4,7 +4,7 @@ import { BsCalendar4Week, BsPlusLg } from "react-icons/bs";
 import { Link } from "react-router-dom";
 const NewsItem = ({ imgUrl, date, title, text }) => {
   return (
-    <div className="col-md-12 col-lg-4">
+    <div className="col-md-6 col-lg-4">
       <div className={style.newsItem}>
         <div className={style.newsItemImage}>
           <img src={imgUrl} alt="news" className={style.newImg} />

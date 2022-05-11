@@ -18,7 +18,7 @@ const Faq = () => {
             Seamlessly generate user friendly content.
           </p>
         </div>
-        <div className="d-flex justify-content-center align-items-center">
+        <div className="d-flex flex-wrap justify-content-center align-items-center">
           <button
             className={`${style.tab} ${
               activeTab === "first" ? style.active : ""
