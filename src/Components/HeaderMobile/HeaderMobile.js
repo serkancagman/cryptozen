@@ -4,7 +4,14 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { Link } from "react-router-dom";
 import logoImg from "Assets/Logo/logo.png";
-import { Markets, BuyCrypto, Trade, Earn, News } from "./NavbarItems";
+import {
+  Markets,
+  BuyCrypto,
+  Trade,
+  Earn,
+  News,
+  Giveaways,
+} from "./NavbarItems";
 const HeaderMobile = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
@@ -48,9 +55,21 @@ const HeaderMobile = () => {
           </li>
           <li className={style.nav_item}>
             <span to="/buy" className={style.nav_link}>
+              Copy Trading <span className={style.nav_link_tag}>NEW</span>
+            </span>
+          </li>
+
+          <li className={style.nav_item}>
+            <span to="/buy" className={style.nav_link}>
               News <TiArrowSortedDown className={style.nav_icon} />
             </span>
             <News />
+          </li>
+          <li className={style.nav_item}>
+            <span to="/buy" className={style.nav_link}>
+              My Referrals <TiArrowSortedDown className={style.nav_icon} />
+            </span>
+            <Giveaways />
           </li>
         </ul>
       </nav>

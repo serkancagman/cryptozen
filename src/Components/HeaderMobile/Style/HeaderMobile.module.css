@@ -163,4 +163,16 @@
   color: #b3b3b3;
   padding: 10px;
 }
+
+.nav_link_tag {
+  font-size: 10px;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, right top, left top, from(#ff4a3c), to(#ff8031));
+  background: linear-gradient(270deg, #ff4a3c 0%, #ff8031 100%);
+  padding: 0 2px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  color: #fff !important;
+}
 /*# sourceMappingURL=HeaderMobile.module.css.map */
