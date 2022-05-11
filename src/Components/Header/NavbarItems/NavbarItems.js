@@ -45,11 +45,7 @@ import {
   RiNotificationBadgeFill,
 } from "react-icons/ri";
 import { SiFacepunch } from "react-icons/si";
-import {
-  FaFileInvoiceDollar,
-  FaCubes,
-  FaCoins,
-} from "react-icons/fa";
+import { FaFileInvoiceDollar, FaCubes, FaCoins } from "react-icons/fa";
 // Buy List Dropdown Menu
 export const buyList = (
   <div className={style.navSubWrapper}>

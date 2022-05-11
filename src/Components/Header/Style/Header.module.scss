@@ -20,7 +20,7 @@
 }
 .navItem {
   margin: 0 10px;
-
+  list-style: none;
   &:hover {
     .navIconUp {
       transform: rotate(180deg);

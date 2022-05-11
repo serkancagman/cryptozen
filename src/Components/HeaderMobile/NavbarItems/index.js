@@ -5,3 +5,5 @@ export {default as Earn} from "./Earn";
 export {default as News} from "./News";
 export {default as Giveaways} from "./Giveaways";
 export {default as NftBox} from "./NftBox";
+export {default as Languages} from "./Languages";
+export {default as Currency} from "./Currency";

@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./Style/HeaderMobile.module.css";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { BsCurrencyExchange } from "react-icons/bs";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { Link } from "react-router-dom";
 import { RiGlobalFill } from "react-icons/ri";
@@ -13,8 +14,11 @@ import {
   News,
   Giveaways,
   NftBox,
+  Languages,
+  Currency,
 } from "./NavbarItems";
-import Languages from "./NavbarItems/Languages";
+import Search from "Components/Header/NavbarItems/Search";
+
 const HeaderMobile = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
@@ -23,12 +27,15 @@ const HeaderMobile = () => {
         <Link to="/" className={style.logo}>
           <img src={logoImg} className={style.logoImg} alt="logo" />
         </Link>
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className={`btn ${style.btn_menu}`}
-        >
-          <GiHamburgerMenu />
-        </button>
+        <div className="d-flex align-items-center justify-content-end">
+          <Search />
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className={`btn ${style.btn_menu}`}
+          >
+            <GiHamburgerMenu />
+          </button>
+        </div>
       </div>
       <nav className={`${style.nav} ${isOpen && style.show_nav}`}>
         <ul className={style.nav_list}>
@@ -90,6 +97,12 @@ const HeaderMobile = () => {
               <RiGlobalFill className={style.nav_icon} /> Language
             </span>
             <Languages />
+          </li>
+          <li className={style.nav_item}>
+            <span to="/#" className={style.nav_link}>
+              <BsCurrencyExchange className={style.nav_icon} /> Currency
+            </span>
+            <Currency />
           </li>
         </ul>
       </nav>
