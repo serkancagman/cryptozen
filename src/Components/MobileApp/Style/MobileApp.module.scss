@@ -38,7 +38,7 @@
 }
 .mobileAppImg {
   position: absolute;
-  right: 100px;
+  right: 10px;
   top: -25%;
   animation: float_phone 3s ease-in-out infinite;
 }
@@ -73,5 +73,12 @@
   }
   100% {
     transform: translateY(20px);
+  }
+}
+
+
+@media screen and (max-width: 991.99px) {
+  .mobileAppImg{
+    display: none !important;
   }
 }

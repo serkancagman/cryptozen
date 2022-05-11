@@ -41,7 +41,7 @@
 
 .mobileAppImg {
   position: absolute;
-  right: 100px;
+  right: 10px;
   top: -25%;
   -webkit-animation: float_phone 3s ease-in-out infinite;
           animation: float_phone 3s ease-in-out infinite;
@@ -116,6 +116,12 @@
   100% {
     -webkit-transform: translateY(20px);
             transform: translateY(20px);
+  }
+}
+
+@media screen and (max-width: 991.99px) {
+  .mobileAppImg {
+    display: none !important;
   }
 }
 /*# sourceMappingURL=MobileApp.module.css.map */

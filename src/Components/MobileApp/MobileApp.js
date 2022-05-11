@@ -40,7 +40,8 @@ const MobileApp = () => {
               </div>
             </div>
             <div className="col-md-12 col-lg-6">
-              <div className={style.mobileAppImg}>
+            <div className={style.phone_wrapper}>
+            <div className={style.mobileAppImg}>
                 <div className={style.mobileAppInner}>
                   <img src={phoneImg} alt="phone" className="img-fluid" />
                   <div className={style.phoneIcon}>
@@ -52,6 +53,7 @@ const MobileApp = () => {
                   </div>
                 </div>
               </div>
+            </div>
             </div>
           </div>
         </div>

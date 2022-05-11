@@ -29,7 +29,7 @@ const CandleChart = ({ coin }) => {
     }
     setChartData(useData);
   }, [data]);
-  console.log(chartData);
+
   const config = {
     appendPadding: [10, 0, 10, 0],
     data: chartData,
