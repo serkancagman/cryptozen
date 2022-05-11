@@ -11,6 +11,7 @@ import {
   Earn,
   News,
   Giveaways,
+  NftBox,
 } from "./NavbarItems";
 const HeaderMobile = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -30,46 +31,57 @@ const HeaderMobile = () => {
       <nav className={`${style.nav} ${isOpen && style.show_nav}`}>
         <ul className={style.nav_list}>
           <li className={style.nav_item}>
-            <span to="/buy" className={style.nav_link}>
+            <span to="/#" className={style.nav_link}>
               Buy Crypto <TiArrowSortedDown className={style.nav_icon} />
             </span>
             <BuyCrypto />
           </li>
           <li className={style.nav_item}>
-            <span to="/buy" className={style.nav_link}>
+            <span to="/#" className={style.nav_link}>
               Markets <TiArrowSortedDown className={style.nav_icon} />
             </span>
             <Markets />
           </li>
           <li className={style.nav_item}>
-            <span to="/buy" className={style.nav_link}>
+            <span to="/#" className={style.nav_link}>
               Trade <TiArrowSortedDown className={style.nav_icon} />
             </span>
             <Trade />
           </li>
           <li className={style.nav_item}>
-            <span to="/buy" className={style.nav_link}>
+            <span to="/#" className={style.nav_link}>
               Earn <TiArrowSortedDown className={style.nav_icon} />
             </span>
             <Earn />
           </li>
           <li className={style.nav_item}>
-            <span to="/buy" className={style.nav_link}>
+            <span to="/#" className={style.nav_link}>
               Copy Trading <span className={style.nav_link_tag}>NEW</span>
             </span>
           </li>
-
           <li className={style.nav_item}>
-            <span to="/buy" className={style.nav_link}>
+            <span to="/#" className={style.nav_link}>
               News <TiArrowSortedDown className={style.nav_icon} />
             </span>
             <News />
           </li>
           <li className={style.nav_item}>
-            <span to="/buy" className={style.nav_link}>
-              My Referrals <TiArrowSortedDown className={style.nav_icon} />
+            <span to="/#" className={style.nav_link}>
+              Giveaways <TiArrowSortedDown className={style.nav_icon} />
             </span>
             <Giveaways />
+          </li>
+          <li className={style.nav_item}>
+            <span to="/#" className={style.nav_link}>
+              NFT Box <span className={style.nav_link_tag}>HOT</span>{" "}
+              <TiArrowSortedDown className={style.nav_icon} />
+            </span>
+            <NftBox />
+          </li>
+          <li className={style.nav_item}>
+            <span to="/#" className={style.nav_link}>
+              Startup 
+            </span>
           </li>
         </ul>
       </nav>

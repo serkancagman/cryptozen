@@ -4,3 +4,4 @@ export {default as Trade} from "./Trade";
 export {default as Earn} from "./Earn";
 export {default as News} from "./News";
 export {default as Giveaways} from "./Giveaways";
+export {default as NftBox} from "./NftBox";
