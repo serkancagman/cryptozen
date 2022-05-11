@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { BsCurrencyExchange } from "react-icons/bs";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { Link } from "react-router-dom";
-import { RiGlobalFill } from "react-icons/ri";
+import { RiCustomerService2Fill, RiGlobalFill } from "react-icons/ri";
 import logoImg from "Assets/Logo/logo.png";
 import {
   Markets,
@@ -16,6 +16,7 @@ import {
   NftBox,
   Languages,
   Currency,
+  Help,
 } from "./NavbarItems";
 import Search from "Components/Header/NavbarItems/Search";
 
@@ -103,6 +104,12 @@ const HeaderMobile = () => {
               <BsCurrencyExchange className={style.nav_icon} /> Currency
             </span>
             <Currency />
+          </li>
+          <li className={style.nav_item}>
+            <span to="/#" className={style.nav_link}>
+              <RiCustomerService2Fill className={style.nav_icon} /> Customer Service
+            </span>
+            <Help />
           </li>
         </ul>
       </nav>

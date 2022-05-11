@@ -157,6 +157,11 @@
   color: #a2bbd2;
 }
 
+.nav_icon {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
 .nav_link_sub_header {
   text-transform: uppercase;
   font-weight: 600;

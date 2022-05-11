@@ -43,9 +43,9 @@ const Header = () => {
   }, [pageHeight.height]);
 
   React.useEffect(() => {
-    if (window.innerWidth < 1020) {
+    if (window.innerWidth < 1054) {
       setIsMobile(true);
-    } else if (window.innerWidth > 1020 && isMobile) {
+    } else if (window.innerWidth > 1054 && isMobile) {
       setIsMobile(false);
     }
   }, [isMobile, width]);
