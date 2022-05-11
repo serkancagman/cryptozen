@@ -17,11 +17,9 @@ const PopularItem = ({ coin }) => {
           </div>
           <div className="d-flex flex-column align-items-end justify-content-between">
             <span className={style.coinTimeType}>24h</span>
-
             <div className={style.chart}>
               <BasicLineChart coin={coin} />
             </div>
-
             <span
               className={`${style.marketCapChange} ${
                 coin.market_cap_change_percentage_24h > 0
