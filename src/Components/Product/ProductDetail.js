@@ -27,7 +27,7 @@ const ProductDetail = ({ name }) => {
   return (
     <div className={style.productDetail}>
       <div className={style.productDetailTop}>
-        <div className="d-flex align-items-center justify-content-between">
+        <div className="d-flex align-items-center flex-wrap justify-content-between">
           {!isLoading && !error && (
             <>
               <div className={style.productNameInfo}>

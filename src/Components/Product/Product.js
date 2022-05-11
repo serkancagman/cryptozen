@@ -25,7 +25,7 @@ const Product = () => {
             <div className="col-12">
               <div className={style.tradeOptions}>
                 <div className={style.tradeOptionsBar}>
-                  <div className="d-flex align-items-center justify-content-start">
+                  <div className="d-flex align-items-center flex-wrap justify-content-start">
                     <div
                       onClick={() => setSelectedOption("spot")}
                       className={`${style.tradeOptionsBarItem} ${

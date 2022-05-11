@@ -6,8 +6,18 @@ import { Table } from "antd";
 import { Link } from "react-router-dom";
 import { BsArrowUp, BsArrowDown } from "react-icons/bs";
 import { useSelector } from "react-redux";
+import useWindowSize from "Hooks/useWindowSize";
 const MarketTable = () => {
   const { currency, currencyIcon } = useSelector((state) => state.currency);
+  const { width } = useWindowSize();
+  const [isMobile, setIsMobile] = React.useState(false);
+  React.useEffect(() => {
+    if (width < 992) {
+      setIsMobile(true);
+    } else {
+      return;
+    }
+  }, [width]);
   const { data, isLoading, error } = useQuery(["allCoinList", currency], () =>
     getAllCoinList(currency)
   );
@@ -143,7 +153,7 @@ const MarketTable = () => {
           columns={columns}
           rowKey="id"
           dataSource={data}
-          scroll={{ y: "calc(100vh - 300px)" }}
+          scroll={{ y: "calc(100vh - 300px)",x : isMobile }}
         />
       )}
     </>

@@ -9,7 +9,7 @@ const BuyorSell = ({ type }) => {
   return (
     <div className={style.buyorSell}>
       <div className={style.buyorSellTopArea}>
-        <div className="d-flex justify-content-between align-items-center">
+        <div className="d-flex justify-content-between  align-items-center">
           <span className={style.buyorSellTitle}>
             {type}
             <span className={style.coinName}> {coin}</span>
@@ -17,7 +17,7 @@ const BuyorSell = ({ type }) => {
           <button className={style.buyorSellButton}>Stop Order</button>
         </div>
       </div>
-      <div className="d-flex my-1 justify-content-start align-items-center">
+      <div className="d-flex my-1 justify-content-start flex-wrap align-items-center">
         <span className={style.buyorSellSubTitle}>My balance</span>
         <span
           className={`${style.buyorSellSubTitleCount} ${
@@ -29,7 +29,7 @@ const BuyorSell = ({ type }) => {
         <span className={style.buyorSellSubTitle}>Deposit</span>
         <span className={style.buyorSellSubTitle}>Withdraw</span>
       </div>
-      <div className="d-flex my-1 justify-content-start align-items-center">
+      <div className="d-flex my-1 justify-content-start flex-wrap align-items-center">
         <span className={style.buyorSellSubTitle}>Obtainable</span>
         <span
           className={`${style.buyorSellSubTitleCount} ${
