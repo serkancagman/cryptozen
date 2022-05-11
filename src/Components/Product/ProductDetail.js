@@ -9,6 +9,7 @@ import { ImBook } from "react-icons/im";
 import useNumberStep from "Hooks/useNumberStep";
 import { Rate } from "antd";
 import { TiArrowSortedDown, TiArrowSortedUp } from "react-icons/ti";
+import Preloader from "Components/PreLoader/Preloader";
 const ProductDetail = ({ name }) => {
   const dispatch = useDispatch();
   const { currency, currencyIcon } = useSelector((state) => state.currency);
@@ -28,7 +29,7 @@ const ProductDetail = ({ name }) => {
     <div className={style.productDetail}>
       <div className={style.productDetailTop}>
         <div className={style.product_top_wrapper}>
-          {!isLoading && !error && (
+          {!isLoading && !error ? (
             <>
               <div className={style.productNameInfo}>
                 <div className="d-flex align-items-center justify-content-start">
@@ -140,7 +141,7 @@ const ProductDetail = ({ name }) => {
                 </div>
               </div>
             </>
-          )}
+          ) :<Preloader />}
         </div>
       </div>
     </div>

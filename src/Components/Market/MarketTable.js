@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { BsArrowUp, BsArrowDown } from "react-icons/bs";
 import { useSelector } from "react-redux";
 import useWindowSize from "Hooks/useWindowSize";
+import Preloader from "Components/PreLoader/Preloader";
 const MarketTable = () => {
   const { currency, currencyIcon } = useSelector((state) => state.currency);
   const { width } = useWindowSize();
@@ -143,7 +144,7 @@ const MarketTable = () => {
 
   return (
     <>
-      {!isLoading && !error && (
+      {!isLoading && !error ? (
         <Table
           rowClassName={(record, index) =>
             index % 2 === 0 ? style.firstRow : style.secondRow
@@ -155,7 +156,7 @@ const MarketTable = () => {
           dataSource={data}
           scroll={{ y: "calc(100vh - 300px)",x : isMobile }}
         />
-      )}
+      ) : <Preloader />}
     </>
   );
 };

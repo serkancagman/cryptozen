@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 import { BiSearchAlt } from "react-icons/bi";
 import style from "./Style/Product.module.css";
 import useNumberStep from "Hooks/useNumberStep";
+import Preloader from "Components/PreLoader/Preloader";
 const ProductTable = () => {
   const [simpleTable, setSimpleTable] = React.useState(false);
   const { currency, currencyIcon } = useSelector((state) => state.currency);
@@ -117,7 +118,7 @@ const ProductTable = () => {
           </div>
         </div>
         <div className={style.tableBody}>
-          {!isLoading && !error && (
+          {!isLoading && !error ? (
             <Table
               className={style.tableProduct}
               rowClassName={(record, index) =>
@@ -130,6 +131,8 @@ const ProductTable = () => {
               size="small"
               scroll={{ y: 825 }}
             />
+          ) : (
+            <Preloader />
           )}
         </div>
       </div>

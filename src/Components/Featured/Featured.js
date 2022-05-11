@@ -10,6 +10,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import PromotionCarousel from "./PromotionCarousel";
 import { useSelector } from "react-redux";
 import HeaderTag from "Components/HeaderTag/HeaderTag";
+import Preloader from "Components/PreLoader/Preloader";
 const TopList = () => {
   const {currency} = useSelector(state => state.currency);
 
@@ -33,7 +34,7 @@ const TopList = () => {
           )}
         </div>
         <div className={style.tableWrapper}>
-          {!isLoading && !error && <FeaturedTable data={data} />}
+          {!isLoading && !error ? <FeaturedTable data={data} /> : <Preloader />}
           <div className="d-flex justify-content-center align-items-center my-3">
             <Link to="/market_list" className={style.viewAll}>
               {" "}
