@@ -112,7 +112,7 @@ const Footer = () => {
           </div>
         </div>
         <div className={style.footerBottom}>
-          <div className="d-flex justify-content-between align-items-center">
+          <div className={style.footerBottomInner}>
             <h5 className={style.footerBottomTitle}>
               {" "}
               Copyright © 2022 Developed by Serkan Çağman with{" "}

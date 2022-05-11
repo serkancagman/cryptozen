@@ -27,7 +27,7 @@ const ProductDetail = ({ name }) => {
   return (
     <div className={style.productDetail}>
       <div className={style.productDetailTop}>
-        <div className="d-flex align-items-center flex-wrap justify-content-between">
+        <div className={style.product_top_wrapper}>
           {!isLoading && !error && (
             <>
               <div className={style.productNameInfo}>
@@ -64,14 +64,28 @@ const ProductDetail = ({ name }) => {
                   </div>
                 </div>
               </div>
-              <div className={style.productPriceInfo}>
-                <div className="d-flex justify-content-center align-items-center">
+              <div className={style.priceandvalue_wrapper}>
+                <div className={style.productPriceInfo}>
                   <div className="d-flex justify-content-center align-items-center">
-                    <span className={style.productCurrencyIcon}>
-                      {currencyIcon}
-                    </span>
-                    <span
-                      className={`${style.productPriceValue} ${
+                    <div className="d-flex justify-content-center align-items-center">
+                      <span className={style.productCurrencyIcon}>
+                        {currencyIcon}
+                      </span>
+                      <span
+                        className={`${style.productPriceValue} ${
+                          data.market_data
+                            .market_cap_change_percentage_24h_in_currency.usd >
+                          0
+                            ? style.priceUp
+                            : style.priceDown
+                        }`}
+                      >
+                        {" "}
+                        {data.market_data.current_price.usd}
+                      </span>
+                    </div>
+                    <div
+                      className={`${style.productPriceChange} ${
                         data.market_data
                           .market_cap_change_percentage_24h_in_currency.usd > 0
                           ? style.priceUp
@@ -79,58 +93,49 @@ const ProductDetail = ({ name }) => {
                       }`}
                     >
                       {" "}
-                      {data.market_data.current_price.usd}
-                    </span>
-                  </div>
-                  <div
-                    className={`${style.productPriceChange} ${
-                      data.market_data
-                        .market_cap_change_percentage_24h_in_currency.usd > 0
-                        ? style.priceUp
-                        : style.priceDown
-                    }`}
-                  >
-                    {" "}
-                    <span>
-                      {" "}
-                      {data.market_data.market_cap_change_percentage_24h_in_currency.usd.toFixed(
-                        2
-                      )}
-                      %
-                    </span>
-                    <span>
-                      {data.market_data
-                        .market_cap_change_percentage_24h_in_currency.usd >
-                      0 ? (
-                        <TiArrowSortedUp className={style.priceUp} />
-                      ) : (
-                        <TiArrowSortedDown className={style.priceDown} />
-                      )}
-                    </span>
+                      <span>
+                        {" "}
+                        {data.market_data.market_cap_change_percentage_24h_in_currency.usd.toFixed(
+                          2
+                        )}
+                        %
+                      </span>
+                      <span>
+                        {data.market_data
+                          .market_cap_change_percentage_24h_in_currency.usd >
+                        0 ? (
+                          <TiArrowSortedUp className={style.priceUp} />
+                        ) : (
+                          <TiArrowSortedDown className={style.priceDown} />
+                        )}
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className={style.productVolumeInfo}>
-                <div className="d-flex justify-content-center align-items-center">
-                  <div className="d-flex justify-content-center mx-2 align-items-start flex-column">
-                    <span className={style.productVolumeTitle}>High</span>
-                    <span className={style.productVolumeValue}>
-                      {data.market_data.high_24h.usd}
-                    </span>
-                  </div>
-                  <div className="d-flex justify-content-center mx-2 align-items-start flex-column">
-                    <span className={style.productVolumeTitle}>Low</span>
-                    <span className={style.productVolumeValue}>
-                      {data.market_data.low_24h.usd}
-                    </span>
-                  </div>
-                  <div className="d-flex justify-content-center mx-2 align-items-start flex-column">
-                    <span className={style.productVolumeTitle}>24H Volume</span>
-                    <span className={style.productVolumeValue}>
-                      {currencyIcon +
-                        "" +
-                        shortedNumber(data.market_data.total_volume.usd)}
-                    </span>
+                <div className={style.productVolumeInfo}>
+                  <div className="d-flex justify-content-center align-items-center">
+                    <div className="d-flex justify-content-center mx-2 align-items-start flex-column">
+                      <span className={style.productVolumeTitle}>High</span>
+                      <span className={style.productVolumeValue}>
+                        {data.market_data.high_24h.usd}
+                      </span>
+                    </div>
+                    <div className="d-flex justify-content-center mx-2 align-items-start flex-column">
+                      <span className={style.productVolumeTitle}>Low</span>
+                      <span className={style.productVolumeValue}>
+                        {data.market_data.low_24h.usd}
+                      </span>
+                    </div>
+                    <div className="d-flex justify-content-center mx-2 align-items-start flex-column">
+                      <span className={style.productVolumeTitle}>
+                        24H Volume
+                      </span>
+                      <span className={style.productVolumeValue}>
+                        {currencyIcon +
+                          "" +
+                          shortedNumber(data.market_data.total_volume.usd)}
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>

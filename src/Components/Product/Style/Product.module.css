@@ -185,7 +185,7 @@
 }
 
 .productDetail .productDetailTop .productNameInfo {
-  width: 100%;
+  height: 100%;
 }
 
 .productDetail .productDetailTop .productNameInfo .productImageWrapper {
@@ -474,5 +474,68 @@
 .sellBtn {
   background: #ff3f00;
   background: radial-gradient(circle, #ff3f00 0%, #e67e5e 100%);
+}
+
+.product_top_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.priceandvalue_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 991.98px) {
+  .product_row {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .priceandvalue_wrapper {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+}
+
+@media screen and (max-width: 500.98px) {
+  .product_top_wrapper {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .productNameInfo {
+    margin-bottom: 20px !important;
+  }
 }
 /*# sourceMappingURL=Product.module.css.map */

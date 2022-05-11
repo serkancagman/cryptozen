@@ -31,7 +31,7 @@ const CandleChart = ({ coin }) => {
   }, [data]);
   console.log(chartData);
   const config = {
-    appendPadding: [10, 0, 10, 30],
+    appendPadding: [10, 0, 10, 0],
     data: chartData,
     xField: "trade_date",
     yField: ["open", "close", "high", "low"],

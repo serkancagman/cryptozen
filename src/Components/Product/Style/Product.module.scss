@@ -154,7 +154,7 @@
     padding: 10px;
 
     .productNameInfo {
-      width: 100%;
+      height: 100%;
       .productImageWrapper {
         width: 60px;
         height: 60px;
@@ -278,11 +278,11 @@
     font-weight: 600;
   }
 }
-.tradeOptionsBarItemPercent{
+.tradeOptionsBarItemPercent {
   background-color: rgba(255, 41, 41, 0.301);
   color: $red;
   font-family: $interFont;
-  padding:0 5px;
+  padding: 0 5px;
   border-radius: 5px;
   font-size: 12px;
   text-align: center;
@@ -411,4 +411,31 @@
     rgba(255, 63, 0, 1) 0%,
     rgba(230, 126, 94, 1) 100%
   );
+}
+.product_top_wrapper{
+  @include flexrowbetween;
+}
+.priceandvalue_wrapper{
+  @include flexrowbetween;
+  width: 100%;
+}
+
+@media screen and (max-width: 991.98px) {
+  .product_row {
+    flex-direction: column-reverse !important;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .priceandvalue_wrapper{
+    flex-direction: column !important;
+  }
+}
+
+@media screen and (max-width: 500.98px) {
+.product_top_wrapper{
+  flex-direction: column !important;
+}
+.productNameInfo{
+  margin-bottom: 20px !important;
+}
 }

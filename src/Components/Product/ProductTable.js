@@ -7,19 +7,9 @@ import { useSelector } from "react-redux";
 import { BiSearchAlt } from "react-icons/bi";
 import style from "./Style/Product.module.css";
 import useNumberStep from "Hooks/useNumberStep";
-import useWindowSize from "Hooks/useWindowSize";
 const ProductTable = () => {
   const [simpleTable, setSimpleTable] = React.useState(false);
   const { currency, currencyIcon } = useSelector((state) => state.currency);
-  const { width } = useWindowSize();
-  const [isMobile, setIsMobile] = React.useState(false);
-  React.useEffect(() => {
-    if (width < 992) {
-      setIsMobile(true);
-    } else {
-      return;
-    }
-  }, [width]);
   const { data, isLoading, error } = useQuery(["allCoinList", currency], () =>
     getAllCoinList(currency)
   );
@@ -136,9 +126,9 @@ const ProductTable = () => {
               rowKey="id"
               columns={columns}
               dataSource={data}
-            
               pagination={false}
               size="small"
+              scroll={{ y: 825 }}
             />
           )}
         </div>

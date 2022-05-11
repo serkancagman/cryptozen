@@ -4,8 +4,7 @@ import { Slider } from "antd";
 import { useSelector } from "react-redux";
 const BuyorSell = ({ type }) => {
   const { coin, coin_price } = useSelector((state) => state.current_coin);
-  const [coinPrice, setCoinPrice] = React.useState(coin_price);
-  console.log(coin_price);
+  const [coinPrice, setCoinPrice] = React.useState(0);
   return (
     <div className={style.buyorSell}>
       <div className={style.buyorSellTopArea}>
@@ -46,7 +45,7 @@ const BuyorSell = ({ type }) => {
               type="text"
               className={style.buyorSellInput}
               placeholder="0"
-              value={coin_price}
+              value={coinPrice || coin_price}
               onChange={(e) => setCoinPrice(e.target.value)}
             />
             <span className={style.buyorSellInputText}>
