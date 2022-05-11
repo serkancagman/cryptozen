@@ -2,11 +2,9 @@ import React from "react";
 import style from "./Style/HeaderMobile.module.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { TiArrowSortedDown } from "react-icons/ti";
-
 import { Link } from "react-router-dom";
 import logoImg from "Assets/Logo/logo.png";
-import BuyCrypto from "./NavbarItems/BuyCrypto";
-import Markets from "./NavbarItems/Markets";
+import { Markets, BuyCrypto, Trade } from "./NavbarItems";
 const HeaderMobile = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
@@ -35,6 +33,12 @@ const HeaderMobile = () => {
               Markets <TiArrowSortedDown className={style.nav_icon} />
             </span>
             <Markets />
+          </li>
+          <li className={style.nav_item}>
+            <span to="/buy" className={style.nav_link}>
+              Trade <TiArrowSortedDown className={style.nav_icon} />
+            </span>
+            <Trade />
           </li>
         </ul>
       </nav>

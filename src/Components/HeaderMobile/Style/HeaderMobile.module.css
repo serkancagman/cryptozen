@@ -42,6 +42,23 @@
 .nav {
   display: none;
   padding: 20px 0;
+  margin-top: 10px;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.nav::-webkit-scrollbar {
+  background-color: #0B0B47;
+  width: 0.5em;
+  height: 2em;
+  z-index: 99;
+  position: relative;
+}
+
+.nav::-webkit-scrollbar-thumb {
+  background-color: #37a3fe;
+  border-radius: 10px;
+  size: 1px;
 }
 
 .nav .nav_list {
@@ -118,5 +135,23 @@
   font-size: 16px;
   font-family: "Inter", sans-serif;
   margin: 0 10px;
+}
+
+.nav_list_sub_Inner {
+  padding: 0 10px 10px 10px;
+}
+
+.nav_list_sub_Inner .nav_link_sub_text {
+  color: #a2bbd2;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+}
+
+.nav_list_sub_Inner .btn_sub {
+  font-size: 18px;
+  display: inline-block;
+  margin: 0 5px;
+  font-weight: 600;
+  color: #a2bbd2;
 }
 /*# sourceMappingURL=HeaderMobile.module.css.map */
