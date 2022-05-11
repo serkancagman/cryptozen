@@ -175,4 +175,9 @@
   letter-spacing: 1px;
   color: #fff !important;
 }
+
+.nav_link_sub_icon {
+  color: #37a3fe;
+  font-size: 20px;
+}
 /*# sourceMappingURL=HeaderMobile.module.css.map */

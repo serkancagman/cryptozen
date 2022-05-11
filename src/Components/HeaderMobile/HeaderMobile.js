@@ -3,6 +3,7 @@ import style from "./Style/HeaderMobile.module.css";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { Link } from "react-router-dom";
+import { RiGlobalFill } from "react-icons/ri";
 import logoImg from "Assets/Logo/logo.png";
 import {
   Markets,
@@ -13,6 +14,7 @@ import {
   Giveaways,
   NftBox,
 } from "./NavbarItems";
+import Languages from "./NavbarItems/Languages";
 const HeaderMobile = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
@@ -80,8 +82,14 @@ const HeaderMobile = () => {
           </li>
           <li className={style.nav_item}>
             <span to="/#" className={style.nav_link}>
-              Startup 
+              Startup
             </span>
+          </li>
+          <li className={style.nav_item}>
+            <span to="/#" className={style.nav_link}>
+              <RiGlobalFill className={style.nav_icon} /> Language
+            </span>
+            <Languages />
           </li>
         </ul>
       </nav>
