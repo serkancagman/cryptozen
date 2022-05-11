@@ -154,4 +154,13 @@
   font-weight: 600;
   color: #a2bbd2;
 }
+
+.nav_link_sub_header {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: #b3b3b3;
+  padding: 10px;
+}
 /*# sourceMappingURL=HeaderMobile.module.css.map */

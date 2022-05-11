@@ -118,3 +118,11 @@
     color: $pColor;
   }
 }
+.nav_link_sub_header {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: $interFont;
+  font-size: 15px;
+  color: rgb(179, 179, 179);
+  padding: 10px;
+}

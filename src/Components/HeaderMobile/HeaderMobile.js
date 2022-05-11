@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { Link } from "react-router-dom";
 import logoImg from "Assets/Logo/logo.png";
-import { Markets, BuyCrypto, Trade } from "./NavbarItems";
+import { Markets, BuyCrypto, Trade, Earn } from "./NavbarItems";
 const HeaderMobile = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
@@ -39,6 +39,13 @@ const HeaderMobile = () => {
               Trade <TiArrowSortedDown className={style.nav_icon} />
             </span>
             <Trade />
+          </li>
+
+          <li className={style.nav_item}>
+            <span to="/buy" className={style.nav_link}>
+              Earn <TiArrowSortedDown className={style.nav_icon} />
+            </span>
+            <Earn />
           </li>
         </ul>
       </nav>
