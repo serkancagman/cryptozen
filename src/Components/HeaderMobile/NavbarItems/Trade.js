@@ -37,7 +37,6 @@ const Trade = () => {
           </div>
         </div>
       </li>
-
       <li className={style.nav_item_sub}>
         <Link to="/#" className={style.nav_link_sub}>
           <GiInjustice className={style.nav_icon_sub} />
@@ -61,7 +60,6 @@ const Trade = () => {
           </div>
         </div>
       </li>
-
       <li className={style.nav_item_sub}>
         <Link to="/#" className={style.nav_link_sub}>
           <MdOutlineGeneratingTokens className={style.nav_icon_sub} />
@@ -74,7 +72,6 @@ const Trade = () => {
           </p>
         </div>
       </li>
-
       <li className={style.nav_item_sub}>
         <Link to="/#" className={style.nav_link_sub}>
           <CgArrowsExchangeAltV className={style.nav_icon_sub} />
@@ -88,7 +85,6 @@ const Trade = () => {
           </p>
         </div>
       </li>
-
       <li className={style.nav_item_sub}>
         <Link to="/#" className={style.nav_link_sub}>
           <RiExchangeDollarLine className={style.nav_icon_sub} />
@@ -101,7 +97,6 @@ const Trade = () => {
           </p>
         </div>
       </li>
-
       <li className={style.nav_item_sub}>
         <Link to="/#" className={style.nav_link_sub}>
           <BsFileEarmarkPersonFill className={style.nav_icon_sub} />
@@ -154,7 +149,6 @@ const Trade = () => {
           </div>
         </div>
       </li>
-
       <li className={style.nav_item_sub}>
         <Link to="/#" className={style.nav_link_sub}>
           <AiFillSetting className={style.nav_icon_sub} />
@@ -168,7 +162,6 @@ const Trade = () => {
           </p>
         </div>
       </li>
-
       <li className={style.nav_item_sub}>
         <Link to="/#" className={style.nav_link_sub}>
           <GiBearFace className={style.nav_icon_sub} />
@@ -182,10 +175,9 @@ const Trade = () => {
           </p>
         </div>
       </li>
-
       <li className={style.nav_item_sub}>
         <Link to="/#" className={style.nav_link_sub}>
-          <GiTransform  className={style.nav_icon_sub} />
+          <GiTransform className={style.nav_icon_sub} />
           <span className={style.nav_link_sub_text}>Warrant</span>
         </Link>
         <div className={style.nav_list_sub_Inner}>
