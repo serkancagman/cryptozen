@@ -51,7 +51,12 @@ const Header = () => {
   }, [isMobile, width]);
 
   return (
-    <header className={`${style.header} ${isScrolled && style.scrolledHeader}`}>
+    <header
+      className={`${style.header} ${
+        (isScrolled && style.scrolledHeader) ||
+        (isMobile && style.scrolledHeader)
+      }`}
+    >
       <div className="container-fluid">
         {!isMobile ? (
           <nav className="navbar navbar-expand-lg ">

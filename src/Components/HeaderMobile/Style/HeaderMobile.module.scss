@@ -1,2 +1,88 @@
 @import "../../../Style/Variables.scss";
 @import "../../../Style/Mixins.scss";
+
+.header_mobile {
+  width: 100%;
+  padding: 3px 0;
+
+  .header_mobile_inner {
+    @include flexrowbetween;
+    width: 100%;
+
+    .logo {
+      margin-right: 10px;
+
+      .logoImg {
+        width: 180px;
+        height: auto;
+      }
+    }
+    .btn_menu {
+      background-color: transparent;
+      border: none;
+      font-size: 30px;
+      color: #fff;
+    }
+  }
+}
+.nav {
+  display: none;
+  padding: 20px 0;
+  .nav_list {
+    padding: 0;
+    margin: 0;
+
+    .nav_item {
+      list-style: none;
+      width: 100%;
+      &:hover {
+        .nav_list_sub {
+          display: block !important;
+        }
+      }
+      .nav_link {
+        width: 100%;
+        display: block;
+        padding: 5px 0;
+        cursor: pointer;
+        color: #fff;
+        font-weight: 550;
+        font-family: $interFont;
+        font-size: 18px;
+      }
+    }
+  }
+}
+.show_nav {
+  display: block !important;
+}
+
+.nav_list_sub {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #133496;
+  display: none;
+  .nav_item_sub {
+    list-style: none;
+
+    .nav_link_sub {
+      padding: 10px;
+      @include flexrowjstart;
+      transition: $clastrans;
+      &:hover {
+        background-color: #2a479e;
+      }
+      .nav_icon_sub {
+        font-size: 20px;
+        color: $mainColor;
+      }
+      .nav_link_sub_text {
+        color: #fff;
+        font-size: 16px;
+        font-family: $interFont;
+        margin: 0 10px;
+      }
+    }
+  }
+}

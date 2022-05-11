@@ -1,17 +1,44 @@
 import React from "react";
 import style from "./Style/HeaderMobile.module.css";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { TiArrowSortedDown } from "react-icons/ti";
+
+import { Link } from "react-router-dom";
+import logoImg from "Assets/Logo/logo.png";
+import BuyCrypto from "./NavbarItems/BuyCrypto";
+import Markets from "./NavbarItems/Markets";
 const HeaderMobile = () => {
+  const [isOpen, setIsOpen] = React.useState(false);
   return (
-  
-     
-        <div className={style.header_mobile}>
-          <button className={style.btn_menu}>
-            <GiHamburgerMenu />
-          </button>
-          <nav className={style.nav}></nav>
-        </div>
-     
+    <div className={style.header_mobile}>
+      <div className={style.header_mobile_inner}>
+        <Link to="/" className={style.logo}>
+          <img src={logoImg} className={style.logoImg} alt="logo" />
+        </Link>
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className={`btn ${style.btn_menu}`}
+        >
+          <GiHamburgerMenu />
+        </button>
+      </div>
+      <nav className={`${style.nav} ${isOpen && style.show_nav}`}>
+        <ul className={style.nav_list}>
+          <li className={style.nav_item}>
+            <span to="/buy" className={style.nav_link}>
+              Buy Crypto <TiArrowSortedDown className={style.nav_icon} />
+            </span>
+            <BuyCrypto />
+          </li>
+          <li className={style.nav_item}>
+            <span to="/buy" className={style.nav_link}>
+              Markets <TiArrowSortedDown className={style.nav_icon} />
+            </span>
+            <Markets />
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
 };
 
