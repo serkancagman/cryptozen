@@ -6,9 +6,10 @@ import { BsCheckLg } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
 import { setCurrency } from "Redux/CurrencySlice/CurrencySlice";
 import i18next from "i18next";
+import { useTranslation } from "react-i18next";
 const GlobalList = () => {
   const dispatch = useDispatch();
-
+  const { t } = useTranslation();
   const { currency } = useSelector((state) => state.currency);
   const [lang, setLang] = React.useState();
 
@@ -29,7 +30,7 @@ const GlobalList = () => {
     <div className={style.navSubWrapper}>
       <div className={style.navGlobalInner}>
         <ul className={style.globalList}>
-          <h6 className={style.globalListTitle}>Languages</h6>
+          <h6 className={style.globalListTitle}>{t("header.lang_menu.title")}</h6>
           <li
             onClick={() => handleChange("en")}
             className={style.globalListItem}
@@ -63,7 +64,7 @@ const GlobalList = () => {
         </ul>
 
         <ul className={style.globalList}>
-          <h6 className={style.globalListTitle}>Currencies</h6>
+          <h6 className={style.globalListTitle}>{t("header.currency_menu.title")}</h6>
           <li
             onClick={() => dispatch(setCurrency({ type: "USD", icon: "$" }))}
             className={style.globalListItem}
