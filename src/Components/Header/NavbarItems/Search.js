@@ -4,12 +4,14 @@ import { FaSearchDollar } from "react-icons/fa";
 import { Dropdown } from "antd";
 import { searchCoin, getDefaultSearchData } from "API/Api";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { useQuery } from "react-query";
 const Search = () => {
   const [isVisible, setIsVisible] = React.useState(false);
   const [searchItems, setSearchItems] = React.useState([]);
   const [searchValue, setSearchValue] = React.useState("");
   const [defaultValue, setDefaultValue] = React.useState([]);
+  const { t } = useTranslation();
   const { data } = useQuery("defaultSearchData", () =>
     getDefaultSearchData("USD")
   );
@@ -55,7 +57,7 @@ const Search = () => {
         </div>
         <div className={style.navSearchTitle}>
           <span className={style.navSearchTitleText}>
-            {searchItems.length > 0 ? "Search Results" : "Hot Searches"}
+            {searchItems.length > 0 ? t('header.search_menu.items.second') : t('header.search_menu.items.first')}
             {searchItems.length === 0 && (
               <span className={style.navLinkTag}>HOT</span>
             )}

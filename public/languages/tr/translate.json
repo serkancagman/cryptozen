@@ -45,8 +45,8 @@
           "description": "Geleneksel vadeli işlemlerden farklıdır çünkü esasen ödeme tarihi yoktur."
         },
         "seventh": {
-          "title": "Margin Alım-Satım",
-          "description": "Kar ve zararı artırmak için diğer kullanıcılardan borç alma."
+          "title": "Sipariş",
+          "description": "Vade sonunda kapatılan gelecekteki sözleşmeler. Hiçbir fon ödemesi alınmaz veya ödenmez."
         },
         "eighth": {
           "title": "Opsiyonlar",
@@ -68,7 +68,7 @@
       "title_third": "Madencilik",
       "items": {
         "first": {
-          "title": "HODL & KAZAN",
+          "title": "HODL & Kazan",
           "description": "Çeşitli ürünlerle tek duraklı bir yatırım merkezi."
         },
         "second": {
@@ -84,8 +84,8 @@
           "description": "Kazanç elde etmek için kriptonuzu belirli bir faiz oranı ve kredi vadesinde ödünç vermek için bir yatırım."
         },
         "fifth": {
-          "title": "Kripto Kredisi",
-          "description": "Kripto kredisi, bir kriptoyu diğerini ödünç almak için rehin vermektir."
+          "title": "Çift Para Birimi Ürünü",
+          "description": "Fiyat hareketinden bağımsız olarak kazanın."
         },
         "sixth": {
           "title": "Margin Borçlanma",
@@ -185,12 +185,8 @@
     },
     "search_menu": {
       "items": {
-        "first": {
-          "title": "En Çok Arananlar"
-        },
-        "second": {
-          "title": "Arama Sonuçları"
-        }
+        "first": "En Çok Arananlar",
+        "second": "Arama Sonuçları"
       }
     }
   },
