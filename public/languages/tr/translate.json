@@ -1,4 +1,8 @@
 {
-  "banner_top_title": "Güvenli Kripto Para Birimi",
-  "banner_main_title": "Kripto İşleminizi Yapın"
+  "banner": {
+    "top_title": "Güvenli Kripto Para Birimi",
+    "main_title": "<strong_anchor>Kripto</strong_anchor> İşleminizi Yapın",
+    "description": "Banka havalelerini veya kredi/banka kartınızı kullanarak 20'den fazla düz para birimine sahip 100'den fazla Kripto Para Birimi Satın Alın ve Satış yapın.",
+    "button_text": "Nasıl Yapılıyor ?"
+  }
 }

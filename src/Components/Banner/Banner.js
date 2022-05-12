@@ -8,6 +8,7 @@ import fifthImg from "Assets/Banner/five.png";
 import sixthImg from "Assets/Banner/three.png";
 import { BiDollar } from "react-icons/bi";
 import { BsPlayCircle } from "react-icons/bs";
+import { Trans } from "react-i18next";
 import Countdown from "./Countdown";
 import { useTranslation } from "react-i18next";
 const Banner = () => {
@@ -25,19 +26,22 @@ const Banner = () => {
                       <BiDollar className={style.bannerLeftIcon} />
                     </span>
                     <span className={style.bannerSloganText}>
-                      {t('banner_top_title')}
+                      {t("banner.top_title")}
                     </span>
                   </h4>
                 </div>
                 <h2 className={style.bannerTitle}>
-                  Make your{" "}
-                  <span className={style.strongTextBanner}>Crypto</span>{" "}
-                  Transaction
+                  <Trans
+                    i18nKey="banner.main_title"
+                    components={{
+                      strong_anchor: (
+                        <span className={style.strongTextBanner}>Kripto</span>
+                      ),
+                    }}
+                  />
                 </h2>
                 <p className={style.bannerDescription}>
-                  Buy and Sales 100+ Cryptocurrencies with 20+ flat currencies
-                  market using bank transfers or your credit/debit card in your
-                  exchange type bitcoin establshed token area.
+                  {t("banner.description")}
                 </p>
               </div>
               <div className="d-flex justify-content-start align-items-center">
@@ -48,7 +52,7 @@ const Banner = () => {
                     <BsPlayCircle className={style.bannerButtonIcon} />
                     <span className={style.bannerButtonText}>
                       {" "}
-                      How it works{" "}
+                      {t("banner.button_text")}
                     </span>
                   </div>
                 </button>
@@ -66,7 +70,11 @@ const Banner = () => {
                   <img src={twoImg} alt="banner" className={style.thirdImage} />
                 </div>
                 <div className={style.bannerImageFourth}>
-                  <img src={fourthImg} alt="banner" className={style.soldTotalImage} />
+                  <img
+                    src={fourthImg}
+                    alt="banner"
+                    className={style.soldTotalImage}
+                  />
                 </div>
                 <div className={style.bannerImageFifth}>
                   <img src={fifthImg} alt="banner" className="img-fluid" />

@@ -8,15 +8,30 @@ import { setCurrency } from "Redux/CurrencySlice/CurrencySlice";
 import i18next from "i18next";
 const GlobalList = () => {
   const dispatch = useDispatch();
-  const [lang, setLang] = React.useState("en");
+
   const { currency } = useSelector((state) => state.currency);
+  const [lang, setLang] = React.useState();
+
+  React.useEffect(() => {
+    const value = `; ${document.cookie}`;
+    const parts = value.split("i18next=");
+    if (parts.length === 2) {
+      setLang(parts.pop().split(";").shift());
+    }
+  }, []);
+
+  const handleChange = (value) => {
+    setLang(value);
+    i18next.changeLanguage(value);
+  };
+
   const menu = (
     <div className={style.navSubWrapper}>
       <div className={style.navGlobalInner}>
         <ul className={style.globalList}>
           <h6 className={style.globalListTitle}>Languages</h6>
           <li
-            onClick={() => i18next.changeLanguage("en")}
+            onClick={() => handleChange("en")}
             className={style.globalListItem}
           >
             <span
@@ -31,7 +46,7 @@ const GlobalList = () => {
             )}
           </li>
           <li
-            onClick={() => i18next.changeLanguage("tr")}
+            onClick={() => handleChange("tr")}
             className={style.globalListItem}
           >
             <span

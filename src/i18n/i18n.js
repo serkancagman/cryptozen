@@ -10,13 +10,16 @@ i18n
     supportedLngs: ["en", "tr"],
     fallbackLng: "en",
     detection: {
-      order: ["htmlTag", "cookie", "localStorage", "path", "subdomain"],
+      order: ["cookie", "htmlTag", "localStorage", "path", "subdomain"],
       caches: ["cookie"],
     },
     backend: {
       loadPath: "languages/{{lng}}/translate.json",
     },
-    react:{useSuspens:false}
+    interpolation: {
+      escapeValue: false,
+    },
+    react: { useSuspens: false },
   });
 
 export default i18n;
