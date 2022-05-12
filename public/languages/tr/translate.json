@@ -47,5 +47,12 @@
   "rating": {
     "main_title": "Kripto Token Puanları",
     "tag_text": "Kripto Puanları "
+  },
+  "who_we_are": {
+    "main_title": "Her projeyi müşterilerimiz için özenle gerçekleştiriyoruz.",
+    "tag_text": "Yatırım Platformu",
+    "description_first": "Kripto para birimi için en iyi ticaret platformunu yaratma konusunda tutkulu, yüksek nitelikli ve deneyimli geliştiricilerden oluşan bir ekibiz.",
+    "description_second": "Kripto para birimi için en iyi ticaret platformunu yaratma konusunda tutkulu, yüksek nitelikli ve deneyimli geliştiricilerden oluşan bir ekibiz.",
+    "more_text": "Daha Fazla Oku"
   }
 }

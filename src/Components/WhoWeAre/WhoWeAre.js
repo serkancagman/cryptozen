@@ -3,35 +3,31 @@ import React from "react";
 import style from "./Style/WhoWeAre.module.css";
 import { BsPlusCircleDotted } from "react-icons/bs";
 import colImg from "Assets/WhoWeAre/single.png";
+import { useTranslation } from "react-i18next";
 const WhoWeAre = () => {
+  const {t} = useTranslation();
   return (
     <section className={style.whoWeAre}>
       <div className="container">
         <div className="row g-3 align-items-center">
           <div className="col-md-12 col-lg-6">
             <div className="d-flex flex-column justify-content-center align-items-start">
-              <HeaderTag title="Trading Platform" />
+              <HeaderTag title={t('who_we_are.tag_text')} />
               <h2 className={style.whoWeAreTitle}>
-                We complete every project extra care as customer.
+                {t('who_we_are.main_title')}
               </h2>
               <p className={style.whoWeAreDesc}>
-                Globally transition ours multidisciplinary applications for
-                bleeding-edge vortals. harness o ours plug-and-plays networks
-                without stand-alone bandwidth market harness competitive
-                channels.
+              {t('who_we_are.description_first')}
               </p>
               <p className={style.whoWeAreDesc}>
-                Seamlessly redefine ethical materials through ours high-payoff
-                growth strategie appropriately envisioneer robust
-                infrastructures before robust for the aynergistically generate
-                B2B alignments after.
+              {t('who_we_are.description_second')}
               </p>
               <button className={style.whoWeAreBtn}>
                 <div
                   className={`d-flex align-items-center justify-content-center ${style.moreBtn}`}
                 >
                   <BsPlusCircleDotted className={style.moreIcon} />
-                  <span className={style.moreText}>Read More</span>
+                  <span className={style.moreText}>{t('who_we_are.more_text')}</span>
                 </div>
               </button>
             </div>
