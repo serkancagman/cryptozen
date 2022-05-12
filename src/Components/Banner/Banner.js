@@ -9,8 +9,9 @@ import sixthImg from "Assets/Banner/three.png";
 import { BiDollar } from "react-icons/bi";
 import { BsPlayCircle } from "react-icons/bs";
 import Countdown from "./Countdown";
-
+import { useTranslation } from "react-i18next";
 const Banner = () => {
+  const { t } = useTranslation();
   return (
     <section className={style.banner}>
       <div className={style.bannerContent}>
@@ -24,7 +25,7 @@ const Banner = () => {
                       <BiDollar className={style.bannerLeftIcon} />
                     </span>
                     <span className={style.bannerSloganText}>
-                      Secure & Safe Crypto Currency
+                      {t('banner_top_title')}
                     </span>
                   </h4>
                 </div>

@@ -9,6 +9,7 @@ import "./Style/main.css";
 import "swiper/css";
 import {Provider} from "react-redux";
 import { store } from "Redux/store";
+import "i18n/i18n";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>

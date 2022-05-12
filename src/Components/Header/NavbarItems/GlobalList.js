@@ -5,6 +5,7 @@ import { RiGlobalFill } from "react-icons/ri";
 import { BsCheckLg } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
 import { setCurrency } from "Redux/CurrencySlice/CurrencySlice";
+import i18next from "i18next";
 const GlobalList = () => {
   const dispatch = useDispatch();
   const [lang, setLang] = React.useState("en");
@@ -14,7 +15,10 @@ const GlobalList = () => {
       <div className={style.navGlobalInner}>
         <ul className={style.globalList}>
           <h6 className={style.globalListTitle}>Languages</h6>
-          <li onClick={() => setLang("en")} className={style.globalListItem}>
+          <li
+            onClick={() => i18next.changeLanguage("en")}
+            className={style.globalListItem}
+          >
             <span
               className={`${style.globalListItemText} ${
                 lang === "en" && style.selectedLang
@@ -26,7 +30,10 @@ const GlobalList = () => {
               <BsCheckLg className={style.globalListItemIcon} />
             )}
           </li>
-          <li onClick={() => setLang("tr")} className={style.globalListItem}>
+          <li
+            onClick={() => i18next.changeLanguage("tr")}
+            className={style.globalListItem}
+          >
             <span
               className={`${style.globalListItemText} ${
                 lang === "tr" && style.selectedLang
