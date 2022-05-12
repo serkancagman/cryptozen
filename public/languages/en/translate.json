@@ -124,5 +124,27 @@
         }
       }
     }
+  },
+  "news": {
+    "main_title": "Recent Blog Post",
+    "tag_text": "Latest News",
+    "btn_text": "Read More",
+    "items": {
+      "first": {
+        "title": "How to invest in ICO ?",
+        "description": "Crypto ICO is a decentralized cryptocurrency exchange that allows users to buy and sell cryptocurrencies using wire transfers or credit/debit cards.",
+        "date": "12th June, 2022"
+      },
+      "second": {
+        "title": "Cryptocash is a clean & modern coin",
+        "description": "Crypto ICO is a decentralized cryptocurrency exchange that allows users to buy and sell cryptocurrencies using wire transfers or credit/debit cards.",
+        "date": "18th June, 2022"
+      },
+      "third": {
+        "title": "Pros & Cons of Premined Crypto",
+        "description": "Crypto ICO is a decentralized cryptocurrency exchange that allows users to buy and sell cryptocurrencies using wire transfers or credit/debit cards.",
+        "date": "22th June, 2022"
+      }
+    }
   }
 }
