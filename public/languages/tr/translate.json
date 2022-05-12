@@ -43,5 +43,9 @@
         "description": "Güvenilir bir şekilde ve hızlı yöntemlerle işlemlerinizi gerçekleştirin. Gerçekleştirdiğiniz işlemlerden hediyeler kazanın"
       }
     }
+  },
+  "rating": {
+    "main_title": "Kripto Token Puanları",
+    "tag_text": "Kripto Puanları "
   }
 }

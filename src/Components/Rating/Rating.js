@@ -5,13 +5,15 @@ import iconOne from "Assets/Rate/rate-1.png";
 import iconTwo from "Assets/Rate/rate-2.png";
 import iconThree from "Assets/Rate/rate-3.png";
 import iconFour from "Assets/Rate/rate-4.png";
+import { useTranslation } from "react-i18next";
 const Rating = () => {
+  const { t } = useTranslation();
   return (
     <section className={style.rating}>
       <div className="container">
         <div className={style.rateHeader}>
-          <HeaderTag title="Token Rating" />
-          <h2 className={style.rateTitle}> Crypto Token Rating </h2>
+          <HeaderTag title={t('rating.tag_text')} />
+          <h2 className={style.rateTitle}>{t('rating.main_title')}</h2>
         </div>
         <div className="row justify-content-center align-items-center g-3">
           <div className="col-md-6 col-lg-3 col-12">

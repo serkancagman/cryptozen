@@ -43,5 +43,9 @@
         "description": "Perform your transactions in a reliable and fast way. Earn gifts from your transactions"
       }
     }
+  },
+  "rating": {
+    "main_title": "Crypto Token Rating",
+    "tag_text": "Token Rating "
   }
 }
