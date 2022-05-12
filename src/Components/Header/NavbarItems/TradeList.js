@@ -11,7 +11,9 @@ import { MdOutlineGeneratingTokens } from "react-icons/md";
 import { CgArrowsExchangeAltV } from "react-icons/cg";
 import { RiExchangeDollarLine } from "react-icons/ri";
 import { BsFileEarmarkPersonFill } from "react-icons/bs";
+import { useTranslation } from "react-i18next";
 const TradeList = () => {
+  const { t } = useTranslation();
   return (
     <div className={style.navSubWrapper}>
       <ul className={style.navSubList}>
@@ -20,9 +22,9 @@ const TradeList = () => {
           <span className={style.navSubStartLink}>
             <AiOutlineSwap className={style.navSubIcon} />
             <div className={style.navSubTextWrapper}>
-              <span className={style.navSubText}>Spot Trading</span>
+              <span className={style.navSubText}>{t('header.trade_menu.items.first.title')}</span>
               <p className={style.navSubTextBottom}>
-                Crypto-to-crypto trading, such as selling USDT for BTC
+              {t('header.trade_menu.items.first.description')}
               </p>
               <div className={style.navSubLinkOptionsWrapper}>
                 <div className={style.navSubLinkOptions}>
@@ -44,9 +46,9 @@ const TradeList = () => {
           <span className={style.navSubStartLink}>
             <GiInjustice className={style.navSubIcon} />
             <div className={style.navSubTextWrapper}>
-              <span className={style.navSubText}>Margin Trading</span>
+              <span className={style.navSubText}>{t('header.trade_menu.items.second.title')}</span>
               <p className={style.navSubTextBottom}>
-                Borrowing from other users to amplify the profit and loss
+              {t('header.trade_menu.items.second.description')}
               </p>
               <div className={style.navSubLinkOptionsWrapper}>
                 <div className={style.navSubLinkOptions}>
@@ -71,10 +73,9 @@ const TradeList = () => {
           <Link to="/margin_trade" className={style.navSubStartLink}>
             <MdOutlineGeneratingTokens className={style.navSubIcon} />
             <div className={style.navSubTextWrapperHoverless}>
-              <span className={style.navSubText}>Leveraged Tokens</span>
+              <span className={style.navSubText}>{t('header.trade_menu.items.third.title')}</span>
               <p className={style.navSubTextBottom}>
-                Enjoy up to 5X leveraged trading with Gate.io Leveraged ETF
-                Tokens
+              {t('header.trade_menu.items.third.description')}
               </p>
             </div>
           </Link>
@@ -83,11 +84,9 @@ const TradeList = () => {
           <Link to="/push_exchange" className={style.navSubStartLink}>
             <CgArrowsExchangeAltV className={style.navSubIcon} />
             <div className={style.navSubTextWrapperHoverless}>
-              <span className={style.navSubText}>Push Transactions</span>
+              <span className={style.navSubText}>{t('header.trade_menu.items.fourth.title')}</span>
               <p className={style.navSubTextBottom}>
-                Push Transactions / Transfer an asset at a given price to
-                another account using the Push function, a peer-to-peer sell/buy
-                operation
+              {t('header.trade_menu.items.fourth.description')}
               </p>
             </div>
           </Link>
@@ -96,9 +95,9 @@ const TradeList = () => {
           <Link to="/convert" className={style.navSubStartLink}>
             <RiExchangeDollarLine className={style.navSubIcon} />
             <div className={style.navSubTextWrapperHoverless}>
-              <span className={style.navSubText}>Flash Swap</span>
+              <span className={style.navSubText}>{t('header.trade_menu.items.fifth.title')}</span>
               <p className={style.navSubTextBottom}>
-                Swap one currency with another in one click
+              {t('header.trade_menu.items.fifth.description')}
               </p>
             </div>
           </Link>
@@ -110,10 +109,9 @@ const TradeList = () => {
           <span className={style.navSubStartLink}>
             <BsFileEarmarkPersonFill className={style.navSubIcon} />
             <div className={style.navSubTextWrapper}>
-              <span className={style.navSubText}>Perpetual</span>
+              <span className={style.navSubText}>{t('header.trade_menu.items.sixth.title')}</span>
               <p className={style.navSubTextBottom}>
-                A crypto derivative. It differs from the traditional futures
-                mainly because it has no settlement date
+              {t('header.trade_menu.items.sixth.description')}
               </p>
               <div className={style.navSubLinkOptionsWrapper}>
                 <div className={style.navSubLinkOptions}>
@@ -145,10 +143,9 @@ const TradeList = () => {
           <span className={style.navSubStartLink}>
             <AiOutlineFieldTime className={style.navSubIcon} />
             <div className={style.navSubTextWrapper}>
-              <span className={style.navSubText}>Delivery</span>
+              <span className={style.navSubText}>{t('header.trade_menu.items.seventh.title')}</span>
               <p className={style.navSubTextBottom}>
-                Future contracts that are settled at expiration time. No funding
-                payment is received or paid
+              {t('header.trade_menu.items.seventh.description')}
               </p>
               <div className={style.navSubLinkOptionsWrapper}>
                 <div className={style.navSubLinkOptions}>
@@ -176,10 +173,9 @@ const TradeList = () => {
           <Link to="/options/BTC_USD" className={style.navSubStartLink}>
             <GiTransform className={style.navSubIcon} />
             <div className={style.navSubTextWrapperHoverless}>
-              <span className={style.navSubText}>Options</span>
+              <span className={style.navSubText}>{t('header.trade_menu.items.eighth.title')}</span>
               <p className={style.navSubTextBottom}>
-                European options group with put and call options of different
-                strike prices and exercise dates.
+              {t('header.trade_menu.items.eighth.description')}
               </p>
             </div>
           </Link>
@@ -188,10 +184,9 @@ const TradeList = () => {
           <Link to="/warrants/cbbc" className={style.navSubStartLink}>
             <GiBearFace className={style.navSubIcon} />
             <div className={style.navSubTextWrapperHoverless}>
-              <span className={style.navSubText}>CBBC</span>
+              <span className={style.navSubText}>{t('header.trade_menu.items.ninth.title')}</span>
               <p className={style.navSubTextBottom}>
-                Callable bull/bear contract, a structured product. High
-                leverage, easy purchase, low fee.
+              {t('header.trade_menu.items.ninth.description')}
               </p>
             </div>
           </Link>
@@ -200,10 +195,9 @@ const TradeList = () => {
           <Link to="/warrants/warrant" className={style.navSubStartLink}>
             <AiFillSetting className={style.navSubIcon} />
             <div className={style.navSubTextWrapperHoverless}>
-              <span className={style.navSubText}>Warrant</span>
+              <span className={style.navSubText}>{t('header.trade_menu.items.tenth.title')}</span>
               <p className={style.navSubTextBottom}>
-                If you are bullish on the price movement of the underlying
-                asset,buy a call warrant;if you are bearish,buy a put warrant
+              {t('header.trade_menu.items.tenth.description')}
               </p>
             </div>
           </Link>

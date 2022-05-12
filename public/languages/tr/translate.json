@@ -21,7 +21,7 @@
       "title": "Alım-Satım",
       "items": {
         "first": {
-          "title": "Piyasa Fiyatı",
+          "title": "Spot Alım-Satım",
           "description": "BTC için USDT satmak gibi kriptodan kriptoya alım satım."
         },
         "second": {
@@ -42,7 +42,7 @@
         },
         "sixth": {
           "title": "Sürekli İşlem",
-          "description": "Sürekli işlem bir kripto türevi. Geleneksel vadeli işlemlerden farklıdır çünkü esasen ödeme tarihi yoktur."
+          "description": "Geleneksel vadeli işlemlerden farklıdır çünkü esasen ödeme tarihi yoktur."
         },
         "seventh": {
           "title": "Margin Alım-Satım",
