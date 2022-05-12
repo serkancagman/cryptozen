@@ -13,19 +13,19 @@ const GiveawayList = () => {
         <li className={style.navSubItem}>
           <Link to="/rewards/activity" className={style.navSubLink}>
             <AiFillGift className={style.navSubIcon} />
-            <span className={style.navSubText}>{t("header.giveaway_menu.items.first.title")}</span>
+            <span className={style.navSubText}>{t("header.giveaway_menu.items.first")}</span>
           </Link>
         </li>
         <li className={style.navSubItem}>
           <Link to="/rewards/task" className={style.navSubLink}>
             <BiTask className={style.navSubIcon} />
-            <span className={style.navSubText}>{t("header.giveaway_menu.items.second.title")}</span>
+            <span className={style.navSubText}>{t("header.giveaway_menu.items.second")}</span>
           </Link>
         </li>
         <li className={style.navSubItem}>
           <Link to="/referral" className={style.navSubLink}>
             <FaCoins className={style.navSubIcon} />
-            <span className={style.navSubText}>{t("header.giveaway_menu.items.third.title")}</span>
+            <span className={style.navSubText}>{t("header.giveaway_menu.items.third")}</span>
           </Link>
         </li>
       </ul>
