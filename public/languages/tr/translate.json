@@ -64,6 +64,8 @@
     },
     "earn_menu": {
       "title": "Kazan",
+      "title_second": "Borç",
+      "title_third": "Madencilik",
       "items": {
         "first": {
           "title": "HODL & KAZAN",

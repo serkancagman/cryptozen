@@ -30,7 +30,9 @@ const EarnList = () => {
           <Link to="/structured" className={style.navSubStartLink}>
             <FaFileInvoiceDollar className={style.navSubIcon} />
             <div className={style.navSubTextWrapperHoverless}>
-              <span className={style.navSubText}>{t("header.earn_menu.items.second.title")}</span>
+              <span className={style.navSubText}>
+                {t("header.earn_menu.items.second.title")}
+              </span>
               <p className={style.navSubTextBottom}>
                 {t("header.earn_menu.items.second.description")}
               </p>
@@ -41,7 +43,9 @@ const EarnList = () => {
           <Link to="/autoinvest" className={style.navSubStartLink}>
             <RiTimerFlashFill className={style.navSubIcon} />
             <div className={style.navSubTextWrapperHoverless}>
-              <span className={style.navSubText}>{t("header.earn_menu.items.third.title")}</span>
+              <span className={style.navSubText}>
+                {t("header.earn_menu.items.third.title")}
+              </span>
               <p className={style.navSubTextBottom}>
                 {t("header.earn_menu.items.third.description")}
               </p>
@@ -52,7 +56,9 @@ const EarnList = () => {
           <Link to="/margin/lend/USD" className={style.navSubStartLink}>
             <RiCoinsFill className={style.navSubIcon} />
             <div className={style.navSubTextWrapperHoverless}>
-              <span className={style.navSubText}>{t("header.earn_menu.items.fourth.title")}</span>
+              <span className={style.navSubText}>
+                {t("header.earn_menu.items.fourth.title")}
+              </span>
               <p className={style.navSubTextBottom}>
                 {t("header.earn_menu.items.fourth.description")}
               </p>
@@ -61,12 +67,16 @@ const EarnList = () => {
         </li>
       </ul>
       <ul className={style.navSubList}>
-        <h6 className={style.navSubHeader}>Loan</h6>
+        <h6 className={style.navSubHeader}>
+          {t("header.earn_menu.title_second")}
+        </h6>
         <li className={style.navSubItem}>
           <Link to="/cryptoloan/usd" className={style.navSubStartLink}>
             <FaCubes className={style.navSubIcon} />
             <div className={style.navSubTextWrapperHoverless}>
-              <span className={style.navSubText}>{t("header.earn_menu.items.fifth.title")}</span>
+              <span className={style.navSubText}>
+                {t("header.earn_menu.items.fifth.title")}
+              </span>
               <p className={style.navSubTextBottom}>
                 {t("header.earn_menu.items.fifth.description")}
               </p>
@@ -77,7 +87,9 @@ const EarnList = () => {
           <Link to="/margin/borrow" className={style.navSubStartLink}>
             <GiInjustice className={style.navSubIcon} />
             <div className={style.navSubTextWrapperHoverless}>
-              <span className={style.navSubText}>{t("header.earn_menu.items.sixth.title")}</span>
+              <span className={style.navSubText}>
+                {t("header.earn_menu.items.sixth.title")}
+              </span>
               <p className={style.navSubTextBottom}>
                 {t("header.earn_menu.items.sixth.description")}
               </p>
@@ -86,12 +98,16 @@ const EarnList = () => {
         </li>
       </ul>
       <ul className={style.navSubList}>
-        <h6 className={style.navSubHeader}>Mining</h6>
+        <h6 className={style.navSubHeader}>
+          {t("header.earn_menu.title_third")}
+        </h6>
         <li className={style.navSubItem}>
           <Link to="/liquidity" className={style.navSubStartLink}>
             <GiMining className={style.navSubIcon} />
             <div className={style.navSubTextWrapperHoverless}>
-              <span className={style.navSubText}>{t("header.earn_menu.items.seventh.title")}</span>
+              <span className={style.navSubText}>
+                {t("header.earn_menu.items.seventh.title")}
+              </span>
               <p className={style.navSubTextBottom}>
                 {t("header.earn_menu.items.seventh.description")}
               </p>
@@ -103,7 +119,7 @@ const EarnList = () => {
             <BsCircleSquare className={style.navSubIcon} />
             <div className={style.navSubTextWrapperHoverless}>
               <span className={style.navSubText}>
-              {t("header.earn_menu.items.eighth.title")}
+                {t("header.earn_menu.items.eighth.title")}
               </span>
               <p className={style.navSubTextBottom}>
                 {t("header.earn_menu.items.eighth.description")}
@@ -115,7 +131,9 @@ const EarnList = () => {
           <Link to="/cloud_mining" className={style.navSubStartLink}>
             <BsCloudMinusFill className={style.navSubIcon} />
             <div className={style.navSubTextWrapperHoverless}>
-              <span className={style.navSubText}>{t("header.earn_menu.items.ninth.title")}</span>
+              <span className={style.navSubText}>
+                {t("header.earn_menu.items.ninth.title")}
+              </span>
               <p className={style.navSubTextBottom}>
                 {t("header.earn_menu.items.ninth.description")}
               </p>
@@ -126,7 +144,9 @@ const EarnList = () => {
           <Link to="/slot_auctions" className={style.navSubStartLink}>
             <BsCloudMinusFill className={style.navSubIcon} />
             <div className={style.navSubTextWrapperHoverless}>
-              <span className={style.navSubText}>{t("header.earn_menu.items.tenth.title")}</span>
+              <span className={style.navSubText}>
+                {t("header.earn_menu.items.tenth.title")}
+              </span>
               <p className={style.navSubTextBottom}>
                 {t("header.earn_menu.items.tenth.description")}
               </p>
