@@ -8,8 +8,6 @@ import { TiArrowSortedDown } from "react-icons/ti";
 import { MdMobileScreenShare } from "react-icons/md";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import {
-
-  tradeList,
   earnList,
   newsList,
   giveawayList,
@@ -21,7 +19,7 @@ import { useTranslation } from "react-i18next";
 import useWindowSize from "Hooks/useWindowSize";
 import Search from "./NavbarItems/Search";
 import HeaderMobile from "Components/HeaderMobile/HeaderMobile";
-import {BuyCrypto,MarketList} from "./NavbarItems";
+import {BuyCrypto,MarketList,TradeList} from "./NavbarItems";
 const Header = () => {
   const [isScrolled, setIsScrolled] = React.useState(false);
   const [pageHeight, setPageHeight] = React.useState({ height: 0 });
@@ -84,7 +82,7 @@ const Header = () => {
                 </Dropdown>
               </li>
               <li className={style.navItem}>
-                <Dropdown placement="bottom" overlay={tradeList}>
+                <Dropdown placement="bottom" overlay={TradeList}>
                   <span className={style.dropdownLink} href="/#">
                     {t("header.trade_menu.title")}{" "}
                     <TiArrowSortedDown className={style.navIconUp} />
