@@ -1,4 +1,199 @@
 {
+  "header": {
+    "buy_menu": {
+      "title": "Kripto Satın Al",
+      "items": {
+        "first": "Kredi Kartı",
+        "second": "Banka Transferi",
+        "third": "P2P Transfer"
+      }
+    },
+    "market_menu": {
+      "title": "Piyasalar",
+      "items": {
+        "first": "Piyasa Fiyatı",
+        "second": "Piyasa Takipçisi",
+        "third": "Büyük Veri",
+        "fourth": "Küresel Para Birimleri"
+      }
+    },
+    "trade_menu": {
+      "title": "Alım-Satım",
+      "items": {
+        "first": {
+          "title": "Piyasa Fiyatı",
+          "description": "BTC için USDT satmak gibi kriptodan kriptoya alım satım."
+        },
+        "second": {
+          "title": "Margin Alım-Satım",
+          "description": "Kar ve zararı artırmak için diğer kullanıcılardan borç alma."
+        },
+        "third": {
+          "title": "Kaldıraçlı Token",
+          "description": "Cryptozen kaldıraçlı ETF Tokenları ile 5 kata kadar kaldıraçlı alım-satımın keyfini çıkarın"
+        },
+        "fourth": {
+          "title": "Push İşlemleri",
+          "description": "Eşler arası satın alma işlemi olan Push işlevini kullanarak belirli bir fiyata bir varlığı başka bir hesaba aktarın"
+        },
+        "fifth": {
+          "title": "Flaş Takas",
+          "description": "Tek bir tıklamayla bir para birimini diğeriyle değiştirin"
+        },
+        "sixth": {
+          "title": "Sürekli İşlem",
+          "description": "Sürekli işlem bir kripto türevi. Geleneksel vadeli işlemlerden farklıdır çünkü esasen ödeme tarihi yoktur."
+        },
+        "seventh": {
+          "title": "Margin Alım-Satım",
+          "description": "Kar ve zararı artırmak için diğer kullanıcılardan borç alma."
+        },
+        "eighth": {
+          "title": "Opsiyonlar",
+          "description": "Farklı kullanım fiyatlarına ve kullanım tarihlerine sahip satım ve alım opsiyonlarına sahip Avrupa opsiyon grubu."
+        },
+        "ninth": {
+          "title": "CBBC",
+          "description": "Farklı kullanım fiyatlarına ve kullanım tarihlerine sahip satım ve alım opsiyonlarına sahip Avrupa opsiyon grubu."
+        },
+        "tenth": {
+          "title": "Garanti",
+          "description": "Dayanak varlığın fiyat hareketinde boğa iseniz, bir arama emri satın alın; düşüş yaşıyorsanız, bir satım emri satın alın."
+        }
+      }
+    },
+    "earn_menu": {
+      "title": "Kazan",
+      "items": {
+        "first": {
+          "title": "HODL & KAZAN",
+          "description": "Çeşitli ürünlerle tek duraklı bir yatırım merkezi."
+        },
+        "second": {
+          "title": "Yapılandırılmış Ürünler",
+          "description": "Faiz ve türevlerle bağlantılı varlıkları içeren önceden paketlenmiş ürünler."
+        },
+        "third": {
+          "title": "Otomatik Yatırım",
+          "description": "Tek tıkla yatırım, esnek portföy, her zaman kullanılabilir ve değiştirilebilir."
+        },
+        "fourth": {
+          "title": "Kripto Kredisi",
+          "description": "Kazanç elde etmek için kriptonuzu belirli bir faiz oranı ve kredi vadesinde ödünç vermek için bir yatırım."
+        },
+        "fifth": {
+          "title": "Kripto Kredisi",
+          "description": "Kripto kredisi, bir kriptoyu diğerini ödünç almak için rehin vermektir."
+        },
+        "sixth": {
+          "title": "Margin Borçlanma",
+          "description": "Margin olarak kendi varlıklarınızla satın alma gücünüzü artırmak için borçlanma."
+        },
+        "seventh": {
+          "title": "Likidite Madenciliği",
+          "description": "Piyasaya İkili Varlık likiditesi sağlayarak ücretlerden gelir elde edin."
+        },
+        "eighth": {
+          "title": "Ödünç Verme",
+          "description": "Gelir elde etmek için Tek Varlıklı likidite sağlayın. İstediğiniz zaman para yatırın veya çekin."
+        },
+        "ninth": {
+          "title": "Bulut Madenciliği",
+          "description": "Donanım satın almadan kripto para madenciliği yapmak."
+        },
+        "tenth": {
+          "title": "Slot Müzayedeleri",
+          "description": "Parachain müzayedelerine katılın ve ödüller kazanın."
+        }
+      }
+    },
+    "copy_trade_menu": {
+      "title": "Kopya Alım-Satım"
+    },
+    "news_menu": {
+      "title": "Haberler",
+      "items": {
+        "first": {
+          "title": "Gönderiler"
+        },
+        "second": {
+          "title": "Canlı Yayın"
+        },
+        "third": {
+          "title": "Sohbet Odası"
+        },
+        "fourth": {
+          "title": "Haberler"
+        },
+        "fifth": {
+          "title": "Cryptozen Haberleri"
+        },
+        "sixth": {
+          "title": "PodCast"
+        }
+      }
+    }
+  },
+  "giveaway_menu": {
+    "title": "Çekiliş",
+    "items": {
+      "first": {
+        "title": "Bonus Kampanyaları"
+      },
+      "second": {
+        "title": "Görevler & Bonuslar"
+      },
+      "third": {
+        "title": "Referanslarım"
+      }
+    }
+  },
+  "nft_menu": {
+    "title": "NFT Kutusu",
+    "items": {
+      "first": {
+        "title": "Teklif / INO"
+      },
+      "second": {
+        "title": "NFT Piyasaları"
+      },
+      "third": {
+        "title": "Öne Çıkan NFT Piyasaları"
+      },
+      "fourth": {
+        "title": "En İyi NFT Piyasaları"
+      },
+      "fifth": {
+        "title": "NFT Varlıklarım"
+      },
+      "sixth": {
+        "title": "Açık Punklar"
+      }
+    },
+    "startup_menu": {
+      "title": "Başlangıç"
+    },
+    "lang_menu": {
+      "title": "Dil"
+    },
+    "currency_menu": {
+      "title": "Para Birimi"
+    },
+    "customer_service_menu": {
+      "title": "Müşteri Hizmetleri",
+      "items": {
+        "first": {
+          "title": "Canlı Destek"
+        },
+        "second": {
+          "title": "Destek Talebi"
+        },
+        "third": {
+          "title": "Açık Ödülü"
+        }
+      }
+    }
+  },
   "banner": {
     "top_title": "Güvenli Kripto Para Birimi",
     "main_title": "<strong_anchor>Kripto</strong_anchor> İşleminizi Yapın",
