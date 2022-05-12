@@ -7,7 +7,7 @@ import { Dropdown } from "antd";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { MdMobileScreenShare } from "react-icons/md";
 import { RiCustomerService2Fill } from "react-icons/ri";
-import { giveawayList, nftList } from "./NavbarItems/NavbarItems";
+import { nftList } from "./NavbarItems/NavbarItems";
 import { appList, helpList } from "./NavbarItems/RightNavItems";
 import GlobalList from "./NavbarItems/GlobalList";
 import { useTranslation } from "react-i18next";
@@ -20,6 +20,7 @@ import {
   TradeList,
   EarnList,
   NewsList,
+  GiveawayList
 } from "./NavbarItems";
 const Header = () => {
   const [isScrolled, setIsScrolled] = React.useState(false);
@@ -107,7 +108,7 @@ const Header = () => {
                 </Dropdown>
               </li>
               <li className={style.navItem}>
-                <Dropdown placement="bottom" overlay={giveawayList}>
+                <Dropdown placement="bottom" overlay={GiveawayList}>
                   <span className={style.dropdownLink}>
                     {t("header.giveaway_menu.title")}{" "}
                     <TiArrowSortedDown className={style.navIconUp} />
