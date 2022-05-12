@@ -68,7 +68,7 @@ const Header = () => {
             </Link>
             <ul className="navbar-nav ms-2">
               <li className={style.navItem}>
-                <Dropdown placement="bottom" overlay={BuyCrypto}>
+                <Dropdown placement="bottom" overlay={<BuyCrypto/>}>
                   <span className={style.dropdownLink} href="/#">
                     {t("header.buy_menu.title")}{" "}
                     <TiArrowSortedDown className={style.navIconUp} />
@@ -76,7 +76,7 @@ const Header = () => {
                 </Dropdown>
               </li>
               <li className={style.navItem}>
-                <Dropdown placement="bottom" overlay={MarketList}>
+                <Dropdown placement="bottom" overlay={<MarketList/>}>
                   <span className={style.dropdownLink} href="/#">
                     {t("header.market_menu.title")}{" "}
                     <TiArrowSortedDown className={style.navIconUp} />
@@ -84,7 +84,7 @@ const Header = () => {
                 </Dropdown>
               </li>
               <li className={style.navItem}>
-                <Dropdown placement="bottom" overlay={TradeList}>
+                <Dropdown placement="bottom" overlay={<TradeList/>}>
                   <span className={style.dropdownLink} href="/#">
                     {t("header.trade_menu.title")}{" "}
                     <TiArrowSortedDown className={style.navIconUp} />
@@ -92,7 +92,7 @@ const Header = () => {
                 </Dropdown>
               </li>
               <li className={style.navItem}>
-                <Dropdown placement="bottom" overlay={EarnList}>
+                <Dropdown placement="bottom" overlay={<EarnList/>}>
                   <span className={style.dropdownLink} href="/#">
                     {t("header.earn_menu.title")}{" "}
                     <TiArrowSortedDown className={style.navIconUp} />
@@ -100,7 +100,7 @@ const Header = () => {
                 </Dropdown>
               </li>
               <li className={style.navItem}>
-                <Dropdown placement="bottom" overlay={NewsList}>
+                <Dropdown placement="bottom" overlay={<NewsList/>}>
                   <span className={style.dropdownLink}>
                     {t("header.news_menu.title")}{" "}
                     <TiArrowSortedDown className={style.navIconUp} />
@@ -108,7 +108,7 @@ const Header = () => {
                 </Dropdown>
               </li>
               <li className={style.navItem}>
-                <Dropdown placement="bottom" overlay={GiveawayList}>
+                <Dropdown placement="bottom" overlay={<GiveawayList/>}>
                   <span className={style.dropdownLink}>
                     {t("header.giveaway_menu.title")}{" "}
                     <TiArrowSortedDown className={style.navIconUp} />
@@ -116,7 +116,7 @@ const Header = () => {
                 </Dropdown>
               </li>
               <li className={style.navItem}>
-                <Dropdown placement="bottom" overlay={NftList}>
+                <Dropdown placement="bottom" overlay={<NftList/>}>
                   <span className={style.dropdownLink}>
                     {t("header.nft_menu.title")}{" "}
                     <TiArrowSortedDown className={style.navIconUp} />
