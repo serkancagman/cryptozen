@@ -16,13 +16,32 @@
     "main_title": "Öne Çıkan Kriptolar",
     "tag_text": "Öne Çıkanlar",
     "more": "Daha Fazlasını Görüntüle",
-    "table":{
+    "table": {
       "market": "Piyasa",
       "price": "Fiyat",
       "volume": "Hacim",
       "change": "Değişim",
       "chart": "Fiyat Grafiği",
       "action": "Eylem"
-    }    
+    }
+  },
+  "about_ico": {
+    "main_title": "Kripto ICO Hakkında",
+    "tag_text": "ICO Hakkında",
+    "description": "Crypto ICO, kullanıcıların banka havalelerini veya kredi/banka kartlarını kullanarak kripto para birimleri satın almalarını ve satmalarını sağlayan merkezi olmayan bir kripto para borsasıdır.",
+    "items": {
+      "first": {
+        "title": "Para Birimi Değişimi",
+        "description": "Güvenilir bir şekilde ve hızlı yöntemlerle işlemlerinizi gerçekleştirin. Gerçekleştirdiğiniz işlemlerden hediyeler kazanın"
+      },
+      "second": {
+        "title": "Bakiye Transferi",
+        "description": "Güvenilir bir şekilde ve hızlı yöntemlerle işlemlerinizi gerçekleştirin. Gerçekleştirdiğiniz işlemlerden hediyeler kazanın"
+      },
+      "thirth": {
+        "title": "Güvenli Transfer",
+        "description": "Güvenilir bir şekilde ve hızlı yöntemlerle işlemlerinizi gerçekleştirin. Gerçekleştirdiğiniz işlemlerden hediyeler kazanın"
+      }
+    }
   }
 }
