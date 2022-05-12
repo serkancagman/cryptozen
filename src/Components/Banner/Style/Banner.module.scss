@@ -281,7 +281,8 @@
     .countdownText {
       color: #fff;
       font-family: $interFont;
-      display: inline-block;
+      display: inline-block; 
+      text-transform: uppercase;
       margin-top: 5px;
       font-size: 15px;
     }
