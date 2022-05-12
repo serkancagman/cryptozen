@@ -58,5 +58,71 @@
   "mobile_app": {
     "main_title": "IOS ve Android'de Erişebilirsiniz",
     "description": "Bize istediğiniz an erişebilirsiniz. Mobil uygulamamızı indirin ve en heyecan verici özelliklere erişin. Ayrıca anlık bildirimlerden faydalanabilirsiniz."
+  },
+  "faq": {
+    "main_title": "Sık Sorulan Sorular",
+    "tag_text": "SSS",
+    "description": "Sıkça sorulan soruları inceleyerek aklınızdaki soru işaretlerini giderebilirsiniz.",
+    "options": {
+      "first": "Genel",
+      "second": "Kripto",
+      "third": "ICO Nedir ?"
+    },
+    "items": {
+      "first": {
+        "first_item": {
+          "question": "ICO Nedir ?",
+          "answer": "Kripto ICO, kullanıcıların banka havalelerini veya kredi/banka kartlarını kullanarak kripto para birimleri satın almalarını ve satmalarını sağlayan merkezi olmayan bir kripto para borsasıdır."
+        },
+        "second_item": {
+          "question": "Kripto para birimleri ne kadar önemli ?",
+          "answer": "Kripto para birimleri, kripto para birimleri için en çok önemli özellikleri barındırır."
+        },
+        "third_item": {
+          "question": "Nasıl kripto satın alabilirim ?",
+          "answer": "Menüden satın alma seçeneğini seçerek kripto para birimleri satın alabilirsiniz."
+        },
+        "fourth_item": {
+          "question": "Nasıl kripto satın alabilirim ?",
+          "answer": "Menüden satın alma seçeneğini seçerek kripto para birimleri satın alabilirsiniz."
+        }
+      },
+      "second": {
+        "first_item": {
+          "question": "Kripto Nedir ?",
+          "answer": "Kripto ICO, kullanıcıların banka havalelerini veya kredi/banka kartlarını kullanarak kripto para birimleri satın almalarını ve satmalarını sağlayan merkezi olmayan bir kripto para borsasıdır."
+        },
+        "second_item": {
+          "question": "Kripto para birimleri ne kadar önemli ?",
+          "answer": "Kripto para birimleri, kripto para birimleri için en çok önemli özellikleri barındırır. "
+        },
+        "third_item": {
+          "question": "Nasıl kripto satın alabilirim ?",
+          "answer": "Menüden satın alma seçeneğini seçerek kripto para birimleri satın alabilirsiniz."
+        },
+        "fourth_item": {
+          "question": "Nasıl kripto satın alabilirim ?",
+          "answer": "Menüden satın alma seçeneğini seçerek kripto para birimleri satın alabilirsiniz."
+        }
+      },
+      "third": {
+        "first_item": {
+          "question": "Token Nedir ?",
+          "answer": "Kripto ICO, kullanıcıların banka havalelerini veya kredi/banka kartlarını kullanarak kripto para birimleri satın almalarını ve satmalarını sağlayan merkezi olmayan bir kripto para borsasıdır."
+        },
+        "second_item": {
+          "question": "Kripto para birimleri ne kadar önemli ?",
+          "answer": "Kripto para birimleri, kripto para birimleri için en çok önemli özellikleri barındırır. "
+        },
+        "third_item": {
+          "question": "Nasıl kripto satın alabilirim ?",
+          "answer": "Menüden satın alma seçeneğini seçerek kripto para birimleri satın alabilirsiniz."
+        },
+        "fourth_item": {
+          "question": "Nasıl kripto satın alabilirim ?",
+          "answer": "Menüden satın alma seçeneğini seçerek kripto para birimleri satın alabilirsiniz."
+        }
+      }
+    }
   }
 }

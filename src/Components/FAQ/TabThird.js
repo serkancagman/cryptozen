@@ -1,33 +1,31 @@
 import React from "react";
 import { Collapse } from "antd";
 import style from "./Style/Faq.module.css";
+import { useTranslation } from "react-i18next";
 const TabThird = () => {
   const { Panel } = Collapse;
+  const { t } = useTranslation();
 
   return (
     <Collapse ghost={true}>
-      <Panel header="Third Tab Question" key="1">
+      <Panel header={t("faq.items.third.first_item.question")} key="1">
         <p className={style.faqText}>
-          Monotonectally productivate virtual benefits vis-a-vis clicks ship.
-          Seamlessly generate user friendly content.
+          {t("faq.items.third.first_item.answer")}
         </p>
       </Panel>
-      <Panel header="Is Payment Safe ?" key="2">
+      <Panel header={t("faq.items.third.second_item.question")} key="2">
         <p className={style.faqText}>
-          Monotonectally productivate virtual benefits vis-a-vis clicks ship.
-          Seamlessly generate user friendly content.
+          {t("faq.items.third.second_item.answer")}
         </p>
       </Panel>
-      <Panel header="How Can i Buy a Token ?" key="3">
+      <Panel header={t("faq.items.third.third_item.question")} key="3">
         <p className={style.faqText}>
-          Monotonectally productivate virtual benefits vis-a-vis clicks ship.
-          Seamlessly generate user friendly content.
+          {t("faq.items.third.third_item.answer")}
         </p>
       </Panel>
-      <Panel header="Dolor sit amet" key="4">
+      <Panel header={t("faq.items.third.fourth_item.question")} key="4">
         <p className={style.faqText}>
-          Monotonectally productivate virtual benefits vis-a-vis clicks ship.
-          Seamlessly generate user friendly content.
+          {t("faq.items.third.fourth_item.answer")}
         </p>
       </Panel>
     </Collapse>

@@ -5,18 +5,17 @@ import faqImg from "Assets/Faq/faq.png";
 import TabFirst from "./TabFirst";
 import TabSecond from "./TabSecond";
 import TabThird from "./TabThird";
+import { useTranslation } from "react-i18next";
 const Faq = () => {
   const [activeTab, setActiveTab] = React.useState("first");
+  const { t } = useTranslation();
   return (
     <section className={style.faq}>
       <div className="container">
         <div className={style.faqHeader}>
-          <HeaderTag title="FAQS" />
-          <h2 className={style.faqTitle}>Frequently Asked Questions</h2>
-          <p className={style.faqText}>
-            Monotonectally productivate virtual benefits vis-a-vis clicks ship.
-            Seamlessly generate user friendly content.
-          </p>
+          <HeaderTag title={t("faq.tag_text")} />
+          <h2 className={style.faqTitle}>{t("faq.main_title")}</h2>
+          <p className={style.faqText}>{t("faq.description")}</p>
         </div>
         <div className="d-flex flex-wrap justify-content-center align-items-center">
           <button
@@ -25,7 +24,7 @@ const Faq = () => {
             }`}
             onClick={() => setActiveTab("first")}
           >
-            General
+            {t("faq.options.first")}
           </button>
           <button
             className={`${style.tab} ${
@@ -33,7 +32,7 @@ const Faq = () => {
             }`}
             onClick={() => setActiveTab("second")}
           >
-            Token
+            {t("faq.options.second")}
           </button>
           <button
             className={`${style.tab} ${
@@ -41,7 +40,7 @@ const Faq = () => {
             }`}
             onClick={() => setActiveTab("third")}
           >
-            What is ICO?
+            {t("faq.options.third")}
           </button>
         </div>
         <div className="row g-3 align-items-center">
