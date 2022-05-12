@@ -107,9 +107,6 @@
         }
       }
     },
-    "copy_trade_menu": {
-      "title": "Kopya Alım-Satım"
-    },
     "news_menu": {
       "title": "Haberler",
       "items": {
@@ -132,42 +129,43 @@
           "title": "PodCast"
         }
       }
-    }
-  },
-  "giveaway_menu": {
-    "title": "Çekiliş",
-    "items": {
-      "first": {
-        "title": "Bonus Kampanyaları"
-      },
-      "second": {
-        "title": "Görevler & Bonuslar"
-      },
-      "third": {
-        "title": "Referanslarım"
+    },
+
+    "giveaway_menu": {
+      "title": "Çekiliş",
+      "items": {
+        "first": {
+          "title": "Bonus Kampanyaları"
+        },
+        "second": {
+          "title": "Görevler & Bonuslar"
+        },
+        "third": {
+          "title": "Referanslarım"
+        }
       }
-    }
-  },
-  "nft_menu": {
-    "title": "NFT Kutusu",
-    "items": {
-      "first": {
-        "title": "Teklif / INO"
-      },
-      "second": {
-        "title": "NFT Piyasaları"
-      },
-      "third": {
-        "title": "Öne Çıkan NFT Piyasaları"
-      },
-      "fourth": {
-        "title": "En İyi NFT Piyasaları"
-      },
-      "fifth": {
-        "title": "NFT Varlıklarım"
-      },
-      "sixth": {
-        "title": "Açık Punklar"
+    },
+    "nft_menu": {
+      "title": "NFT Kutusu",
+      "items": {
+        "first": {
+          "title": "Teklif / INO"
+        },
+        "second": {
+          "title": "NFT Piyasaları"
+        },
+        "third": {
+          "title": "Öne Çıkan NFT Piyasaları"
+        },
+        "fourth": {
+          "title": "En İyi NFT Piyasaları"
+        },
+        "fifth": {
+          "title": "NFT Varlıklarım"
+        },
+        "sixth": {
+          "title": "Açık Punklar"
+        }
       }
     },
     "startup_menu": {
@@ -190,6 +188,36 @@
         },
         "third": {
           "title": "Açık Ödülü"
+        }
+      }
+    },
+    "device_menu": {
+      "items": {
+        "first": {
+          "title": "Mobil"
+        },
+        "second": {
+          "title": "Masaüstü"
+        }
+      }
+    },
+    "user_menu": {
+      "items": {
+        "first": {
+          "title": "Giriş Yap"
+        },
+        "second": {
+          "title": "Üye Ol"
+        }
+      }
+    },
+    "search_menu": {
+      "items": {
+        "first": {
+          "title": "En Çok Arananlar"
+        },
+        "second": {
+          "title": "Arama Sonuçları"
         }
       }
     }

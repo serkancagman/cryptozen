@@ -46,64 +46,12 @@ import {
 } from "react-icons/ri";
 import { SiFacepunch } from "react-icons/si";
 import { FaFileInvoiceDollar, FaCubes, FaCoins } from "react-icons/fa";
-// Buy List Dropdown Menu
-export const buyList = (
-  <div className={style.navSubWrapper}>
-    <ul className={style.navSubList}>
-      <li className={style.navSubItem}>
-        <Link to="/buy_crypto" className={style.navSubLink}>
-          <BsCreditCard2BackFill className={style.navSubIcon} />
-          <span className={style.navSubText}>Credit Card</span>
-        </Link>
-      </li>
-      <li className={style.navSubItem}>
-        <Link to="/buy_crypto/bank" className={style.navSubLink}>
-          <BsBank2 className={style.navSubIcon} />
-          <span className={style.navSubText}>Bank Transfer</span>
-        </Link>
-      </li>
-      <li className={style.navSubItem}>
-        <Link to="/buy_crypto/p2p" className={style.navSubLink}>
-          <SiHiveBlockchain className={style.navSubIcon} />
-          <span className={style.navSubText}>P2P Trade</span>
-        </Link>
-      </li>
-    </ul>
-  </div>
-);
+
+
 
 // Markets Dropdown Menu
 
-export const marketList = (
-  <div className={style.navSubWrapper}>
-    <ul className={style.navSubList}>
-      <li className={style.navSubItem}>
-        <Link to="/market_list" className={style.navSubLink}>
-          <MdPriceChange className={style.navSubIcon} />
-          <span className={style.navSubText}>Market Price</span>
-        </Link>
-      </li>
-      <li className={style.navSubItem}>
-        <Link to="/market_tracker" className={style.navSubLink}>
-          <AiOutlineRise className={style.navSubIcon} />
-          <span className={style.navSubText}>Market Tracker</span>
-        </Link>
-      </li>
-      <li className={style.navSubItem}>
-        <Link to="/big_data" className={style.navSubLink}>
-          <BsClipboardData className={style.navSubIcon} />
-          <span className={style.navSubText}>Big Data</span>
-        </Link>
-      </li>
-      <li className={style.navSubItem}>
-        <Link to="/coins" className={style.navSubLink}>
-          <AiOutlineGlobal className={style.navSubIcon} />
-          <span className={style.navSubText}>Global Currencies</span>
-        </Link>
-      </li>
-    </ul>
-  </div>
-);
+
 
 // Trade Dropdown Menu
 

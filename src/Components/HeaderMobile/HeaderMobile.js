@@ -19,9 +19,11 @@ import {
   Help,
 } from "./NavbarItems";
 import Search from "Components/Header/NavbarItems/Search";
+import { useTranslation } from "react-i18next";
 
 const HeaderMobile = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const { t } = useTranslation();
   return (
     <div className={style.header_mobile}>
       <div className={style.header_mobile_inner}>
@@ -42,55 +44,57 @@ const HeaderMobile = () => {
         <ul className={style.nav_list}>
           <li className={style.nav_item}>
             <span to="/#" className={style.nav_link}>
-              Buy Crypto <TiArrowSortedDown className={style.nav_icon} />
+              {t("header.buy_menu.title")}{" "}
+              <TiArrowSortedDown className={style.nav_icon} />
             </span>
             <BuyCrypto />
           </li>
           <li className={style.nav_item}>
             <span to="/#" className={style.nav_link}>
-              Markets <TiArrowSortedDown className={style.nav_icon} />
+              {t("header.market_menu.title")}{" "}
+              <TiArrowSortedDown className={style.nav_icon} />
             </span>
             <Markets />
           </li>
           <li className={style.nav_item}>
             <span to="/#" className={style.nav_link}>
-              Trade <TiArrowSortedDown className={style.nav_icon} />
+              {t("header.trade_menu.title")}{" "}
+              <TiArrowSortedDown className={style.nav_icon} />
             </span>
             <Trade />
           </li>
           <li className={style.nav_item}>
             <span to="/#" className={style.nav_link}>
-              Earn <TiArrowSortedDown className={style.nav_icon} />
+              {t("header.earn_menu.title")}{" "}
+              <TiArrowSortedDown className={style.nav_icon} />
             </span>
             <Earn />
           </li>
           <li className={style.nav_item}>
             <span to="/#" className={style.nav_link}>
-              Copy Trading <span className={style.nav_link_tag}>NEW</span>
-            </span>
-          </li>
-          <li className={style.nav_item}>
-            <span to="/#" className={style.nav_link}>
-              News <TiArrowSortedDown className={style.nav_icon} />
+              {t("header.news_menu.title")}{" "}
+              <TiArrowSortedDown className={style.nav_icon} />
             </span>
             <News />
           </li>
           <li className={style.nav_item}>
             <span to="/#" className={style.nav_link}>
-              Giveaways <TiArrowSortedDown className={style.nav_icon} />
+              {t("header.giveaway_menu.title")}{" "}
+              <TiArrowSortedDown className={style.nav_icon} />
             </span>
             <Giveaways />
           </li>
           <li className={style.nav_item}>
             <span to="/#" className={style.nav_link}>
-              NFT Box <span className={style.nav_link_tag}>HOT</span>{" "}
+              {t("header.nft_menu.title")}{" "}
+              <span className={style.nav_link_tag}>HOT</span>{" "}
               <TiArrowSortedDown className={style.nav_icon} />
             </span>
             <NftBox />
           </li>
           <li className={style.nav_item}>
             <span to="/#" className={style.nav_link}>
-              Startup
+              {t("header.startup_menu.title")}
             </span>
           </li>
           <li className={style.nav_item}>
@@ -107,7 +111,8 @@ const HeaderMobile = () => {
           </li>
           <li className={style.nav_item}>
             <span to="/#" className={style.nav_link}>
-              <RiCustomerService2Fill className={style.nav_icon} /> Customer Service
+              <RiCustomerService2Fill className={style.nav_icon} /> Customer
+              Service
             </span>
             <Help />
           </li>

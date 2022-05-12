@@ -8,8 +8,7 @@ import { TiArrowSortedDown } from "react-icons/ti";
 import { MdMobileScreenShare } from "react-icons/md";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import {
-  buyList,
-  marketList,
+
   tradeList,
   earnList,
   newsList,
@@ -18,14 +17,17 @@ import {
 } from "./NavbarItems/NavbarItems";
 import { appList, helpList } from "./NavbarItems/RightNavItems";
 import GlobalList from "./NavbarItems/GlobalList";
+import { useTranslation } from "react-i18next";
 import useWindowSize from "Hooks/useWindowSize";
 import Search from "./NavbarItems/Search";
 import HeaderMobile from "Components/HeaderMobile/HeaderMobile";
+import {BuyCrypto,MarketList} from "./NavbarItems";
 const Header = () => {
   const [isScrolled, setIsScrolled] = React.useState(false);
   const [pageHeight, setPageHeight] = React.useState({ height: 0 });
   const [isMobile, setIsMobile] = React.useState(false);
   const { width } = useWindowSize();
+  const { t } = useTranslation();
   React.useEffect(() => {
     window.addEventListener("scroll", handleScroll);
   }, []);
@@ -43,9 +45,9 @@ const Header = () => {
   }, [pageHeight.height]);
 
   React.useEffect(() => {
-    if (window.innerWidth < 1054) {
+    if (window.innerWidth < 1060) {
       setIsMobile(true);
-    } else if (window.innerWidth > 1054 && isMobile) {
+    } else if (window.innerWidth > 1060 && isMobile) {
       setIsMobile(false);
     }
   }, [isMobile, width]);
@@ -66,64 +68,65 @@ const Header = () => {
             </Link>
             <ul className="navbar-nav ms-2">
               <li className={style.navItem}>
-                <Dropdown placement="bottom" overlay={buyList}>
+                <Dropdown placement="bottom" overlay={BuyCrypto}>
                   <span className={style.dropdownLink} href="/#">
-                    Buy Crypto <TiArrowSortedDown className={style.navIconUp} />
+                    {t("header.buy_menu.title")}{" "}
+                    <TiArrowSortedDown className={style.navIconUp} />
                   </span>
                 </Dropdown>
               </li>
               <li className={style.navItem}>
-                <Dropdown placement="bottom" overlay={marketList}>
+                <Dropdown placement="bottom" overlay={MarketList}>
                   <span className={style.dropdownLink} href="/#">
-                    Markets <TiArrowSortedDown className={style.navIconUp} />
+                    {t("header.market_menu.title")}{" "}
+                    <TiArrowSortedDown className={style.navIconUp} />
                   </span>
                 </Dropdown>
               </li>
               <li className={style.navItem}>
                 <Dropdown placement="bottom" overlay={tradeList}>
                   <span className={style.dropdownLink} href="/#">
-                    Trade <TiArrowSortedDown className={style.navIconUp} />
+                    {t("header.trade_menu.title")}{" "}
+                    <TiArrowSortedDown className={style.navIconUp} />
                   </span>
                 </Dropdown>
               </li>
               <li className={style.navItem}>
                 <Dropdown placement="bottom" overlay={earnList}>
                   <span className={style.dropdownLink} href="/#">
-                    Earn <TiArrowSortedDown className={style.navIconUp} />
+                    {t("header.earn_menu.title")}{" "}
+                    <TiArrowSortedDown className={style.navIconUp} />
                   </span>
                 </Dropdown>
               </li>
               <li className={style.navItem}>
-                <Link to="/strategybot" className={style.dropdownLink}>
-                  Copy Trading
-                  <span className={style.navLinkTag}>NEW</span>
-                </Link>
-              </li>
-              <li className={style.navItem}>
                 <Dropdown placement="bottom" overlay={newsList}>
                   <span className={style.dropdownLink}>
-                    News <TiArrowSortedDown className={style.navIconUp} />
+                    {t("header.news_menu.title")}{" "}
+                    <TiArrowSortedDown className={style.navIconUp} />
                   </span>
                 </Dropdown>
               </li>
               <li className={style.navItem}>
                 <Dropdown placement="bottom" overlay={giveawayList}>
                   <span className={style.dropdownLink}>
-                    Giveaways <TiArrowSortedDown className={style.navIconUp} />
+                    {t("header.giveaway_menu.title")}{" "}
+                    <TiArrowSortedDown className={style.navIconUp} />
                   </span>
                 </Dropdown>
               </li>
               <li className={style.navItem}>
                 <Dropdown placement="bottom" overlay={nftList}>
                   <span className={style.dropdownLink}>
-                    NFT BOX <TiArrowSortedDown className={style.navIconUp} />
+                    {t("header.nft_menu.title")}{" "}
+                    <TiArrowSortedDown className={style.navIconUp} />
                     <span className={style.navLinkTag}>HOT</span>
                   </span>
                 </Dropdown>
               </li>
               <li className={style.navItem}>
                 <Link to="/startup" className={style.dropdownLink}>
-                  Startup
+                  {t("header.startup_menu.title")}
                 </Link>
               </li>
             </ul>
@@ -131,7 +134,7 @@ const Header = () => {
             <ul className="navbar-nav ms-auto">
               <li className={style.navItem}>
                 <Link to="/login" className={style.dropdownLink}>
-                  Log In
+                  {t("header.user_menu.items.first.title")}
                 </Link>
               </li>
               <li className={style.navItem}>
@@ -139,7 +142,7 @@ const Header = () => {
                   to="/signup"
                   className={`${style.dropdownLink} ${style.dropdornSignupLink}`}
                 >
-                  Sign Up
+                  {t("header.user_menu.items.second.title")}
                 </Link>
               </li>
               <li className={style.navItem}>
