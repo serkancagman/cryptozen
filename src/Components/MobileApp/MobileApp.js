@@ -4,7 +4,9 @@ import phoneImg from "Assets/MobileApp/phone.png";
 import marketIcon from "Assets/MobileApp/shape3.png";
 import marketIcon2 from "Assets/MobileApp/shape4.png";
 import phoneIcon from "Assets/MobileApp/shape2.png";
+import { useTranslation } from "react-i18next";
 const MobileApp = () => {
+  const { t } = useTranslation();
   return (
     <section className={style.mobileApp}>
       <div className="container">
@@ -13,13 +15,10 @@ const MobileApp = () => {
             <div className="col-md-12 col-lg-6">
               <div className="d-flex flex-column justify-content-center align-items-start">
                 <h2 className={style.mobileAppTitle}>
-                  Also available on IOS and Android
+                  {t('mobile_app.main_title')}
                 </h2>
                 <p className={style.mobileAppText}>
-                  Completely whiteboard robust interfaces without multidiscipli
-                  has to manufactured products. Progressively myocardinate
-                  cooperat crypt technologies through principle- driven
-                  e-commerce.
+                  {t('mobile_app.description')}
                 </p>
                 <div className="d-flex justify-content-start align-items-center">
                   <div className={style.storeIcon}>

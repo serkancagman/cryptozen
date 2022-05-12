@@ -54,5 +54,9 @@
     "description_first": "We are a team of highly qualified and experienced developers who are passionate about creating the best trading platform for cryptocurrency.",
     "description_second": "We are a team of highly qualified and experienced developers who are passionate about creating the best trading platform for cryptocurrency.",
     "more_text": "Read More"
+  },
+  "mobile_app": {
+    "main_title": "Available on IOS and Android",
+    "description": "You can reach us at any time. Download our mobile app and get access to the most exciting features. You can also take advantage of instant notifications."
   }
 }
