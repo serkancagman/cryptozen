@@ -5,7 +5,9 @@ import BuyorSell from "./BuyorSell";
 import ProductDetail from "./ProductDetail";
 import ProductTable from "./ProductTable";
 import style from "./Style/Product.module.css";
+import { useTranslation } from "react-i18next";
 const Product = () => {
+  const { t } = useTranslation();
   const { id } = useParams();
   const [selectedOption, setSelectedOption] = React.useState("spot");
   return (
@@ -126,10 +128,10 @@ const Product = () => {
               <div className={style.tradeOptionsMain}>
                 <div className="row g-3">
                   <div className="col-lg-6 col-md-12">
-                    <BuyorSell type="Buy" />
+                    <BuyorSell type={t('product.buy_or_sell.buy')} />
                   </div>
                   <div className="col-lg-6 col-md-12">
-                    <BuyorSell type="Sell" />
+                    <BuyorSell type={t('product.buy_or_sell.sell')} />
                   </div>
                 </div>
               </div>

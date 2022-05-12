@@ -2,9 +2,11 @@ import React from "react";
 import style from "./Style/Product.module.css";
 import { Slider } from "antd";
 import { useSelector } from "react-redux";
+import { useTranslation } from "react-i18next";
 const BuyorSell = ({ type }) => {
   const { coin, coin_price } = useSelector((state) => state.current_coin);
   const [coinPrice, setCoinPrice] = React.useState(0);
+  const {t} = useTranslation();
   return (
     <div className={style.buyorSell}>
       <div className={style.buyorSellTopArea}>
@@ -17,7 +19,7 @@ const BuyorSell = ({ type }) => {
         </div>
       </div>
       <div className="d-flex my-1 justify-content-start flex-wrap align-items-center">
-        <span className={style.buyorSellSubTitle}>My balance</span>
+        <span className={style.buyorSellSubTitle}>{t('product.buy_or_sell.balance')}</span>
         <span
           className={`${style.buyorSellSubTitleCount} ${
             type === "Buy" ? style.buyText : style.sellText
@@ -25,11 +27,11 @@ const BuyorSell = ({ type }) => {
         >
           0.0000 USD
         </span>
-        <span className={style.buyorSellSubTitle}>Deposit</span>
-        <span className={style.buyorSellSubTitle}>Withdraw</span>
+        <span className={style.buyorSellSubTitle}>{t('product.buy_or_sell.deposit')}</span>
+        <span className={style.buyorSellSubTitle}>{t('product.buy_or_sell.withdraw')}</span>
       </div>
       <div className="d-flex my-1 justify-content-start flex-wrap align-items-center">
-        <span className={style.buyorSellSubTitle}>Obtainable</span>
+        <span className={style.buyorSellSubTitle}>{t('product.buy_or_sell.obtainable')}</span>
         <span
           className={`${style.buyorSellSubTitleCount} ${
             type === "Buy" ? style.buyText : style.sellText
@@ -49,7 +51,7 @@ const BuyorSell = ({ type }) => {
               onChange={(e) => setCoinPrice(e.target.value)}
             />
             <span className={style.buyorSellInputText}>
-              Price USD/<span className={style.coinName}>{coin}</span>
+            {t('product.product_table.price')} USD/<span className={style.coinName}>{coin}</span>
             </span>
           </div>
         </div>
@@ -61,7 +63,7 @@ const BuyorSell = ({ type }) => {
               placeholder="0"
             />
             <span className={style.buyorSellInputText}>
-              Amount <span className={style.coinName}> {coin}</span>
+            {t('product.buy_or_sell.amount')} <span className={style.coinName}> {coin}</span>
             </span>
           </div>
         </div>
@@ -75,7 +77,7 @@ const BuyorSell = ({ type }) => {
               className={style.buyorSellInput}
               placeholder="0"
             />
-            <span className={style.buyorSellInputText}>Total USD</span>
+            <span className={style.buyorSellInputText}>{t('product.buy_or_sell.total')} USD</span>
           </div>
         </div>
         <div className="col-12">
@@ -84,7 +86,7 @@ const BuyorSell = ({ type }) => {
       </form>
       <button
         className={`${style.buyorSellBtn} ${
-          type === "Buy" ? style.buyBtn : style.sellBtn
+          type === "Buy" || type === "Satın Al" ? style.buyBtn : style.sellBtn
         }`}
       >
         {type + " " + coin}

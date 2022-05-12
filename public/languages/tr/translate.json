@@ -390,5 +390,26 @@
       "market_cap": "Piyasa Kapasitesi",
       "action": "Eylem"
     }
+  },
+  "product": {
+    "product_table": {
+      "market": "Piyasa",
+      "price": "Fiyat"
+    },
+    "product_top": {
+      "high": "Yüksek",
+      "low": "Düşük",
+      "volume": "24H Hacim"
+    },
+    "buy_or_sell": {
+      "buy": "Satın Al",
+      "sell": "Sat",
+      "balance": "Bakiyem",
+      "amount": "Miktar",
+      "total": "Toplam",
+      "deposit": "Yatır",
+      "withdraw": "Çek",
+      "obtainable": "Alınabilir"
+    }
   }
 }
