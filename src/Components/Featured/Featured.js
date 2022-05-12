@@ -11,18 +11,19 @@ import PromotionCarousel from "./PromotionCarousel";
 import { useSelector } from "react-redux";
 import HeaderTag from "Components/HeaderTag/HeaderTag";
 import Preloader from "Components/PreLoader/Preloader";
+import { useTranslation } from "react-i18next";
 const TopList = () => {
   const {currency} = useSelector(state => state.currency);
-
   const { data, isLoading, error } = useQuery(["coinList",currency], () =>
     getCoinList(currency)
   );
+  const { t } = useTranslation();
   return (
     <section className={style.topList}>
       <div className="container">
         <div className={style.featuredHeader}>
-          <HeaderTag title="Featured" />
-        <h3 className={style.topListTitle}>Featured Coins</h3>
+          <HeaderTag title={t('featured.tag_text')} />
+        <h3 className={style.topListTitle}>{t('featured.main_title')}</h3>
         </div>
         <div className="row g-3">
           {!isLoading && !error && (
@@ -38,7 +39,7 @@ const TopList = () => {
           <div className="d-flex justify-content-center align-items-center my-3">
             <Link to="/market_list" className={style.viewAll}>
               {" "}
-              View More
+              {t('featured.more')}
               <MdKeyboardArrowRight className={style.viewAllIcon} />
             </Link>
           </div>

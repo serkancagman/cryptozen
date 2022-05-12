@@ -5,11 +5,12 @@ import style from "./Style/Featured.module.css";
 import BasicLineChart from "Charts/BasicLineChart";
 import { useSelector } from "react-redux";
 import useWindowSize from "Hooks/useWindowSize";
-
+import { useTranslation } from "react-i18next";
 const FeaturedTable = ({ data }) => {
   const { currency, currencyIcon } = useSelector((state) => state.currency);
   const { width } = useWindowSize();
   const [isMobile, setIsMobile] = React.useState(false);
+  const { t } = useTranslation();
   React.useEffect(() => {
     if (width < 992) {
       setIsMobile(true);
@@ -21,7 +22,7 @@ const FeaturedTable = ({ data }) => {
   const columns = React.useMemo(() => {
     return [
       {
-        title: "Market",
+        title: t("featured.table.market"),
         dataIndex: "symbol",
         key: "symbol",
         render: (text, record) => (
@@ -49,7 +50,7 @@ const FeaturedTable = ({ data }) => {
         ),
       },
       {
-        title: "Price",
+        title: t("featured.table.price"),
         dataIndex: "current_price",
         key: "current_price",
         render: (text, record) => (
@@ -65,7 +66,7 @@ const FeaturedTable = ({ data }) => {
         ),
       },
       {
-        title: "Volume",
+        title: t("featured.table.volume"),
         dataIndex: "total_volume",
         key: "total_volume",
         render: (text, record) => (
@@ -75,7 +76,7 @@ const FeaturedTable = ({ data }) => {
         ),
       },
       {
-        title: "24H Change",
+        title: `24H ${t("featured.table.change")}`,
         dataIndex: "market_cap_change_percentage_24h",
         key: "market_cap_change_percentage_24h",
         render: (text, record) => (
@@ -91,7 +92,7 @@ const FeaturedTable = ({ data }) => {
         ),
       },
       {
-        title: "Price Trend (3D)",
+        title: `${t("featured.table.chart")} (3D)`,
         dataIndex: "price",
         key: "price",
         render: (text, record) => (
@@ -101,17 +102,17 @@ const FeaturedTable = ({ data }) => {
         ),
       },
       {
-        title: "Action",
+        title: t("featured.table.action"),
         dataIndex: "name",
         key: "name",
         render: (text, record) => (
           <Link to={`/market_list/${record.id}`} className={style.tradeBtn}>
-            Trade
+            {t("featured.table.action")}
           </Link>
         ),
       },
     ];
-  }, [currency, currencyIcon]);
+  }, [currency, currencyIcon, t]);
 
   return (
     <>
