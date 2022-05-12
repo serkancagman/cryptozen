@@ -9,7 +9,9 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { AiFillHeart } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className={style.footer}>
       <div className="container">
@@ -23,7 +25,7 @@ const Footer = () => {
                 There are many variations of pass of Lorem Ipsum available, but
                 the majority have suffered
               </p>
-              <h5 className={style.socialTitle}>Follow Us</h5>
+              <h5 className={style.socialTitle}>{t('footer.follow_text')}</h5>
               <div className="d-flex justify-content-start align-items-center">
                 <div className={style.socialItem}>
                   <FaFacebookF className={style.socialIcon} />
@@ -43,58 +45,58 @@ const Footer = () => {
 
           <div className="col-md-6 col-lg-3">
             <ul className={style.footerMenu}>
-              <h6 className={style.footerMenuTitle}>Help Links</h6>
+              <h6 className={style.footerMenuTitle}>{t('footer.items.first.title')}</h6>
               <li className={style.footerMenuItem}>
                 <Link className={style.footerLink} to="/">
-                  What Is ICO ?{" "}
+                {t('footer.items.first.links.first')}
                 </Link>
               </li>
               <li className={style.footerMenuItem}>
                 <Link className={style.footerLink} to="/">
-                  Token
+                {t('footer.items.first.links.second')}
                 </Link>
               </li>
               <li className={style.footerMenuItem}>
                 <Link className={style.footerLink} to="/">
-                  Road Map
+                {t('footer.items.first.links.third')}
                 </Link>
               </li>
               <li className={style.footerMenuItem}>
                 <Link className={style.footerLink} to="/">
-                  Advisor
+                {t('footer.items.first.links.fourth')}
                 </Link>
               </li>
             </ul>
           </div>
           <div className="col-md-6 col-lg-3">
             <ul className={style.footerMenu}>
-              <h6 className={style.footerMenuTitle}>Quick Links</h6>
+              <h6 className={style.footerMenuTitle}>{t('footer.items.second.title')}</h6>
               <li className={style.footerMenuItem}>
                 <Link className={style.footerLink} to="/">
-                  ICO Apps
+                {t('footer.items.second.links.first')}
                 </Link>
               </li>
               <li className={style.footerMenuItem}>
                 <Link className={style.footerLink} to="/">
-                  White Papers
+                {t('footer.items.second.links.second')}
                 </Link>
               </li>
               <li className={style.footerMenuItem}>
                 <Link className={style.footerLink} to="/">
-                  Teams
+                {t('footer.items.second.links.third')}
                 </Link>
               </li>
               <li className={style.footerMenuItem}>
                 <Link className={style.footerLink} to="/">
-                  Join Us
+                {t('footer.items.second.links.fourth')}
                 </Link>
               </li>
             </ul>
           </div>
           <div className="col-md-6 col-lg-3">
-            <h6 className={style.footerMenuTitle}>Quick Links</h6>
+            <h6 className={style.footerMenuTitle}>{t('footer.items.third.title')}</h6>
             <p className={style.footerBrandDesc}>
-              Sent Us a Newsletter And Get Update
+            {t('footer.items.third.description')}
             </p>
             <form>
               <div className={style.footerNewsletter}>
@@ -105,7 +107,7 @@ const Footer = () => {
                 />
                 <button className={style.footerNewsletterButton}>
                   {" "}
-                  Subscribe{" "}
+                  {t('footer.items.third.title')}{" "}
                 </button>
               </div>
             </form>
@@ -121,15 +123,15 @@ const Footer = () => {
             <div className="d-flex justify-content-center align-items-center">
               <Link className={style.footerBottomLink} to="/">
                 {" "}
-                Privacy Policy
+                {t('footer.bottom_links.first')}{" "}
               </Link>
               <Link className={style.footerBottomLink} to="/">
                 {" "}
-                Terms of Use
+                {t('footer.bottom_links.second')}
               </Link>
               <Link className={style.footerBottomLink} to="/">
                 {" "}
-                Cookies Policy
+                {t('footer.bottom_links.third')}
               </Link>
             </div>
           </div>

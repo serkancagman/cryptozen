@@ -4,13 +4,15 @@ import style from "./Style/Contact.module.css";
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { BsTelephoneFill } from "react-icons/bs";
 import { FaTelegramPlane } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 const Contact = () => {
+  const { t } = useTranslation();
   return (
     <section className={style.contact}>
       <div className="container">
         <div className={style.contactHeader}>
-          <HeaderTag title="Contacts" />
-          <h2 className={style.contactTitle}>Stay Update With Us</h2>
+          <HeaderTag title={t('contact.tag_text')} />
+          <h2 className={style.contactTitle}>{t('contact.main_title')}</h2>
         </div>
         <div className="row ">
           <div className="col-md-6 col-lg-4 text-center">
@@ -47,7 +49,7 @@ const Contact = () => {
                 <FaTelegramPlane className={style.contactIcon} />
               </div>
               <a href="/#" className={style.contactInfoTitle}>
-                Join us on Telegram
+              {t('contact.telegram_title')}
               </a>
             </div>
           </div>
@@ -90,7 +92,7 @@ const Contact = () => {
               ></textarea>
             </div>
             <div className="d-flex align-items-center justify-content-center">
-              <button className={style.submitBtn}>Submit Message</button>
+              <button className={style.submitBtn}>{t('contact.btn_text')}</button>
             </div>
           </form>
         </div>

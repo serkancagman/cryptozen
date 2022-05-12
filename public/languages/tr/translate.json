@@ -146,5 +146,43 @@
         "date": "22 Haziran, 2022"
       }
     }
+  },
+  "contact": {
+    "main_title": "Bizimle Güncel Kalın",
+    "tag_text": "İletişim",
+    "btn_text": "Mesajı Gönder",
+    "telegram_title": "Telegram'da Bize Katılın"
+  },
+  "footer": {
+    "follow_text": "Bizi takip edin",
+    "items": {
+      "first": {
+        "title": "Yardımcı Linkler",
+        "links": {
+          "first": "ICO Nedir ?",
+          "second": "Kripto",
+          "third": "Yol Haritası",
+          "fourth": "Danışman"
+        }
+      },
+      "second": {
+        "title": "Hızlı Linkler",
+        "links": {
+          "first": "ICO Uygulamaları",
+          "second": "Beyaz Liste",
+          "third": "Takımlar",
+          "fourth": "Bize Katılın!"
+        }
+      },
+      "third": {
+        "title": "Abone Ol",
+        "description": "Bize Bülten Gönderin ve Güncelleme Alın"
+      }
+    },
+    "bottom_links": {
+      "first": "Gizlilik Politikası",
+      "second": "Kullanım Şartları",
+      "third": "Çerez Politikası"
+    }
   }
 }
