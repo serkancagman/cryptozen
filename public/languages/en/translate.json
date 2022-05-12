@@ -375,5 +375,20 @@
       "second": "Terms of Use",
       "third": "Cookies Policy"
     }
+  },
+  "market": {
+    "main_title": "Market List",
+    "tag_text": "Markets",
+    "description": "More than 200 coins information.",
+    "table_items": {
+      "market": "Market",
+      "price": "Price",
+      "change": "24H Change",
+      "high": "High",
+      "low": "Low",
+      "volume": "Volume",
+      "market_cap": "Market Cap",
+      "action": "Action"
+    }
   }
 }

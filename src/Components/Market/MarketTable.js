@@ -8,10 +8,12 @@ import { BsArrowUp, BsArrowDown } from "react-icons/bs";
 import { useSelector } from "react-redux";
 import useWindowSize from "Hooks/useWindowSize";
 import Preloader from "Components/PreLoader/Preloader";
+import { useTranslation } from "react-i18next";
 const MarketTable = () => {
   const { currency, currencyIcon } = useSelector((state) => state.currency);
   const { width } = useWindowSize();
   const [isMobile, setIsMobile] = React.useState(false);
+  const { t } = useTranslation();
   React.useEffect(() => {
     if (width < 992) {
       setIsMobile(true);
@@ -25,7 +27,7 @@ const MarketTable = () => {
   const columns = React.useMemo(() => {
     return [
       {
-        title: "Market",
+        title: t("market.table_items.market"),
         dataIndex: "symbol",
         key: "symbol",
         render: (text, record) => (
@@ -53,7 +55,7 @@ const MarketTable = () => {
         ),
       },
       {
-        title: "Price",
+        title: t("market.table_items.price"),
         dataIndex: "current_price",
         key: "current_price",
         render: (text, record) => (
@@ -77,7 +79,7 @@ const MarketTable = () => {
         sorter: (a, b) => a.current_price - b.current_price,
       },
       {
-        title: "24H Change",
+        title: t("market.table_items.change"),
         dataIndex: "market_cap_change_percentage_24h",
         key: "market_cap_change_percentage_24h",
         render: (text, record) => (
@@ -96,21 +98,21 @@ const MarketTable = () => {
           b.market_cap_change_percentage_24h,
       },
       {
-        title: "High",
+        title: t("market.table_items.high"),
         dataIndex: "high_24h",
         key: "high_24h",
         render: (text) => <span className={style.tablePrice}>{text}</span>,
         sorter: (a, b) => a.high_24h - b.high_24h,
       },
       {
-        title: "Low",
+        title: t("market.table_items.low"),
         dataIndex: "low_24h",
         key: "low_24h",
         render: (text) => <span className={style.tablePrice}>{text}</span>,
         sorter: (a, b) => a.low_24h - b.low_24h,
       },
       {
-        title: "Volume",
+        title: t("market.table_items.volume"),
         dataIndex: "total_volume",
         key: "total_volume",
         render: (text) => (
@@ -118,7 +120,7 @@ const MarketTable = () => {
         ),
       },
       {
-        title: "Market Cap",
+        title: t("market.table_items.market_cap"),
         dataIndex: "market_cap",
         key: "market_cap",
         render: (text) => (
@@ -130,17 +132,17 @@ const MarketTable = () => {
       },
 
       {
-        title: "Action",
+        title: t("market.table_items.action"),
         dataIndex: "name",
         key: "name",
         render: (text, record) => (
           <Link to={`/market_list/${record.id}`} className={style.tradeBtn}>
-            Trade
+            {t("market.table_items.action")}
           </Link>
         ),
       },
     ];
-  }, [currency, currencyIcon]);
+  }, [currency, currencyIcon, t]);
 
   return (
     <>
