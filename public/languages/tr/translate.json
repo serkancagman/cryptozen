@@ -112,62 +112,32 @@
     "news_menu": {
       "title": "Haberler",
       "items": {
-        "first": {
-          "title": "Gönderiler"
-        },
-        "second": {
-          "title": "Canlı Yayın"
-        },
-        "third": {
-          "title": "Sohbet Odası"
-        },
-        "fourth": {
-          "title": "Haberler"
-        },
-        "fifth": {
-          "title": "Cryptozen Haberleri"
-        },
-        "sixth": {
-          "title": "PodCast"
-        }
+        "first": "Gönderiler",
+        "second": "Canlı Yayın",
+        "third": "Sohbet Odası",
+        "fourth": "Haberler",
+        "fifth": "Cryptozen Haberleri",
+        "sixth": "Podcast"
       }
     },
 
     "giveaway_menu": {
       "title": "Çekiliş",
       "items": {
-        "first": {
-          "title": "Bonus Kampanyaları"
-        },
-        "second": {
-          "title": "Görevler & Bonuslar"
-        },
-        "third": {
-          "title": "Referanslarım"
-        }
+        "first": "Bonus Kampanyaları",
+        "second": "Görevler & Bonuslar",
+        "third": "Referanslarım"
       }
     },
     "nft_menu": {
       "title": "NFT Kutusu",
       "items": {
-        "first": {
-          "title": "Teklif / INO"
-        },
-        "second": {
-          "title": "NFT Piyasaları"
-        },
-        "third": {
-          "title": "Öne Çıkan NFT Piyasaları"
-        },
-        "fourth": {
-          "title": "En İyi NFT Piyasaları"
-        },
-        "fifth": {
-          "title": "NFT Varlıklarım"
-        },
-        "sixth": {
-          "title": "Açık Punklar"
-        }
+        "first": "Teklif / INO",
+        "second": "NFT Piyasaları",
+        "third": "Öne Çıkan NFT Piyasaları",
+        "fifth": "En İyi NFT Piyasaları",
+        "sixth": "NFT Varlıklarım",
+        "seventh": "Açık Punklar"
       }
     },
     "startup_menu": {
