@@ -30,7 +30,9 @@ const GlobalList = () => {
     <div className={style.navSubWrapper}>
       <div className={style.navGlobalInner}>
         <ul className={style.globalList}>
-          <h6 className={style.globalListTitle}>{t("header.lang_menu.title")}</h6>
+          <h6 className={style.globalListTitle}>
+            {t("header.lang_menu.title")}
+          </h6>
           <li
             onClick={() => handleChange("en")}
             className={style.globalListItem}
@@ -62,9 +64,10 @@ const GlobalList = () => {
             )}
           </li>
         </ul>
-
         <ul className={style.globalList}>
-          <h6 className={style.globalListTitle}>{t("header.currency_menu.title")}</h6>
+          <h6 className={style.globalListTitle}>
+            {t("header.currency_menu.title")}
+          </h6>
           <li
             onClick={() => dispatch(setCurrency({ type: "USD", icon: "$" }))}
             className={style.globalListItem}
