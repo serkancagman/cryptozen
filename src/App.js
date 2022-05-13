@@ -16,7 +16,6 @@ function App() {
       <QueryClientProvider client={queryClient}>
         <ScrollToTop />
         <Router />
-   
       </QueryClientProvider>
     </>
   );
