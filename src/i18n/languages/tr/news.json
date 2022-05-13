@@ -1,0 +1,22 @@
+{
+  "main_title": "Son Blog Gönderileri",
+  "tag_text": "Son Haberler",
+  "btn_text": "Daha fazla oku",
+  "items": {
+    "first": {
+      "title": "ICO'ya nasıl yatırım yapılır ?",
+      "description": "Crypto ICO, kullanıcıların banka havalesi veya kredi/banka kartı kullanarak kripto para birimleri alıp satmalarına olanak tanıyan merkezi olmayan bir kripto para borsasıdır.",
+      "date": "12 Haziran, 2022"
+    },
+    "second": {
+      "title": "Cryptocash temiz ve modern bir madeni paradır.",
+      "description": "Crypto ICO, kullanıcıların banka havalesi veya kredi/banka kartı kullanarak kripto para birimleri alıp satmalarına olanak tanıyan merkezi olmayan bir kripto para borsasıdır.",
+      "date": "18 Haziran, 2022"
+    },
+    "third": {
+      "title": "Premine Kriptonun Artıları ve Eksileri.",
+      "description": "Crypto ICO, kullanıcıların banka havalesi veya kredi/banka kartı kullanarak kripto para birimleri alıp satmalarına olanak tanıyan merkezi olmayan bir kripto para borsasıdır.",
+      "date": "22 Haziran, 2022"
+    }
+  }
+}

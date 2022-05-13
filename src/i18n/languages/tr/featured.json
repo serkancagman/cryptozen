@@ -1,0 +1,13 @@
+{
+  "main_title": "Öne Çıkan Kriptolar",
+  "tag_text": "Öne Çıkanlar",
+  "more": "Daha Fazlasını Görüntüle",
+  "table": {
+    "market": "Piyasa",
+    "price": "Fiyat",
+    "volume": "Hacim",
+    "change": "Değişim",
+    "chart": "Fiyat Grafiği",
+    "action": "Eylem"
+  }
+}

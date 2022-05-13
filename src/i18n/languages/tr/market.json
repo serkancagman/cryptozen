@@ -1,0 +1,15 @@
+{
+  "main_title": "Piyasa Listesi",
+  "tag_text": "Piyasalar",
+  "description": "200'den fazla piyasa bilgisi.",
+  "table_items": {
+    "market": "Piyasa",
+    "price": "Fiyat",
+    "change": "24H Değişim",
+    "high": "Yüksek",
+    "low": "Düşük",
+    "volume": "Hacim",
+    "market_cap": "Piyasa Kapasitesi",
+    "action": "Eylem"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "main_title": "Featured Coins",
+  "tag_text": "Featured",
+  "more": "View More",
+  "table": {
+    "market": "Market",
+    "price": "Price",
+    "volume": "Volume",
+    "change": "Change",
+    "chart": "Price Trend",
+    "action": "Action"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "main_title": "About Crypto ICO",
+  "tag_text": "About ICO",
+  "description": "Crypto ICO is a decentralized cryptocurrency exchange that allows users to buy and sell cryptocurrencies using bank transfers or their credit/debit card in their exchange type bitcoin establshed token area.",
+  "items": {
+    "first": {
+      "title": "Money Exchange",
+      "description": "Perform your transactions in a reliable and fast way. Earn gifts from your transactions"
+    },
+    "second": {
+      "title": "Balance Transfer",
+      "description": "Perform your transactions in a reliable and fast way. Earn gifts from your transactions"
+    },
+    "thirth": {
+      "title": "Safe Transfer",
+      "description": "Perform your transactions in a reliable and fast way. Earn gifts from your transactions"
+    }
+  }
+}

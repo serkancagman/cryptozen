@@ -1,0 +1,23 @@
+{
+  "product": {
+    "product_table": {
+      "market": "Market",
+      "price": "Price"
+    },
+    "product_top": {
+      "high": "High",
+      "low": "Low",
+      "volume": "24H Volume"
+    },
+    "buy_or_sell": {
+      "buy": "Buy",
+      "sell": "Sell",
+      "balance": "My Balance",
+      "amount": "Amount",
+      "total": "Total",
+      "deposit": "Deposit",
+      "withdraw": "Withdraw",
+      "obtainable": "Obtainable"
+    }
+  }
+}

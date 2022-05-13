@@ -1,0 +1,32 @@
+{
+  "follow_text": "Follow Us",
+  "items": {
+    "first": {
+      "title": "Helpful Links",
+      "links": {
+        "first": "What is ICO ?",
+        "second": "Crypto",
+        "third": "Road Map",
+        "fourth": "Advisor"
+      }
+    },
+    "second": {
+      "title": "Quick Links",
+      "links": {
+        "first": "ICO Apps",
+        "second": "White List",
+        "third": "Teams",
+        "fourth": "Join Us!"
+      }
+    },
+    "third": {
+      "title": "Subscribe",
+      "description": "Subscribe and get the latest news and updates."
+    }
+  },
+  "bottom_links": {
+    "first": "Privacy Policy",
+    "second": "Terms of Use",
+    "third": "Cookies Policy"
+  }
+}

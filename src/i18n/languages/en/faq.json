@@ -1,0 +1,66 @@
+{
+  "main_title": " Frequently Asked Questions",
+  "tag_text": "FAQ",
+  "description": "You can remove the question marks by examining them with frequently asked questions.",
+  "options": {
+    "first": "General",
+    "second": "Crypto",
+    "third": "What is ICO ?"
+  },
+  "items": {
+    "first": {
+      "first_item": {
+        "question": "What is ICO ?",
+        "answer": "Crypto ICO is a decentralized cryptocurrency exchange that allows users to buy and sell cryptocurrencies using wire transfers or credit/debit cards."
+      },
+      "second_item": {
+        "question": "How important are cryptocurrencies ?",
+        "answer": "Cryptocurrencies contain the most important features for cryptocurrencies. "
+      },
+      "third_item": {
+        "question": "How can I buy crypto?",
+        "answer": "You can buy cryptocurrencies by selecting the buy option from the menu."
+      },
+      "fourth_item": {
+        "question": "How can I buy crypto?",
+        "answer": "You can buy cryptocurrencies by selecting the buy option from the menu."
+      }
+    },
+    "second": {
+      "first_item": {
+        "question": "What is Crypto ?",
+        "answer": "Crypto ICO is a decentralized cryptocurrency exchange that allows users to buy and sell cryptocurrencies using wire transfers or credit/debit cards."
+      },
+      "second_item": {
+        "question": "How important are cryptocurrencies ?",
+        "answer": "Cryptocurrencies contain the most important features for cryptocurrencies. "
+      },
+      "third_item": {
+        "question": "How can I buy crypto?",
+        "answer": "You can buy cryptocurrencies by selecting the buy option from the menu."
+      },
+      "fourth_item": {
+        "question": "How can I buy crypto?",
+        "answer": "You can buy cryptocurrencies by selecting the buy option from the menu."
+      }
+    },
+    "third": {
+      "first_item": {
+        "question": "What is Token ?",
+        "answer": "Crypto ICO is a decentralized cryptocurrency exchange that allows users to buy and sell cryptocurrencies using wire transfers or credit/debit cards."
+      },
+      "second_item": {
+        "question": "How important are cryptocurrencies ?",
+        "answer": "Cryptocurrencies contain the most important features for cryptocurrencies. "
+      },
+      "third_item": {
+        "question": "How can I buy crypto?",
+        "answer": "You can buy cryptocurrencies by selecting the buy option from the menu."
+      },
+      "fourth_item": {
+        "question": "How can I buy crypto?",
+        "answer": "You can buy cryptocurrencies by selecting the buy option from the menu."
+      }
+    }
+  }
+}
