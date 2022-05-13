@@ -14,10 +14,7 @@ i18n
       caches: ["cookie"],
     },
     backend: {
-      loadPath: "languages/{{lng}}/translate.json",
-    },
-    interpolation: {
-      escapeValue: false,
+      loadPath: `${process.env.PUBLIC_URL}/languages/{{lng}}/translate.json`,
     },
     react: { useSuspens: false },
   });
