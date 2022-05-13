@@ -10,13 +10,14 @@ import useNumberStep from "Hooks/useNumberStep";
 import { Rate } from "antd";
 import { TiArrowSortedDown, TiArrowSortedUp } from "react-icons/ti";
 import Preloader from "Components/PreLoader/Preloader";
+import { useTranslation } from "react-i18next";
 const ProductDetail = ({ name }) => {
   const dispatch = useDispatch();
   const { currency, currencyIcon } = useSelector((state) => state.currency);
   const { data, isLoading, error } = useQuery(["coinData", name], () =>
     getCoinData(name)
   );
-
+  const { t } = useTranslation();
   React.useEffect(() => {
     if (data) {
       dispatch(setCurrentCoin(data));
@@ -116,20 +117,20 @@ const ProductDetail = ({ name }) => {
                 <div className={style.productVolumeInfo}>
                   <div className="d-flex justify-content-center align-items-center">
                     <div className="d-flex justify-content-center mx-2 align-items-start flex-column">
-                      <span className={style.productVolumeTitle}>High</span>
+                      <span className={style.productVolumeTitle}>{t('product.product_top.high')}</span>
                       <span className={style.productVolumeValue}>
                         {data.market_data.high_24h.usd}
                       </span>
                     </div>
                     <div className="d-flex justify-content-center mx-2 align-items-start flex-column">
-                      <span className={style.productVolumeTitle}>Low</span>
+                      <span className={style.productVolumeTitle}>{t('product.product_top.low')}</span>
                       <span className={style.productVolumeValue}>
                         {data.market_data.low_24h.usd}
                       </span>
                     </div>
                     <div className="d-flex justify-content-center mx-2 align-items-start flex-column">
                       <span className={style.productVolumeTitle}>
-                        24H Volume
+                      {t('product.product_top.volume')}
                       </span>
                       <span className={style.productVolumeValue}>
                         {currencyIcon +

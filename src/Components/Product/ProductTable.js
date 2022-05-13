@@ -7,6 +7,7 @@ import { useSelector } from "react-redux";
 import { BiSearchAlt } from "react-icons/bi";
 import style from "./Style/Product.module.css";
 import useNumberStep from "Hooks/useNumberStep";
+import { useTranslation } from "react-i18next";
 import Preloader from "Components/PreLoader/Preloader";
 const ProductTable = () => {
   const [simpleTable, setSimpleTable] = React.useState(false);
@@ -14,7 +15,7 @@ const ProductTable = () => {
   const { data, isLoading, error } = useQuery(["allCoinList", currency], () =>
     getAllCoinList(currency)
   );
-
+  const { t } = useTranslation();
   function onChange(checked) {
     setSimpleTable(checked);
   }
@@ -24,7 +25,7 @@ const ProductTable = () => {
   const columns = React.useMemo(() => {
     return [
       {
-        title: "Coin",
+        title: t("product.product_table.market"),
         dataIndex: "symbol",
         key: "symbol",
         render: (text, record) => (
@@ -49,7 +50,7 @@ const ProductTable = () => {
         ),
       },
       {
-        title: "Price",
+        title: t("product.product_table.price"),
         dataIndex: "current_price",
         key: "current_price",
         render: (text, record) => (
@@ -94,7 +95,7 @@ const ProductTable = () => {
         ),
       },
     ];
-  }, [currencyIcon, currency, simpleTable]);
+  }, [currencyIcon, currency, simpleTable, t]);
 
   return (
     <div className={style.tableWrapper}>
