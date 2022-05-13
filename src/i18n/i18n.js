@@ -1,7 +1,6 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
-import HttpApi from "i18next-http-backend";
 import headerTR from "./languages/tr/header.json";
 import bannerTR from "./languages/tr/banner.json";
 import countdownTR from "./languages/tr/countdown.json";
@@ -33,7 +32,6 @@ import productEN from "./languages/en/product.json";
 i18n
   .use(initReactI18next)
   .use(LanguageDetector)
-  .use(HttpApi)
   .init({
     supportedLngs: ["en", "tr"],
     fallbackLng: "en",

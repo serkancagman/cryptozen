@@ -158,7 +158,7 @@ const MarketTable = () => {
           dataSource={data}
           scroll={{ y: "calc(100vh - 300px)",x : isMobile }}
         />
-      ) : <Preloader />}
+      ) :<div className={style.market_loader}> <Preloader /></div>}
     </>
   );
 };

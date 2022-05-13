@@ -164,4 +164,8 @@
   height: 100%;
   background-color: rgba(3, 3, 65, 0.7);
 }
+
+.market_loader {
+  height: 500px !important;
+}
 /*# sourceMappingURL=Market.module.css.map */
