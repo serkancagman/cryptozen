@@ -1,10 +1,20 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const getLocalCurrency = () => {
+  const currency = JSON.parse(localStorage.getItem("currency"));
+  return currency ? currency.type : "USD";
+};
+
+const getLocalIcon = () => {
+  const icon = JSON.parse(localStorage.getItem("currency"));
+  return icon ? icon.icon : "$";
+};
+
 export const currencySlice = createSlice({
   name: "currency",
   initialState: {
-    currency: JSON.parse(localStorage.getItem("currency")).type || "USD",
-    currencyIcon: JSON.parse(localStorage.getItem("currency")).icon || "$",
+    currency: getLocalCurrency(),
+    currencyIcon: getLocalIcon(),
   },
   reducers: {
     setCurrency: (state, action) => {
